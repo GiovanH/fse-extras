@@ -1,0 +1,5 @@
+
+custom_volumes/*.zip
+custom_volumes_other/*.zip
+
+custom_volumes/*_min/
