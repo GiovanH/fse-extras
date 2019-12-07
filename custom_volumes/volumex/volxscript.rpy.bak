@@ -1,0 +1,2130 @@
+define teg = Character("ATRAXA RHEXXE", color='#FFFFFF', image="atraxa", window_background="gui/textbox_cobalt.png", who_outlines=[ (4, "#005682") ],)
+define zebe = Character("GWYLIN KASPAR", color='#FFFFFF', image="gwylin", window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define czebe = Character("IMPOSTER ZEBEDE", color='#FFFFFF', image="gwylin", who_size=32, window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define czebe3 = Character("IM'POSTER ZEBEDE", color='#FFFFFF', image="gwylin", who_size=32, window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define czebe2 = Character("I'M POSTER ZEBEDE", color='#FFFFFF', image="gwylin", who_size=32, window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define coebe = Character("(1v1) LORD GWYN", color='#FFFFFF', image="gwylin", who_size=32, window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define coeye = Character("MAMA GW-EYE-LIN", color='#FFFFFF', image="gwylin", who_size=32, window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define atraxca = Character("ATRAXA", color='#FFFFFF', image="atraxa", who_size=32, window_background="gui/textbox_cobalt.png", who_outlines=[ (4, "#a1a100") ],)  
+define gcir = Character("", color='#FFFFFF', image="cirava", window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define gzebe = Character("LORD GWYN", color='#FFFFFF', image="gwylin", window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define grebe = Character("SOMEONE ELSE ENTIRELY", color='#FFFFFF', image="gwylin", window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define ghost = Character("HOST OF THE NIGHTMARE, GWYLIN", color='#FFFFFF', image="gwylin", window_background="gui/textbox_gold.png", who_outlines=[ (4, "#a1a100") ],)
+define pol = Character("POLYPA", color='#FFFFFF', image="polypa", window_background="gui/textbox_olive.png", who_outlines=[ (4, "#416600") ],)
+define glowingfuckinghand = Character("", color='#FFFFFF', image="glowingfuckinghand", window_background="gui/textbox_red.png", who_outlines=[ (4, "#416600") ],)
+define bigfuckingloom = Character("UNIT", color='#FFFFFF', image="drone", window_background="gui/textbox_red.png", who_outlines=[ (4, "#416600") ],)
+
+
+image gwylin crying = Image("{{assets}}/images/gwylin_crying.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin distressed = Image("{{assets}}/images/gwylin_distressed.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin happy = Image("{{assets}}/images/gwylin_happy.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin hi = Image("{{assets}}/images/gwylin_hi.png", ypos=730, xanchor=640, yanchor=720) 
+image gwylin neutral = Image("{{assets}}/images/gwylin_neutral.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin questioning = Image("{{assets}}/images/gwylin_questioning.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin questioning2 = Image("{{assets}}/images/gwylin_questioning2.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin radiant = Image("{{assets}}/images/gwylin_radiant.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin shifty = Image("{{assets}}/images/gwylin_shiftyeyed.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin shocked = Image("{{assets}}/images/gwylin_shockedembarassed.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin shocked2 = Image("{{assets}}/images/gwylin_shockedembarassed2.png", ypos=730, xanchor=640, yanchor=850)
+image gwylin hi3 = Image("{{assets}}/images/gwylin_hi3.png", ypos=730, xanchor=640, yanchor=720)
+image gwylin hi2 = Image("{{assets}}/images/gwylin_hi2.png", ypos=730, xanchor=640, yanchor=720)
+
+image gotem = Image("{{assets}}/images/gotem.png", ypos=730, xanchor=640, yanchor=720)
+image dearproperty = Image("{{assets}}/images/dearproperty.png", ypos=730, xanchor=640, yanchor=720)
+image spooksplaining = Image("{{assets}}/images/spooksplaining.png", ypos=730, xanchor=640, yanchor=720)
+image surrealism = "{{assets}}/images/surrealism.png"
+
+image highlycursed = Image("{{assets}}/images/highlycursed.png")
+
+image atraxa angry = Image("{{assets}}/images/atraxa_angry.png", ypos=730, xanchor=640, yanchor=820)
+image atraxa brood = Image("{{assets}}/images/atraxa_brood.png", ypos=730, xanchor=640, yanchor=840)
+image atraxa demanding = Image("{{assets}}/images/atraxa_demanding.png", ypos=730, xanchor=640, yanchor=840)
+image atraxa dancebase = Image("{{assets}}/images/atraxa_doyoudance.png", ypos=730, xanchor=640, yanchor=840)
+image atraxa neutral = Image("{{assets}}/images/atraxa_neutral.png", ypos=730, xanchor=640, yanchor=820)
+image atraxa pleased = Image("{{assets}}/images/atraxa_pleased.png", ypos=730, xanchor=640, yanchor=840)
+image atraxa proud = Image("{{assets}}/images/atraxa_proud.png", ypos=730, xanchor=640, yanchor=840)
+image atraxa question = Image("{{assets}}/images/atraxa_question.png", ypos=730, xanchor=640, yanchor=820)
+image atraxa muhgun = Image("{{assets}}/images/atraxa_muhgun.png", ypos=730, xanchor=640, yanchor=880)
+image atraxa sour = Image("{{assets}}/images/atraxa_sour.png", ypos=730, xanchor=640, yanchor=820)
+image atraxa talk = Image("{{assets}}/images/atraxa_talk.png", ypos=790, xanchor=640, yanchor=1020)
+image atraxa muhgun2 = Image("{{assets}}/images/atraxa_muhgun2.png", ypos=730, xanchor=640, yanchor=880)
+
+image absoluteunit = Image("{{assets}}/images/thatsanabsoluteunit.png", ypos=900, xpos=100, xanchor=640, yanchor=720)
+image absoluteunit2 = Image("{{assets}}/images/thatsanabsoluteunit2.png", ypos=900, xpos=800, xanchor=640, yanchor=720)
+
+image tadashi = Image("{{assets}}/images/shibasaru.png", ypos=900, xpos=100, xanchor=640, yanchor=720)
+image glowingfuckinghand = Image("{{assets}}/images/floatyhand_2.png", ypos=730, xanchor=640, yanchor=720)
+image orbs = Image("{{assets}}/images/orbs.png", ypos=730, xanchor=640, yanchor=720)
+image bigfuckingloom 1 = Image("{{assets}}/images/gwylin_dronegwyn1.png", ypos=10, xanchor=600, yanchor=415)
+image bigfuckingloom 2 = Image("{{assets}}/images/gwylin_dronegwyn2.png", ypos=20, xanchor=600, yanchor=415)
+image bigfuckingloom 3 = Image("{{assets}}/images/gwylin_dronegwyn3.png", ypos=20, xanchor=600, yanchor=415)
+image bigfuckingloom 4 = Image("{{assets}}/images/gwylin_dronegwyn4.png", ypos=20, xanchor=600, yanchor=415)
+image bigfuckingloom 5 = Image("{{assets}}/images/gwylin_dronegwyn5.png", ypos=20, xanchor=600, yanchor=415)
+image bigfuckingloom 6= Image("{{assets}}/images/gwylin_dronegwyn6.png", ypos=20, xanchor=600, yanchor=41)
+
+image grypealpha = "gui/grype_alpha.png"
+image shady = "{{assets}}/shady.png"
+image shady2 = "{{assets}}/shady2.png"
+
+image grype gwylin = "{{assets}}/grype_gwylin.png"
+
+
+image grypebg gwylin = AlphaMask("bg gwylinhive2", "grypealpha", xpos=659, ypos=735)
+
+image gwylin grype crying = AlphaMask("gwylin crying", "grypealpha")
+image gwylin grype distressed = AlphaMask("gwylin distressed", "grypealpha")
+image gwylin grype happy = AlphaMask("gwylin happy", "grypealpha")
+image gwylin grype hi = AlphaMask("gwylin hi", "grypealpha", ypos=813)
+image gwylin grype neutral = AlphaMask("gwylin neutral", "grypealpha")
+image gwylin grype questioning = AlphaMask("gwylin questioning", "grypealpha")
+image gwylin grype questioning2 = AlphaMask("gwylin questioning2", "grypealpha")
+image gwylin grype radiant = AlphaMask("gwylin radiant", "grypealpha")
+image gwylin grype shifty = AlphaMask("gwylin shifty", "grypealpha")
+image gwylin grype shocked = AlphaMask("gwylin shocked", "grypealpha")
+image gwylin grype shocked2 = AlphaMask("gwylin shocked", "grypealpha")
+image gwylin grype hi3 = AlphaMask("gwylin hi2", "grypealpha")
+image gwylin grype hi2 = AlphaMask("gwylin hi3", "grypealpha")
+
+image bg gwylinhive = Image("{{assets}}/images/bg_gwylinhive.png", ypos=730)
+image bg gwylinhive0 = Image("{{assets}}/images/bg_gwylinhive2.png", ypos=730)
+image bg gwylinhive2 = Image("{{assets}}/images/bg_gwylinhiveinterior2.png", ypos=730)
+image bg gwylinhive3 = Image("{{assets}}/images/bg_gwylinhiveinterior2.png", ypos=930)
+image bg gwylininterior = Image("{{assets}}/images/bg_gwylinhiveinterior.png", ypos=730)
+
+image bg atraxahive = Image("{{assets}}/images/bg_atraxahive.png", ypos=730)
+image bg freakyship = Image("{{assets}}/images/bg_freakyship.png", ypos=730)
+
+image gameover gwylin1 = Image("{{assets}}/images/zbd_end_1.png")
+image gameover gwylin2 = Image("{{assets}}/images/zbd_end_2.png")
+image gameover atraxa1 = Image("{{assets}}/images/teg_end_1.png")
+image gameover atraxa2 = Image("{{assets}}/images/teg_end_2.png")
+image victory gwylin = Image("{{assets}}/images/zbd_end_3.png")
+image victory atraxa = Image("{{assets}}/images/teg_end_3.png")
+image gameover gwylin4 = Image("{{assets}}/images/zbd_end_4.png")
+image gameover atraxa4 = Image("{{assets}}/images/teg_end_4.png")
+
+transform highanim2:
+
+    alpha 0
+    linear 5 
+    block:
+
+        easein 1 alpha 1.0
+        alpha 1.0
+        easeout 1.8 alpha 0.8
+        pause 3.0
+        easein 1.8 alpha 1.0
+        pause 3.0
+        repeat
+
+transform floaties1:
+
+    alpha 0.0 align (-0.2, 1.1) rotate -40
+
+    parallel:
+
+        easeout 4 alpha 0.4
+        pause 2
+        easein 4 alpha 0.0
+    parallel:
+
+
+        linear 10.0 align (0.8, -0.25) knot (.66, .9) knot (.4, 0) rotate 35
+
+    pause 28
+    repeat
+
+image atraxa movethenstop:
+
+    pos (640, 730) yalign 1.0
+    "atraxa talk"
+
+    linear 0.8 pos (1080, 730) yalign 1.0
+    pause 0.25
+
+    "atraxa muhgun"
+    easeout 0.12 pos (970, 738) yalign 0.99
+    linear 0.12 pos (980, 730) yalign 1.0
+
+image atraxa sourtoneutral:
+
+    "atraxa muhgun"
+    pause 0.4
+    "atraxa muhgun2"
+
+image atraxa dance:
+
+    contains:
+        xpos 640 ypos 730
+        "atraxa dancebase"
+    contains:
+
+        xpos 640 ypos 170
+        "{{assets}}/images/atraxa_doyoudance_fx01.png"
+        pause 0.2
+        "{{assets}}/images/atraxa_doyoudance_fx02.png"
+        pause 0.2
+        repeat
+
+
+image speedlines:
+
+    "{{assets}}/images/speedlines1.png"
+    pause 0.3
+    "{{assets}}/images/speedlines2.png"
+    pause 0.3
+    repeat
+
+image darken:
+
+    alpha 0.0
+    "blackcover"
+
+    linear 1.0 alpha 0.35
+
+transform slashing:
+
+    xpos 640 ypos 730
+
+    linear 0.12 xpos 680 ypos 750
+    pause 0.1
+    easein 0.2 xpos 640 ypos 730
+    pause 0.3
+    linear 0.12 xpos 600 ypos 758
+    pause 0.15
+    easein 0.2 xpos 640 ypos 730
+    pause 0.05
+    easeout 0.2 xpos 640 ypos 715
+    pause 0.1
+    linear 0.08 xpos 630 ypos 770
+    pause 0.4
+    easein 0.25 xpos 640 ypos 730
+    pause 0.3
+    repeat
+
+transform whap:
+
+    xpos 960
+    linear 0.05 xpos 930
+    linear 0.05 xpos 960
+
+transform scuttledug:
+
+    xpos 100 ypos 900
+    easeout 0.1 ypos 910
+    linear 0.1 ypos 900
+    pause 0.1
+    easeout 0.1 ypos 910
+    linear 0.1 ypos 900
+    pause 0.5
+    linear 0.4 xpos 65 ypos 900
+    pause 0.85
+    linear 0.8 xpos 150 ypos 900
+    pause 0.4
+    linear 0.4 xpos 100 ypos 900
+    pause 1.0
+    repeat
+
+image bigfuckingloom:
+
+    pos (440, 420) yalign 1.0 
+    "bigfuckingloom 4"
+    linear 0.6 pos (640, 420) yalign 1.0 
+    pause 0.50
+    easeout 0.05 pos (540, 420) yalign .90
+    "bigfuckingloom 4"
+    easeout 0.12 pos (640, 420) yalign 0.50
+    linear 0.12 pos (600, 415) yalign 0.60
+
+image bigfuckingloom2:
+
+    pos (440, 420) yalign 1.0 
+    "bigfuckingloom 3"
+    linear 0.6 pos (640, 420) yalign 1.0 
+    pause 0.50
+    easeout 0.05 pos (540, 420) yalign .90
+    "bigfuckingloom 3"
+    easeout 0.12 pos (640, 420) yalign 0.50
+    linear 0.12 pos (600, 415) yalign 0.60
+
+image bigfuckingloom3:
+
+    pos (440, 420) yalign 1.0 
+    "bigfuckingloom 1"
+    linear 0.6 pos (640, 420) yalign 1.0 
+    pause 0.50
+    easeout 0.05 pos (540, 420) yalign .90
+    "bigfuckingloom 1"
+    easeout 0.12 pos (640, 420) yalign 0.50
+    linear 0.12 pos (600, 415) yalign 0.60
+
+image bigfuckingloom4:
+
+    pos (440, 420) yalign 1.0 
+    "bigfuckingloom 5"
+    linear 0.6 pos (640, 420) yalign 1.0 
+    pause 0.50
+    easeout 0.05 pos (540, 420) yalign .90
+    "bigfuckingloom 5"
+    easeout 0.12 pos (640, 420) yalign 0.50
+    linear 0.12 pos (600, 415) yalign 0.60
+
+screen __p__trollselect():
+    
+    imagebutton auto "{{assets}}/charselect/gwylin_%s.png" action Jump("gwylin") pos (0, 0)
+    imagebutton auto "{{assets}}/charselect/atraxa_%s.png" action Jump("atraxa") pos (640, 0)
+    
+
+label __package_entrypoint___volumex:
+
+    $ renpy.block_rollback()
+
+    $ main_menu = False
+
+    show expression "gui/game_menu.png"
+
+    window hide
+
+    scene black with Dissolve(1.5)
+
+    op "The following is a {=friend}FAN-BASED{/friend} mod project."
+
+    op "Homestuck, Hiveswap, Friendsim, and the Friendsim IP are all owned by WhatPumpkin LLC. Please support the official release."
+
+    op "Like, no, seriously."
+
+    op "This won't even run without it. Be a {=friend}FRIEND & FAN{/friend} on behalf of fans  & friends."
+
+    op "Thank you."
+
+    op "..."
+
+    play music "{{assets}}/music/Ergo_Phizmiz_-_10_-_Smoke_Animals.wav"
+
+    op "Things have been pretty shitty lately, you're not going to lie."
+
+    op "Around this time of year you'd probably be procrastinating an overdue art-meme. Or testing the upper limits of your body's abjuring."
+
+    op "Or saying thank you for something other than physical violence that doesn't remove one or more of your limbs."
+
+    op "Maybe even playing part one of a videogame programmed by a dog or some crazy shit like that."
+
+    op "Hell, anything's better than being left to your not-cursed, not-magical, not-enchanted-or-special-in-any-way-existential-thoughts."
+
+    op "It's truly been the Hallowed-Hack season for friend and {=friend}fiend{/=friend} alike."
+
+    op "To everyone except for you."
+
+    op "..."
+
+    op "Maybe that's why things have been so shitty."
+
+    op "You have too many friends."
+
+    op "You're sure none of them would mind if you were to impose, but if you screw it up, or say the wrong thing..."
+
+    op "Well, that's the bad ending."
+
+    op "You're never the type to {=friend}PESTER CHUMS{/=friend}."
+
+    op "So why not flirt with the unknown for a change?"
+
+    show shady
+
+    op "Why not get {=friend}SPOOKY?{/=friend}"
+
+    stop music
+
+    show shady2
+
+    call screen __p__trollselect with Dissolve(1.0)
+
+    with Pause(0.25)
+
+    return
+
+label gwylin:
+
+    $ renpy.block_rollback()
+
+    scene black with Dissolve(1.0)
+
+    scene bg hs_background3 with dissolve
+
+    $ quick_menu = True
+
+    scene bg hs_background3 with dissolve
+
+    "You're not sure why, but you get the feeling today is the optimal day to start making friends outside your usual circle. Branching out beyond your production possibilities curve. Socialize, damnit!"
+
+    "You NEED it." 
+
+    "That's not to say your friend-pool is anything close to shallow, but you just don't want to cut yourself off from a world of possibilities contained within the biblical canon of meeting someone new every 2 weeks."   
+
+    "And then waiting in the solitude of your lonesome."
+
+    "No certainty."
+
+    "No gaurantee you'll even like who you meet." 
+
+    "Just...oh!"
+
+    "A troll call! What comedic timing!"
+
+    "It must be a friend contacting you for some innocuous purpose! Perhaps it's Cirava with a new lo-fi beat loop for you to tune out, or perhaps Zebruh with another unlabeled image.PNG followed by a string of apologies. Hopefully not."
+
+    "{i}Buzzinga is calling!{/i}"
+
+    "Oh! Zebede!"
+
+    "His bumbling antics always bring you joy when you're down, and even though this is the third time you've left him unread tonight, you think you'll dish out some social charity and text him."
+
+    "Seems he's already taken the liberty of buzzing you with a generous handful of messages. Although..."
+
+    "Rather oddly enough his username has changed a number of times while you were out..." 
+
+    "It's now 'I'M POSTER ZEBEDE', as if to reassure you you're talking to the REAL shady sim himself."
+
+    "How considerate!"
+
+    czebe "omg hiii!!!! you're my freakish alien friend i blab so much about, right? (1v1)"
+
+    czebe "gjdfslkhjsldkhgjFUCK IT DIDN'T RENDER PROPERLY (101)"
+
+    czebe "hold on, hold on, hold on, hold on..."
+
+    czebe3 "eh...? (1~1)"
+
+    czebe3 "ztill not it, fuck...never experienced this many izzues before the...fucking...URINEGRUBLING Widows10 update..."
+
+    czebe2 "there...er hem."
+
+    czebe2 "oopz, where the FUCK are my mannersz? and signature manic spells? I'M FORGETTING MYSELF, HAHAHAHA. (1v1);"
+
+    "Three dots appear, signaling your IV drip of socialization has been refilled. Oh, goodie."
+
+    czebe2 "BIZARRO BITCH BROTHER, SISTER, OR OTHER OF MINE!" 
+
+    czebe2 "YOU'RE FINALLY MOTHERFUCKING CLICK-CLACKING ONLINE! (1V1)"
+
+    "...Says he's still typing. That is to say, he literally announced he was still typing."
+
+    czebe2 "I'M TYPING. (1v<)"
+
+    "Man, Zebede's etiquette game has sincerely improved since last you spoke. A true gentletroll if you ever met one."
+
+    czebe2 "so...hi. it is i, zebede, the lovable miscreant so inoffensively likable I could be the POSTERGRUB for CRUMBLR!"
+
+    "It's so convenient for Zebede to talk at length about things you already know. You don't have a knack for forgetting people's names or anything..."
+
+    "But you seriously think you thought Zebede was the one with the hard-on for Trizza for a solid minute before that brief refresher."
+
+    czebe2 "...BEES bee patient with me...hi've bee-n exbeeriencing technical difficulbees latebee."
+
+    czebe2 "chief among them bee-ing spontaneous bee puns."
+
+    czebe2 "i also look a bit...different. nothing you can't handle i truzt."
+
+    "Oh! Well that IS nothing you can't handle. You're a supportive friend, and you're prepared for anything. You tell him no big-bee."
+
+    show grypebg gwylin
+    show gwylin grype hi
+    show grype gwylin
+    play music "{{assets}}/music/imin.wav" loop fadeout 2
+
+    "Oh!"
+
+    "You've been had. Bamboozled. Taken for a ride. Hoodwinked and hornswoggled. Short-shafted."
+
+    "Troogle isn't even LOADING enough alternate ways of saying 'decieved' for you to be satisfied with synonym-emphasizing how cozen you were by this master ruseman."
+
+    "The bastard."
+
+    "You should have known all along. All the signs pointed to it. Why didn't you see it? 'I'M POSTER ZEBEDE' was really just an 'imp -- "
+
+    "Oh, goddamnit."
+
+    "His smirking troll face doesn't do anything to alleviate your pain. This is worse than the time you realized Alucard was just Dracula backwards."
+
+    czebe2 "first, let's reintroduce. i've lost all interest in being that troll formerly known as zebede. that troll is not me from this moment forward. begone thoughts  of sweet zebede."
+
+    czebe2 "i much prefer to be someone else."
+
+    czebe2 "for all intents and purposes, call me zebede, especially if anyone with a name spelt A-T-R-A-X-A asks."
+
+    czebe2 grype shifty "but..."
+
+    czebe2 grype hi "zebede is a ridiculously agonizing name to have. and the very syllables sound allergic to self improvement. i'm also going to stop talking like an idiot."
+
+    czebe2 grype neutral "starting...now. (1v1)"
+
+    coebe grype questioning "you are to refer to me as LORD GWYN in all of our future correspondances...every single call, bum-dial, or ring, you will answer from the NotZebede Hotline..."
+
+    coebe grype questioning2 "AND ANOTHER THING!"
+
+    "Sweet merciful fuck."
+
+    coebe grype hi2 "I SHOULDN'T HAVE TO TEXT FIRST! IF I DEEM IMPERATIVE THAT YOU GIVE ME A RING, THEN YOU WILL GIVE ME THE RING FREELY!"
+
+    coebe grype hi3 "IN THE PLACE OF THE NARK LORD, YOU WILL SET UP A QUEEN! AND I SHALL NOT BE NARK, BUT BEAUTIFUL AND TERRIBLE AS THE MORNING AND DAY! UNFAIR AS THE ALTERNIAN SEA! AND HOT AS THE SUN THAT BOILS IT!"
+
+    coebe grype shocked "COLD AS THE SNOW ON THE MOUNTAINTOPS! DREADED MUSE OF DOOM AM I, TO DWARF THE STORMS AND LIGHTNING WITH MY EYESTALKS! DOOM! LOVE! DESPAIR!"
+
+    coebe grype shocked2 "ALL SHALL LOVE ME! AND DESPAIR! (0v0)"
+
+    "Lord fucking Gwyn, man. Some friends are just like that. One day you feel like tossing them a bone, next thing you know, they're a marrow-sucking monarch calling themselves lord of the rings." 
+
+    "..."
+
+    "...you wait an uncomfortable amount of time with his arms in the air like that."
+
+    "..."
+
+    "He's still not moving."
+
+    "..."
+
+    "You were about to assume his screen froze, but you still hear his slow half-panting breathing."
+
+    "It reeks of unspoken expectations and equally unspoken animosity." 
+
+    "Wait a minute, you've seen this exact Simon Cowell-like expression on TV before..."
+
+    "Lord Gwyn's challenging you to perform, darling!"
+
+    "How do you plan on placating this rancorous friend you barely know?"
+
+    menu:
+        "[pick] Your flawless smeagol impression.":
+
+
+            "You don't hesitate to own the moment."
+
+            "You're not sure why, but some uncharacteristic part of you lines up your shot and lets out a bumbling growl."
+
+            "Lord Gwyn is precious! YOUR precious! You want to make it very clear who he belongs to, and whose friendship is yours! You takeses it and stuffs it in your pocketses! P...precious."
+
+            gzebe grype neutral "...?"
+
+            gzebe "what the actual fuck...?" 
+
+            gzebe grype shifty "are you trying to intimidate me with your oh-so-fucking hoity-toity knowledge of high-class cinema or something?"
+
+            "Never one to break character, except when you do, you immediately assure him you do nothing of the sort! You just wanted to relate to him!"
+
+            gzebe grype shocked "what the actual fuck...?" 
+
+            gzebe "are you trying to relate to me with your oh-so-fucking hoity-toity knowledge of high-class cinema or something?"
+
+            "You motion for a little CUT with your hands rather urgently, explaining extensively to Lord Gwyn that this is JUST a scene from a movie he hasn't even seen."
+
+            gzebe grype shifty "...what the actual fuck?"
+
+            "His expression shifts, lower lip ready to part for a complaint, but you interject just in time -- presumably digging a deeper hole."
+
+            "You explain that you've got a passion for kinography, a word you assume gives you credentials as a movie person, and claim you have a copy of it on your rocket." 
+
+            "You give a convincingly movie-snob like grin, and say you can tell when someone has cultivated an appreciation for cinema, and when one ganders."
+
+            gzebe grype shocked "what the actual fuck?"
+
+            gzebe "are you trying to assume my ganders?"
+
+            "Wha -- "
+
+            gzebe grype shocked2 "STUPID POPPET! NO WONDER NO ONE LIKES YOU! NOT EVEN ZEBEDE! NOT EVEN GWYLIN! NOT EVEN SMEAGOL!"
+
+            "Try as you will, your botched attempt at an impersonation was beaten by an impersonator."
+
+            "Perhaps your life is better off beset by friends, not fiends, after all..."
+
+            call ending ("gameover gwylin1", False, True) from _call_ending_52
+
+            return
+        "[pick] Give him the 'ol razzle dazzle.":
+   
+
+            "You don't hesitate to own the moment."
+
+            "Actually, you totally do. Frozen. Like a deer, or whatever bizzare thing these freaky aliens call a deer, in headlights, or whatever bizarre thing these freaky aliens call headlights."
+
+            "Strutting your lower limbs like an icecube slipped down your pant leg, you slap your hands against your knees hoping that this adds emphasis."
+
+            "Or, anything, really."
+
+            "Your improvised dance number isn't BAD per se."
+
+            "It's merely the most disorganized, disjointed, and poorly structured two-left-feet fucking catastrophe to ever involve coordination of limb and mind throughout all of human history."
+
+            "This is how you get your first bad ending. You're sure of it. You're going to die, right here, right now, dancing like a lunatic as someone posing as a KPOP-stan disowns you. Your heart aches."
+
+            "If this was a parody genre dating sim, you could see the caption now -- something snarky like FIEND FAUX-PASS or DEFAULT DANCE ELSEWHERE."
+
+            "You press your hands into your cheeks in shame, as his sour unmoving face..."
+
+            gzebe grype happy "...!"
+
+            "Lights up...?"
+
+            gzebe grype hi "h...hahahahaha! down with seas! die high seas scum! fuck, oh my GHB, flap your fins! flap your fins like a gutless fucking wader! no blinking! you don't have eyelids!"
+
+            gzebe grype neutral "like this! c'mon! this shit's hilarious!" 
+
+            gzebe grype "it's me -- Mr. Bour·geoi·sea! {w})-(uuuuuhhhh...gluuuuub...i'm the govfinment!{w=.5} {w}fill pails, and don't commit fuckfin tax fraud!{w=.5} {w})-(ee)-(ee...{w=.5}{w}also wear gender-codified clothes,{w=.5} {w}and signs,{w=.5}{w} and charge my shellphone with your sentience!{w=.5}" 
+
+            gzebe grype "do your part for fuckfin sea-ciety! (1v1)"
+
+            "You give a convincingly stupid fish-out-of-water-look, and waver your arms a little. You also repeat what Lord Gwyn said, hopeful no semi-aquatics overheard. You alienate no bipeds!"
+
+            "Ever the convincing method actor, you also commit to your role, seemingly having idea what's going on. Just like your character, you too pretend to be an uncannily stupid fish out of water."       
+
+            "The audience, however, laughs it up, seemingly unaware you're just a bagel. Probably gluten-free and full of lies. Like all things organic."
+
+            gzebe grype radiant "what is air?!?! fuckkkkk...that had me WEAK!"
+
+            gzebe grype hi "yeah, no, seadwellers are everything wrong with alternia. privileged, precocious, and predictably absentee rulers. can't even wipe their SEEDFLAPS without help."
+
+            gzebe grype hi "eat the fish, i always say! (1v<)"
+
+            gzebe grype neutral "actually, i never say that. but it strokes my ego now! (1v1)"
+
+    show gwylin grype hi
+
+    show gwylin grype radiant
+
+    "That face does not seem...encouraging."
+
+    "It screams the inverse of a heart growing three sizes in a single 24 hour block."
+
+    "It resembles a molotov cocktail exploding in slow motion, every individual glass shard-shaped tooth stinging his face into smiling horrifically wide."
+
+    "It looks like he's about to punt an orphan off a bridge. Or steal from a puppy. An orphan puppy."
+
+    "WHAT DOES THIS FIEND WANT FROM YOU?!"
+
+    menu:
+        "[pick] ...":
+
+            gzebe "..."
+
+            "..."
+
+            gzebe "...hey."
+
+            "Hey."
+
+            gzebe "..."
+
+            "..."
+
+            gzebe "sooooo...(1v1)"
+
+            "Gwyn stares at you with his unflinching orphan-booting wince for an uncomfortably long time."
+
+            gzebe "..."
+
+            "..."
+
+
+            gzebe "..."
+
+            "..."
+
+            gzebe "you look like the PERFECT patsy!"
+
+            "What?"
+
+            gzebe "tell you what...for confidentiality reasons, I can't tell you my TRUE and AWESOME nomenclature...(1~1)"
+
+            grebe "but as of now, you are no longer speaking to Lord Gwyn. i am Someone Else Entirely. (1v<)"
+
+            grebe "and this special Someone Else Entirely is about to send you an escort. (1v1)"
+
+            grebe grype neutral "when the time is right, you'll know EXACTLY who you're dealing with...BUT...more pressing matters to deal with."
+
+            grebe grype crying "i've got a PROBLEM...and her name is spelled A-T-R-A-X-A."
+
+            grebe grype crying "that web-toed BITCH has been on my aphobe hitlist since the day she first disrespected my pronouns. offline. IRL."
+
+            grebe grype radiant "he/him/his/himself, agender demigirl in case you were wondering, hehehe. (1v1) welcome to my twisted thinkpan."
+
+            "Sounds valid to you! This A-T-R-A-X-A person seems like a real grouch. Being courteous about an identity is a small price to pay for someone as eccentric and...eccentric as this demigal!"
+
+            "Then again...maybe it's just the way he stresses the syllables of her name...so...well, it's hard to pinpoint with an erratic voice like his, but homocidal intent-y. Would murder her-ish. Yikes."
+
+            grebe grype shifty "UGH...A...T-R-A-X-A...the mere letters make me...FEEL things...EMOTION things...dis-GUSTING. (1~<)"
+
+            grebe grype hi "but if you were to...er hem...have a nice little chat with me about her wellbeing, age-appropriate drinks, and cyanide, we could fix that problem lickity split! (1v<)"
+
+            "You're not sure what the overlap between any of those things is, but, hey, the more thought-provoking discussion and character the merrier!"
+
+            "You'd talk about clown religion, fish politics, or the validity of orphan jokes if it meant netting you the sweet succulent ambrosia nectar of fans...and friends. You mean friends." 
+
+            grebe "ENOUGH TALK! if you just want to flap your gums about spooks like authority, find someone else entirely! or you're welcome to die! but if you want the time of your freaky alien life...and will lay it down prematurely...in pursuit of..."
+
+            grebe grype crying "...unrequited ardor..."
+
+            grebe grype radiant  "find Someone Else Entirely. (101)"
+
+            grebe grype hi "i'm sending her your coordinates now. (1v<)"
+
+            "Oh, NOW you get it! You...think."
+
+            "They want to fuck, right?"
+
+            "Excuse the language of your no-filter thoughts for all the proud mothers of six Christian children out there raised right, including your OWN!"
+
+            "But the dubious nature of their intent to procreate is so complex you don't even want to IMAGINE the crackling. Or the fizzling. Or the -- okay, okay, point made. Eugh."
+
+            "Bad brain. Who would even HYPOTHETICALLY write something so vile? Arrest them for horny on main or published work crimes. Or thought crimes. Are those illegal here? You hope so."
+
+            grebe "censors indicate she's in range! treat my dear A350-LUT3 UNIT nicely. do NOT call her IT. her pronouns are she/her/herself and her culling protocol is MOSTLY sedated. mostly." 
+
+            grebe grype hi "pesky subroutines, hehe. (1v1)"
+
+            "Uhhh...culling protocol?"
+
+            stop music 
+
+            grebe grype radiant "and one last thing..."
+
+            "Oh no. Not the adoptee-blow-to-the-knee face again. That usually means he's going to insult you or say something particularly sadistic."
+
+            play music "{{assets}}/music/youandmebreathing.wav" loop
+
+            grebe grype crying "i...i'm..."
+
+            "Fed up with you. Going to kill you. Of the opinion you don't deserve to breathe. Sending your innermost secrets to the darkweb as we speak."
+
+            grebe grype hi "...i'm counting on you, best-fiend!"
+
+            "...wait, what the fuck?"
+
+            grebe grype radiant "don't fuck this up. (1v<)"
+
+            "W...where's the...where's the...where's the insult?"
+
+            grebe "we've only just met, and yet, i trust you more than half the morons striking up an occupancy on this bitch of a world..."
+
+            "Where's the bodily harm?" 
+
+            grebe grype hi "you're valid!"
+
+            "Where's the sassy put down?" 
+
+            grebe grype "i can't emphasize enough how sorry i am for being so vitriolic towards my favorite bitchnasty buddy."
+
+            "THIS ISN'T FORMULAIC!" 
+
+            "GIVE ME STATUS QUO OR GIVE ME DEATH!" 
+
+            grebe "oh, hush...don't cry. mama gets ya! hard to trust a complete STRANGER on the WEB! (131)"
+
+            "Y-your eyes are just allergic to sappy things."
+
+            grebe grype crying "i've...done a lot of rotten things in my life...but...this A-T-R-A-X-A? might be my chance to do something RIGHT. (1v1);"
+
+            "Where are these feelings coming from?" 
+
+            "Where did the non-acidic rain start pouring from, localized entirely within your tear ducts?"
+
+            "You're almost jealous, hahaha. This A-T-R-A-X-A doesn't get Gwylin like you do. He's a sensitive soul. Rough around the edges...but, fuck, what a softie. How can you get closer?"
+
+            grebe grype hi "...tell you what. i'm making it official. you and me? we're partners. no. moirails. besties bestier than the restier. (1v<)"
+
+            "W...wow. This is...everything you ever wanted. One True Pairing. Sure, it's a little Mary Sue-y, but the fanart mill needs to churn SOMETHING out."
+
+            "Move over, Jayne Eyre. Show's been cancelled, Romeo and Juliet. You did some illegal shit, Bonnie and Clyde. Not sure if there's a point to even mentioning anyone else..."
+
+            "Not when it takes up time between Lord Gwyn X Me! Whoever doesn't ship it, clearly goes against canon and deserves HATEMAIL!"
+
+            "Wait, no, scratch that. Hyperbolic overkill. But...you get the idea. Super duper fuckin happy."
+
+            grebe "initiate protocol: Fiends Are In The Hive. get it?"
+
+            grebe grype hi "because i have FAITH in you! (1v1)"
+
+            grebe grype crying "just don't chip the fucking paint job. (1~1) gwylin OUT!"
+
+            hide grypebg gwylin
+            hide gwylin grype
+            hide grype gwylin
+
+    play music "{{assets}}/music/marchofthedrones.wav" loop
+
+    show absoluteunit at appearbottomleft2 with hpunch
+  
+    "Wait what the fuck."
+
+    show absoluteunit with vpunch
+
+    "You feel a seismic rumble underfoot. Something's fishy, and the noticeable lack of speaking makes it clear it's not Gwylin's bass-mouth badmouthing."
+
+    show absoluteunit2 at appeartopright2 with hpunch
+
+    "JESUS TAPDANCING CHRIST, WHAT THE HELL IS THAT?"
+
+    show absoluteunit2
+
+    "You've seen drones before, but a rogue drone? Is that even a thing that can happen? Hijacked drones? Is there really anything Alternia can do about a renegade drone? There goes society."
+
+    "It -- sorry, she, lumbers forward and starts to sink to her massive awe-inspiring razor-covered knees. They belong on a magazine they're so polished. Extreme knee envy immediately sets in."
+
+    "And...you're in AWE at the size of the lass."
+
+    "A350-LUT3 UNIT is an abso...wow, you're not exactly quick on the draw today. Christ."
+
+    "It's as if you've become allergic to realizing certain punchlines in a timely manner."
+
+    hide absoluteunit
+    hide absoluteunit2
+    show bigfuckingloom
+
+    "THUNK!"
+
+    coeye "testing...testing...come in...this is MAMA GW-EYE-LIN...DO YOU READ ME? answer me you CHURLISH CHITINED SILENT PROTAGONIST! do you READ ME?"
+
+    coeye "you're not helping anyone here by playing coy, you know!!"
+
+    "You apologize for zoning out for a moment there. A350-LUT3 UNIT is...quite a sight to behold."
+
+    coeye "as are you, friend, as are you. (-v1) now let's focus on the task at hand, OK? leave the sight-seeing to me. i have eyes EVERYWHERE, including on you. no one else can hurt you! <>"
+
+    coeye "and uh...seductive a piece of work as she is, A350-LUT3 UNIT is a DRONE with FEELINGS. {w}don't...yknow, objectify her just because of semi-mechanical core processing units.{w=.5}"
+
+    "You sigh a little as mechanized whirring begins to click to the side of you. Being considerate of others is tiring! N-not that you're unwilling."
+
+    "In all honestly, you never thought you'd be in the position to view a robot as a living, breathing, coherent thing. Much less one with FEELINGS."
+
+    "...if only you could peer at the inside, you know? If you just knew her story. Questions you could never ask her. How old is she? What's her make and model? Subway or Dominoes? Does she like jazz?"
+
+    coeye "move it or lose it! (>v1);" with vpunch
+
+    "She starts shambling, somewhat, giving you the cue you should be leaving. Maybe it's for the best...you think...that you don't think at all."
+
+    play music "{{assets}}/music/imin.wav" loop fadeout 2
+
+    show blackcover with closeeyes
+
+    coeye "99 bottles of class-traitor-tears on the wall...99 bottles of class-traitor tears...(1v<)"
+    "You've been following Mama Gwy-eye-lin for a bit." with vpunch
+  
+    scene bg sewer with dissolve
+    show bigfuckingloom2
+    "Like...a FUCKING while." with hpunch
+
+    "Momma Gw-eye-lin closes the sewer lid overhead, puppeteering A350 with a sadist's gleam as he continues his vile mantra..."
+
+    "The DOOMED song, you think he called it? He's so high energy you can't even keep up with the memory of what he said. Incomprehensible and long-winded."
+
+    coeye "take one down...s-MASH it around...2 b-b-b-b-b-bottles of class traitor tears on the wallllll~! (1v1)"
+
+    coeye "...would you like the honors of the last bottle-smash before the next set? the state of the state is in your hands, comraider! {w}SMASH IT!{w=.1} {w}SMASH IT!{w=.1} {w}SMASH IT!{w=.1} {w}EXORCISE THE SPOOKS, M-M-M-MOTHERFUCKER!{w=.1} (!V!)"
+
+    "Eh. You've got nothing to lose beyond brain cells and your chains, you suppose. 99 bottles of class traitor tears on the wall...99 bottles of tears..."
+
+    play music "{{assets}}/music/youandmebreathing.wav" loop
+
+    coeye "..."
+
+    "..."
+
+    coeye "...hey."
+
+    "Hey."
+
+    coeye "..."
+
+    "..."
+
+    coeye "sooooo...(1v1)"
+
+
+    coeye "..."
+
+    "..."
+
+
+    coeye "..."
+
+    "..."
+
+    coeye "hey...do you believe we're the masters of our own destinies, best fiend?"
+
+    "Wow, that was...serious all of a sudden."
+
+    menu:
+        "[pick] Yes.":
+            
+
+            "..."
+
+            "Truth be told you've always felt you had an internal locus of control."
+
+            "It can be hard to realize you're the reason you're failing or succeeding."
+
+            "People like to oursource responsibility as a means of distancing themselves from their actions."
+
+            "The truth is, we are nothing but what we make of ourselves."
+
+            coeye "...eye guess you're right...heh. (1v1)" 
+
+            coeye "i like to think it's a bit of both, y'know? there's a danger in thinking we're helpless, i admit."
+
+            coeye "but standing against an unassailable force alone can be just as damaging as never trying."
+
+            coeye "truth be told, i'm just glad you have an opinion. (1v<)"
+
+            play music "{{assets}}/music/imin.wav" loop fadeout 2
+
+            zebe "my name is Gwylin Kaspar, by the way. sorry i didn't say it sooner."
+
+            "Frankly, you're just glad he said it at all."
+
+            "Gwylin Kaspar."
+
+            "You'll do everything in your power to bring him to his happiness."
+
+        "[pick] No.":
+
+            "..."
+
+            "Truth be told you've always felt you had an external locus of control."
+
+            "Things just sort of happen, no rhyme or reason."
+
+            "It's maddening to try and pretend there's a reason for everything."
+
+            "Sometimes it's more damaging than just accepting there are some things you can't change."
+
+            coeye "...eye guess you're right...heh. (1v1)"
+
+            coeye "personally i feel it's a bit of both, y'know? we're responsible for some things, and not for others."
+
+            coeye "and people who DON'T accept this usually write off their actions as meaningless, since they can't fix the outcome."
+
+            coeye "truth be told, i'm just glad you have an opinion. (1v<)"
+
+            play music "{{assets}}/music/imin.wav" loop fadeout 2
+
+            zebe "my name is Gwylin Kaspar, by the way. sorry i didn't say it sooner."
+
+            "Frankly, you're just glad he said it at all."
+
+            "Gwylin Kaspar."
+
+            "You'll make sure nothing keeps him from his happiness."
+  
+    show blackcover with closeeyes
+    scene bg ciravastream with dissolve
+    show bigfuckingloom3
+
+    "How the fuck did we even get in here? We were just in a sewer, what the fuck, what, how, fuck, what?"
+
+    zebe "funny you should ask that! (1v1)" 
+
+    zebe "i...{w}'represent'{w=.1}...{w}a group referred to informally as the ALT-LEFT, or alternian left. our opponents brand us the PALEBLOOD SOCIETY...but we are neither a society, nor are we composed of palebloods. save for myself. (>v<){w=.1}"
+
+    "Palebloods? You're quite certain you've never seen another paleblood before."
+
+    zebe "one exposition sequence at a time, sweetheart. (1~1)"
+
+    zebe "anyway, yeah, so, like, we all share lock combinations, entrance codes, and key-ciphers! really neat bunch of toesucks and miscreants. you really GOTTA meet these fiends sometime. hand picked besties."
+
+    zebe "not the sorts you'd invite to an unholy spatrimony duel..."
+
+    zebe "but the only trolls DECENT ENOUGH to respect pronouns, hook you up with the latest gear, and lend you a couch to crash on when shit gets rough and your lusus is culled."
+
+    "That's interesting! Cirava never mentioned they were part of an underground society of rebels, or that they shared a key to their property!"
+
+    zebe "they aren't! Cirava is literally the least qualified most anti-egoist troll our prestigious group has heard of EVER, like, they stabbed their own eye out..." 
+
+    zebe "EYE MEAN WHO DOES THAT?! (0v0)"
+
+    "You chuckle. It's not right to laugh about friends behind their backs on their property with their livestream recording every second of it."
+
+    "But it is...liberating just to BURN IT ALL DOWN!"
+
+    zebe "and what makes you think we even OWN property? that would defeat the purpose of illegitimately acquiring other people's locks, codes and ciphers, wouldn't it? (1v1)" 
+
+    "O...oh. Hahahah."
+
+    "Fiends, you suppose. When you burn it ALL down there's nothing and no one left to call your own."
+
+    zebe "ooooooh...ooooooh...look what EYE found! (1v1)" with hpunch
+
+    "A350-LUT3 UNIT pinches a small squirming silverfish like creature, inspecting it with her screenchest as Gwylin grows fantastically amused. It's...an E-Cig?"
+
+    zebe "only the FINEST quality...DEATH STIX...shit's so illegal you could get culled just for touching it...here, have some. (1v1)"
+
+    "You're handed the wingless little insectoid, its mouth closing sideways and oozing icky vibes while squeaking senselessly."
+
+    "It misses the warmth of its desk drawer..."
+
+    "You blow out a small, pathetic puff along the critter's back end, the creature's many wriggling hindlegs making it especially difficult to enjoy." with hpunch
+
+    show surrealism at highanim2 
+
+    play music "{{assets}}/music/youandmebreathing.wav" loop
+
+    zebe "society is fake. (1v1)"
+
+    "Oh. It's another of Gwylin's spiels."
+
+    zebe "everything you think you know about life, liberty, happiness, all of it is rooted in consumerist lies and propaganda. they put a price tag on your basic needs and call it wealth."
+
+    zebe "the empire would COLLAPSE without yellows and muties to fuel their inoperable fucking machines."
+
+    zebe "but instead of bargaining with our might, we sacrifice it. {w}make ourselves weaker so we're not useful to the strong anymore.{w=.1} {w}we shoot ourselves in the foot by sticking to our loathsome guns.{w=.1}"
+
+    zebe "that's why we're squatting on private property, stealing drugs. because we hate Cirava and everything they stand for. (1v1)"
+
+    "Amen to that."
+
+    "Truth be told, he could have said 'there's a third eye located between my legs' and you would've said amen to that to that."
+
+    "This Death Stix shit hits hard and fast."
+
+    show spooksplaining at floaties1
+
+    zebe "...i just hate spooks, man. immaterial things like morality, society, laws...they don't hold real power like we do. (1~1)"
+
+    zebe "take for instance, The Grand Highblood. problematic fave. (1v<)"
+
+    zebe "it's considered BLASPHEMY to draw his face in any unflattering depiction, punishable by death."
+
+    zebe "but so is being hatched in this world a filthy fucking mutant."
+
+    zebe "too bad you can't enforce that shit so easily! (1v1)" 
+
+    zebe "so i graffeti him everywhere. so many places no one can tell who to kill." 
+
+    zebe "besides, he's handsome and his face is never unflattering. (1v1)"
+
+    show gotem at floaties3
+
+    zebe "it's...lonely work. and no one appreciates it. but it keeps the mind busy. and if my mind's not busy...well, then I'm PANRUSTED! BRAINDEAD! good as a corpse."
+
+    zebe "...i just wish there was someone out there for people like me."
+
+    zebe "guess i'm stuck with what i can find with an old IP address, some rope, and an abandoned warehouse..."
+
+    "You make a subtle committment to never end up as lonely as Gwylin. And, even if you have to listen to the DOOMED song for the rest of your days..."
+
+    "Somehow you'll make sure even Gwylin doesn't have to end up as lonely as Gwylin."
+
+    show blackcover with closeeyes
+    scene bg alley with dissolve
+    play music "{{assets}}/music/imin.wav" loop fadeout 2
+
+
+    "Dialogue!"
+
+    hide blackcover with openeyes
+    show bg gwylinhive at default
+
+    czebe "rather convincing don't you think?"
+
+    show gwylin at shaking
+
+    "He seems rabidly excited at your arrival, eyes eerily fixed on you with probing intent..."
+
+    "You'll be honest. You've...never made friends with someone this off-putting before. You feel like this is a trap. No matter what you do it's wrong."
+    menu:
+        "[pick] Try to give him a headpat.":
+         
+
+            "You saw this in an anime once."
+            "Boku no...something. Which is usually cause for alarm, or a tell-tale sign of good writing, in Japanese."
+            "The mawkishly cheeky love interest, who in this instance didn't look like she would gnaw your thumb off, needed reassuance."
+            "Though the cherry blossums are far from in bloom, and your agender equivilent of a maiden would probably do fine without..."
+            "...the dubbing was so good. The lip synch impeccable, even if five words off at any given time."
+            "Well, gosh fluffing damnit!"
+            "If it worked there, why wouldn't it work here?"
+        "[pick] Go in for a head scratch.":
+           
+
+            "That is a metric fuck ton of hair."
+            "Your mind is hijacked by the thought of what sins lay beyond this fiend's floof, what secrets escape your knowing grip..."
+            "He gives you a sudden smirk, shoulders slacking impatiently, each arm being swung not unlike a ragdoll's. Perhaps you should just play it cool?"
+            "But thanks to your curiosity and 'despacito', a Spanish word you think means 'desperation'..."
+            "You act on curiosity and despacito too."
+        "[pick] Two words: cranium-caress.":
+           
+
+            "You saw this in an anime once."
+            "The mawkishly cheeky love interest, who in this instance didn't look like she would gnaw your thumb off, needed reassuance."
+            "If it worked there, why wouldn't it work here?"
+        "[pick] Give that noggin a nudge.":
+           
+
+            "You saw this in an anime once."
+            "The mawkishly cheeky love interest, who in this instance didn't look like she would gnaw your thumb off, needed reassuance."
+            "If it worked there, why wouldn't it work here?"
+
+
+    show gwylin shifty at shudder
+
+    czebe "a...are you trying to get fresh with me...? (1~1)"
+
+    czebe "i mean, don't take this the wrong way...i'm as much a purple staahn as ANY self-respecting alternian..." 
+
+    show gwylin shifty at shudder
+
+    czebe "but you've got the look of a really touchy-feelsy prime ministrangler..."
+
+    show gwylin neutral at bounce 
+
+    "You're not quite sure what that is, but you agree with the sentiment. A lot of the things he says make no sense, but that's okay. Fiends are like that sometimes."
+
+    show gwylin questioning2 at bounce 
+    show glowingfuckinghand at bounce
+
+    czebe "WOW, YOU ARE SO PALE THIRSTY FOR MY PALEBLOODED FLESHLUMPS, YOU DEGENERATE!!! (1v1)"
+   
+    show gwylin questioning2 at bounce
+    show glowingfuckinghand at bounce
+
+    "Like that for instance. The fuck."
+
+    hide glowingfuckinghand
+    show gwylin shocked at bounce
+
+    "You hear a sound you can only describe as a cross between a power outage and a firecracker."
+
+    "You also hear a discordant ringing in your ears that makes you want to projectile vomit the fizzling electric current that's hogging your breathable air."
+
+    show gwylin shocked2 at bounce
+
+    "...only for him to beat you to the punch."
+
+    show gwylin shocked2 at shaking
+
+    czebe "you've probably deduced by now Zebede is but a PSUEDONYM! a false face! a SPOOK, if you will!"
+
+    show gwylin questioning2 at shaking
+    show glowingfuckinghand at bounce
+
+    czebe "like gender-conformity, government, and absentee property it means NOTHING! it has no power here! (1v1)"
+   
+    show glowingfuckinghand at shaking
+    show gwylin questioning2 at shaking
+
+    zebe "i am GWYLIN! DARK LORD! PALEBLOODED CERULEAN-MUTANT SCUM! THE YELLOW SIGN! THE MUSE OF DOOM!"
+    hide glowingfuckinghand
+
+    show gwylin hi at shaking
+    zebe "please...come inside. (1v1)"
+    show bg gwylininterior with wipeleft
+
+
+    show blackcover with pixellate
+    play music "{{assets}}/music/somniculonia.wav" loop fadeout 2
+    scene bg freakyship with dissolve
+
+    "You've never felt a migraine this viscerally."
+
+    zebe "HAHAHAHAHAH!"
+
+    show gwylin questioning at loweredbrief
+
+    ghost "welcome to my TRULY TWISTED MIND, SHITLORD! (1v1)"
+
+    show gwylin questioning at shudder
+
+    show gwylin at left1280 with move
+
+    show gwylin crying at slownod
+
+    show gwylin at left1280
+    show bg at default
+
+    show gwylin questioning at middle with move
+
+    show gwylin happy at quickhug
+
+    "...you really are allergic to happy endings."
+
+    call ending ("victory gwylin", True, True) from _call_ending_54
+
+    return
+
+
+label atraxa:
+
+    $ renpy.block_rollback()
+
+    scene black with Dissolve(1.0)
+
+    scene bg atraxahive with dissolve
+
+    $ quick_menu = True
+
+    "...God, you're going to disappoint the fuck out of your folks back home. Or worse, impress them."
+
+    "You've become civically engaged! And the wedding, or more accurately, the divorce from all your friends with differing opinions is tomorrow!"
+
+    "Somehow the siren song of political action committees, and, of course, free I VOTED stickers -- provided Alternia has those -- has caught your attention something fierce."
+
+    "After all, what better a way to make friends than to lose a bunch of them for BETTER more OPINIONATED friends? Ones who suggest how you dress, think, behave, and who you do or don't associate with."
+
+    "...wow, this idea sounded so much better on the brochure and in your head reading what you skimmed from the brochure..."
+
+    "Actually, come to think of it, you still have it."
+
+    show highlycursed at appearatright
+
+    "...you know what, to be fair, the lady handing it out was pretty and very passionate. You couldn't NOT take one. Or pretend you wouldn't give your life to spread its message. Whatever that message is. Your mind was...somewhere else!"
+
+    show atraxa neutral with moveinleft
+    play music "{{assets}}/music/imout.wav" loop
+    show atraxa neutral
+
+    teg "What are you? Some kind of mutant tro//? Or another sentient creature?"
+
+    show atraxa muhgun at bounce
+
+    teg "die seas scum!"
+
+    show atraxa muhgun2 at bounce
+
+    "Definitely the latter, you say. Unless he would prefer the former, in which case you’re that, actually. But mutants, you’ve learned, are not particularly well-liked on this planet."
+
+    teg question "An a/ien... Hmph. I won’t have to cu// you, then. Not immediate/y, at /east. You don’t appear to be a cu//-on-sight species."
+
+    show atraxa proud at nod
+
+    teg "/ucky for you, that I won’t have to /oose my b/ade. And\n/ucky for me, to have found a potentia/ comrade."
+
+    teg question "I know what you seek."
+
+    "Shelter and friendship, not necessarily in that order. You’re about to speak up, but he’s already moving on."
+
+    teg proud "You seek the meeting p/ace of the Eastern A/ternian Fine Animated Art Appreciation Society."
+
+    teg talk "Or, as some /ess-cu/tured sou/s wou/d ca// it – the\nanime c/ub."
+
+    show atraxa neutral
+
+    "Oh, a club! Back home, teachers used to go on and on about how clubs were a wonderful place to meet new friends. You didn’t really believe it then, but maybe things are different here on Alternia."
+
+    "You confidently assert that yes, you are here for the animes!"
+
+    teg pleased "Good."
+
+    teg proud "I feared I was going to have to cance/ tonight’s meeting due to no-shows, but now it can proceed as schedu/ed. Fo//ow me."
+
+    show atraxa movethenstop
+
+    "He gestures toward his hive and begins to stride confidently toward it. But then he rethinks it, pausing to look back at you."
+
+    teg "Wait."
+
+    teg demanding "Subs or dubs?"
+
+    menu:
+        "[pick] Subs.":
+
+
+            show atraxa proud at nod
+
+            teg "Heh... It’s entertaining how wrong you are."
+
+            teg talk "But even the greatest of A/ternia’s phi/osofighters required sparring opponents on the batt/efie/d of the inte//ect."
+
+            teg proud "To cha//enge your assumptions with my superior /ogic and taste wi// be a fu/fi//ing task."
+
+            teg talk "Come in."
+
+            "Not really the reaction you were hoping for, but you’d say anything to get into someone’s hive, so you’ll take it."
+        "[pick] Dubs.":
+
+
+            show atraxa pleased at bounce
+
+            teg "Perfect. A fe//ow connoisseur."
+
+            teg "/et’s continue."
+        "[pick] Um... both are good?":
+
+
+            show atraxa sour
+
+            "His expression immediately sours, a look you’re all-too-familiar with. If you had a mouse, you’d be frantically scrolling the wheel upwards to roll back time and make a new choice."
+
+            "But you live in the real world, where you have to face the consequences of your godawful anime opinions."
+
+            teg "Tch. Have you no conviction?"
+
+            show atraxa angry at bounce
+
+            teg "The anime c/ub is a sanctuary for those of strong wi// and fine/y-honed arguments, not a she/ter for coward/y pissants."
+
+            teg "What debate can come from a sycophantic toady such as yourse/f?"
+
+            teg demanding "How are you going to stimu/ate my inte//ect?"
+
+            "You begin to sputter in protest. You’re plenty stimulating! You’ve got a pretty long list of friends who you’ve stimulated in all KINDS of ways. Platonic ones, mostly. But he’s not having any of it."
+
+            teg brood "There are other anime \"fans\" in this city. Perhaps their gatherings wi// be more your /eve/."
+
+            teg "Farewe//."
+
+            hide atraxa with moveoutright
+
+            call ending ("gameover atraxa1", False, True) from _call_ending_55
+
+            return
+
+    show bg atraxahive with wiperight
+    show atraxa neutral at middle
+
+    teg neutral "/EX/cellent work, greenhorn. A job well done."
+
+    show atraxa proud at bounce
+
+    teg "Keep me posted if there are any further developments... .7v7"
+
+    "You can't stop staring at that massive fucking monolith of regal hair. Is it just a thing for fiends to have an obscene amount of hair?"
+
+    show atraxa demanding
+
+    teg "Alas...it's my burden as a blueblood to bear, subtrollian freak...to care so little what others expect of me, and care so much what I /EX/pect of me."
+
+    "...You're finding it difficult to honor this gal's wishes. You didn't even say that last bit aloud."
+
+    show atraxa question at bounce
+
+    teg "...Hm. So, hun, you know how I said keep your thoughts to yourself?"
+    menu:
+        "[pick] Yeah.":
+
+
+
+            teg brood shaking "Don't. Please. Just don't."
+
+        "[pick] Nah.":
+
+
+            show atraxa pleased at bounce
+
+            teg "Perfect. A fe//ow connoisseur."
+
+            teg "/et’s continue."
+
+    teg "At least not where my beauty is concerned."
+
+    show atraxa talk at shaking 
+
+    teg "It's /criminally/ underappreciated. Blues /DESERVE/ to feel beautiful. Every other color gets positivity spoonfed to their ugly shades and overrated tints. Hgnnm..."
+
+    show atraxa demanding at bounce 
+
+    teg "Impressionable young /ceruleans/ and /indigos/ need to be told... there's a use in being blue! It really is okay, okay?!"
+
+    "Okay."
+
+    show atraxa talk at shaking
+
+    teg "You can't shame the best there is for being great. I mean, take a look at rusties. Beautiful people. Tremendous. I love rusties. Nobody loves rustbloods better than me."
+
+    show atraxa brood at bounce
+
+    teg "I know everything about their kind."
+
+    show teg demanding at bounce
+
+    teg "But alas... I'd never shake hands with one. You know why? Because I'm /forced/ to. We live in a /SOCIETY/ that's just so /CRUEL/ and /DUMB/ and /FORCES/ us to make friends with the lowest common denominators... "
+
+    show atraxa sour at bounce
+
+    teg "Now I /know/ what you're thinking!"
+
+    "You don't doubt it."
+
+    "Ceruleans seem to be a little lax on intellectual private property rights. Your thoughts are never guarded enough. And, for once, biased enough."
+
+    "Especially around Miss. Anti-Integration here."
+
+    show gwylin neutral with moveinleft
+
+    czebe "SUCK MY FUCKING TOES, STATIST SCUM!"
+
+    show gwylin shocked at bounce
+
+    "What the..."
+
+    show atraxa movethenstop
+
+    teg "NOT YOU /AGAIN/!"
+
+    show atraxa sourtoneutral
+
+    "Oh. Fuck. That's not good."
+
+    teg "/Hemorealism/ is NOT the same thing as /hemoism/. Statistically speaking..."
+
+    teg "Rustbloods make up for 44 percent of the alternian populace's psychic related crimes and offenses, despite only taking up /18 percent/ of the total psychic population. That's like poisoning just under half a batch of grubsausage links..."
+
+    show atraxa demanding at shaking
+
+    teg "Statistics say that meat could be topped with death, mugging, or psionic assault. How /appetizing/."
+
+    teg "It's an uncomfortable truth... but truth doesn't feel bad about hurting your feelings, or tarnishing your world view."
+
+    teg "And uhhh... neither do I, honestly? I know I'm right. And deep down, you do too."
+
+    teg "Hemodiversity is just a barkbeast-whistle for blueblood genocide, if you /REALLY/ think about it."
+
+    "You sure could use a source for those statistics, or a comprehensive explanation of just what a 'psychic crime' entails. Or if what Atraxa does counts. You wonder if she'd be this grumpy if she met some of your rust-friends..."
+
+    "Maybe if she just spent a day in the shoes of -- "
+
+    show atraxa movethenstop
+
+    teg "I just don't /CARE/ for rustbloods... I never want you to think of me like that again."
+
+    show atraxa sourtoneutral
+
+    "Oh. Fuck. That's not good."
+
+    teg talk "Per my viewing schedu/e, we’// watch a carefu//y curated se/ection of episodes from one c/assic, and from one recent re/ease."
+
+    teg question "But... hm..."
+
+    teg "Since you’re a newcomer, it might be best not to jump into the midd/e of /ast bout’s series, Phi/osopher Ha/f-Iron."
+
+    teg "Perhaps we sha//, instead, begin with the first season of Schoo/fed Heroism, and transition into some episodes of Kismet:Stuck Morning?"
+
+    show atraxa angry at bounce
+
+    teg angry "The origina/ airing, of course. Not the censored one with the ridicu/ous CGI dragon. Ugh."
+
+    "Looks like atraxa intends to take full control of the morning’s activities, which you find entirely copacetic."
+
+    "The less you need to assert your own opinions and make your own choices, the less likely you are to fuck up."
+
+    "It’s probably not a healthy way to live, but it’s gotten you somewhere between one to nineteen friends so far, so you’re sticking to it."
+
+    "With deft and precise movements, atraxa retrieves a disc from its container and pops it in the troll equivalent of a DVD player."
+
+    "It makes a slimy, chugging noise as it sucks the disc in, and like usual, you aren’t sure if it’s an inanimate object or a living being. Either way, you’re a little disgusted."
+
+    "The DVD player hums and atraxa’s TV lights up with a colorful title screen."
+
+    "You’re ready to get settled in for a journey through the wonderful world of the animes, but he frowns and pauses the episode less than a minute in."
+
+    teg question "... Hang on."
+
+    teg "This isn’t the correct copy."
+
+    teg "The /oca/ization on these /ines was changed after the origina/ trans/ator was cu//ed by a purp/eb/ood for crimes against buffoonery."
+
+    show atraxa demanding at bounce
+
+    teg angry "I specifica//y ordered the first edition and paid extra for it. This is unacceptab/e!"
+
+    "atraxa stops the DVD player, ejects the disc, and places it back in its case."
+
+    teg talk "Come. There’s sti// time in the night. We need to go reso/ve this immediate/y."
+
+    teg "The shop that imported it for me is nearby."
+
+    show atraxa neutral
+
+    show bg hs_background3 with wipeleft
+
+    "He heads for the door and beckons for you to follow, which you do. You guess it was too much to hope for a quiet morning inside, wasn’t it?"
+
+    "At least you get to go shopping for animes, which sounds fun enough. Will it be at one of those fancy automated stores, you wonder?"
+
+    teg question "No. Un/ike most stores on A/ternia, this specia/ity shop is run by a /iving tro//."
+
+    teg "A fe//ow co//ector who wou/d not entrust such work to automation."
+
+    show atraxa angry at bounce
+
+    teg "So one wou/d EXPECT, with an actua/ think pan invo/ved, there wou/d be no care/ess mistakes /ike this."
+
+    teg question "At /east I’m on good terms with the owner, so I doubt there wi// be troub/e."
+
+    "You, on the other hand, expect plenty of it. Pretty much everything on this goddamn planet has been trouble so far. Does he know how awful it is here? You don’t want to humansplain to him or anything, but things are pretty awful here."
+
+    teg sour "Things are pretty awfu/ here."
+
+    "Oh. You guess he knows. He’s staring at one of the many billboards that line the streets, which has been defaced with bright red graffiti. It’s saying some pretty nasty stuff about Trizza."
+
+    teg "Hmph... Rebe/ sentiments grow by the moment."
+
+    teg brood "A/ternia /ies on the verge of peri/. A b/ade’s edge..."
+
+    teg "And not any b/ade, but the b/ade of a razor-sharp fo/ded stee/ katana."
+
+    teg "Forged under the East A/ternian moon/ight..."
+
+    teg "Heated by the be//ows-breath of a magnificent draconian\n/usus..."
+
+    teg "Coo/ed by the shimmering cascade of an acid waterfa//..."
+
+    teg "And fit to be hand/ed on/y by a true expert."
+
+    show atraxa dance at bounce
+
+    teg "Do you dance?"
+
+    "You’re a little caught off-guard by that question. Dancing? As in... moving one’s body to music?"
+
+    teg question "In a way, yes."
+
+    teg pleased "Moving to the sweet music of stee/ on stee/, the rhythm of combat, the sti/etto step that weaves death and g/ory into one beautifu/ motion."
+
+    show atraxa talk at bounce
+
+    "Oh. Swordfighting, of course. You really should have figured that one out. This guy’s dial has only two settings; talking about swords or talking about anime. Sometimes he gets particularly frisky and talks about both at once."
+
+    "You tell him that you don’t know how to handle swords, but they seem really cool, and you’d love to learn."
+
+    teg question "Coo/?"
+
+    show atraxa sour at nod
+
+    teg "Feh."
+
+    teg dance "Swordp/ay is more than \"coo/\". It is a way of /ife. A code of honor."
+
+    teg "To pick up the b/ade is to bind yourse/f to the tenets of bushido, and to be prepared at a// times to enforce justice the on/y way a swordsman knows – through stee/."
+
+    teg talk "Someday, the pursuit of justice may bring me face to face with these rebe/ scum."
+
+    teg "I must be ready to show them the true, magnificent terror of the b/ade."
+
+    teg proud "Who knows? Maybe I wou/d even be awarded a\nc/owngressiona/ meda/ of honor."
+
+    teg "A tro// can dare to dream..."
+
+    "So that’s why he practices swordplay, huh? To enforce justice, kind of like a vigilante?"
+
+    teg sour "Vigi/ante? P/ease."
+
+    teg question "I wou/d on/y ever cu// a tro// who /ega//y deserved death."
+
+    teg demanding "What kind of /aw/ess moron do you take me for?"
+
+    "You don’t take him for a moron at all. In fact, he’s very smart and clever and just."
+
+    show atraxa proud at nod
+
+    "You hope you’re not laying it on too thick, but he seems to enjoy the praise."
+
+    teg question "Ah. We’re here. This won’t take too /ong."
+
+    "He’s taken you to a night market that reminds you of the place where you met Polypa. A strip mall lies to the left of the many tents and stalls, and a sign above one door reads, \"SUPER TOPATO IMPORTS.\""
+
+    show bg atraxashop with wiperight
+    show atraxa neutral at left1280 with move
+
+    "As you enter, atraxa makes a beeline for the counter, which is manned by a greasy looking goldblood with pinkish looking eyes."
+
+    "You, on the other hand, are more interested in the rest of the store. It looks a lot like atraxa’s living room, but bigger."
+
+    "Anime figurines on sale for what looks to be a preposterous amount of money, DVDs and comics lining the shelves, arcade games in the corner..."
+
+    "There’s even a section for replica swords, which all look far too sharp and legitimately deadly for your liking."
+
+    "Skulking between the shelves is an oliveblood guy. You can’t quite tell if he works here, or if he’s just browsing. You're not sure if any trolls even have normal jobs."
+
+    show atraxa demanding at bounce
+
+    "You’re about to ask the olive guy about a particularly interesting DVD when you’re distracted by a commotion at the counter."
+
+    show atraxa at left1280 with move
+
+    "You’re pretty sure you heard atraxa snarling something about his \"rights as a consumer\"? Looks like trouble is brewing. You turn your head toward the counter and listen in."
+
+    teg angry "Do you rea//y think you can get away with ripping me off\n /ike this? Do you know who I am? My b/ood caste?"
+
+    teg demanding "A tea/b/ood /ike me has connections. A vast network of /ikeminded sou/s at my beck and ca//, ready to be unsheathed against my hap/ess foes."
+
+    teg "The /ega/ force I can bring to bear against you is greater than your pueri/e mind cou/d ever imagine."
+
+    teg angry "A f/eet of /egis/acerators wi// descend on you /ike shadow c/ones, each armed with the greatest weapon of them a//: know/edge."
+
+    teg "And with our intricate understanding of the A/ternian /ega/ code, you wi// be mired in suits so myriad, so mind-numbing, you wi// wish for the swift and ear/y death my b/ade can provide."
+
+    teg brood "Or..."
+
+    teg demanding "You can offer me an exchange of equa/ or greater va/ue to my origina/ purchase!"
+
+    teg dance "Which path wi// you choose to wa/k, scum?"
+
+    show atraxa question at bounce with hpunch
+
+    "You wander closer to the counter, hoping you might be able to help resolve the situation, but instead you blunder right into the oliveblood and send a box tumbling from his hands to the ground."
+
+    "A bunch of assorted products spill out as the shopkeeper gasps dramatically. You don’t see what the big deal is. Looks like some more DVDs and manga."
+
+    show atraxa sour
+
+    "One cover features a troll with heart-shaped horns and a bright pink sign, and another features some red-blooded douchebag wearing pants way too tall for him."
+
+    "atraxa picks up one of the mangas and waves it in front of the shopkeeper’s face."
+
+    show atraxa demanding at bounce
+
+    teg "Care to exp/ain what I’m /ooking at here?"
+
+    teg "Imperia/ Dictate, Number the Second, Section Three point Two. The depiction of nonstandard hemo/ogica/ attributes is strict/y forbidden."
+
+    teg "Imperia/ Dictate, Number the Seventh, Section Five. Materia/ which encourages action against the state is considered contraband of the highest degree."
+
+    "The oliveblood, who can clearly see the situation careening downhill like a scuttlebuggy without wheelstops, begins to creep toward the door."
+
+    "You’d love to do the same, but you can’t give up on a potential new friendship. It’s basically pathological."
+
+    teg sour "Tch... To think that my favorite Eastern A/ternian hobby shop cou/d stoop so /ow as to pedd/e this crimina/ fi/th..."
+
+    teg "What a sickening betraya/."
+
+    "The shopkeeper stammers, offering a litany of muddled explanations that only seem to incense atraxa further. He was holding it for a friend! No, wait, uh... it’s satire?"
+
+    show atraxa muhgun at bounce
+
+    "atraxa slams a palm down on the counter and his eyes shoot open, revealing dark purple irises with a strange swirl pattern."
+
+    teg "Imperia/ Dictate, Number the Sixty-First, Section Two! Satire is especia//y contraband!"
+
+    teg "You think you can mess with me? I’ve watched count/ess hours of /ega/ drama. P/ayed and rep/ayed /egendary\n/egis/acerator and memorized every twist. I know the /aw back and forth."
+
+    teg dance "And now, it’s time for the punishment due. You’re fucking dead, kiddo."
+
+    show atraxa at middle with move
+
+    "As atraxa leans over the counter, his free hand grips the hilt of his katana and tenses, ready to draw. He’s about to straight-up execute this guy."
+
+    menu:
+        "[pick] Don't intervene.":
+
+
+            "You really don’t want to get in between the shopkeeper and atraxa’s sword. For all you know, this really does warrant an immediate execution. Who are you to judge?"
+
+            "You do, however, squint a little so you don’t have to see the full, gory detail of the culling."
+
+            show speedlines
+            show atraxa muhgun2 at slashing
+
+            "Turns out, it’s not nearly as gory as you expected. atraxa leaps over the counter and swings wildly at the guy, but many of his attacks fail to connect."
+
+            "It’s mostly a bunch of bombastic anime-style moves that don’t translate well to actual combat."
+
+            show goldblood with hpunch
+
+            "Still, some strikes hit home, drawing a spray of murky gold blood that jolts the shopkeeper out of his petrified fear."
+
+            hide speedlines
+            show atraxa sour at bounce with vpunch
+
+            if persistent.flash:
+
+                hide goldblood with pinkflash
+            else:
+
+
+                hide goldblood with slowpinkflash
+
+            "He screeches and unleashes a strobing psionic blast from his eyes, causing atraxa to stagger back, disoriented."
+
+            "The flash of light doesn’t seem to have caused any real damage, but it offers the perfect opportunity to flee; by the time your eyes have adjusted the only thing they see is the backdoor swinging wildly in his wake."
+
+            "Unsurprisingly, the oliveblood is nowhere to be seen as well."
+
+            teg "Tch..."
+
+            show atraxa brood at shaking
+
+            "atraxa glances down at his katana, stained with the blood of the shopkeeper, and slowly sheathes it. His hand is shaking, claws tapping the hilt restlessly."
+
+            show atraxa neutral at middle
+
+            "He turns slowly to you, forcing himself back into his usual stoic posture."
+
+            teg talk "I... Uh..."
+
+            teg brood "He got /ucky, that’s a//. But he can’t hide forever."
+
+            teg question "/et’s go. We need to report this to a drone."
+
+            show atraxa neutral
+
+            show bg hs_background3 with wipedown
+
+            "He strides out of the shop, leaving you to follow hurriedly behind. What a mess. You hesitantly ask him whether it was really necessary to try and kill that boy for what he did."
+
+            show atraxa question at bounce
+
+            teg "O-Of course it was!"
+
+            teg talk "The /aw is abso/ute. A foreigner /ike you might not understand."
+
+            teg brood "It is not my duty to question the righteousness of my actions. I am but a too/ through which the /aw is enforced."
+
+            teg "I am the b/ade that Her Imperious Condescension wie/ds to maintain order in this wor/d of chaos."
+
+            teg talk "Just /ike this drone."
+
+            show atraxa neutral
+
+            "He gestures to one of the big, hulking drones that you’ve grown all-too-familiar with during your stay here on Alternia. Right now, it looks like it’s cleaning up some bronze-colored blood that was spattered on the side of a building."
+
+            show atraxa talk at nod
+
+            "atraxa approaches and hails it, beginning to explain that there’s a collector’s shop he needs to report for rebel activity. But the drone isn’t listening to any of that."
+
+            show atraxa question
+
+            "It slowly turns from him to stare directly at you, and it raises its weapon to your face. A grating, electronic noise issues from its metallic grill. In the immortal words of a wise cartoon dog: ruh roh."
+
+            show atraxa demanding at bounce
+
+            teg demanding "Ho/d it!"
+
+            teg "This creature is under my protection. It has committed no crime."
+
+            teg dance "If you continue this attempted cu//ing, I wi// strike back with my katana."
+
+            show atraxa demanding at bounce
+
+            teg demanding "And... a strong/y worded /etter to your superiors!"
+
+            show atraxa neutral
+
+            "The drone seems supremely annoyed that it can’t just get right down to culling a motherfucker, but atraxa’s caste must be just high enough to give it pause. You, the motherfucker in question, are incredibly relieved."
+
+            "That relief quickly fades when the drone produces a palmhusk with a blurry picture of you on the screen, and a LOT of text beneath, most of it flashing red. That’s a never a good sign."
+
+            "It looks like... A rap sheet."
+
+            show atraxa sour
+
+            "atraxa reads through it quickly, which is a pretty impressive feat considering his eyes are still closed, and his expression darkens the further down he gets."
+
+            teg "Wanted under suspicion of meat product theft..."
+
+            show atraxa angry
+
+            teg "Wanted under suspicion of meat product theft... heist of fine art..."
+
+            show atraxa demanding at bounce
+
+            teg "Wanted under suspicion of meat product theft... heist of fine art... accomp/ice to the assassination of a vio/etb/ood??"
+
+            show atraxa muhgun at nod
+
+            "Oof. You didn’t realize you’d racked up such a heavy list of crimes. He’s already rounding on you with fury radiating off every inch of his being. It’s terrifying. You’ve seen this guy arguing with a retail clerk. You know what he’s capable of."
+
+            teg "A// this time, I thought your sou/ was open to the way of the samurai."
+
+            teg "I thought I had met a potentia/ new connoisseur of the animated arts."
+
+            teg dance "But no..."
+
+            teg "Your b/ood pusher pumps on/y /ies through your vi//ainous veins."
+
+            show atraxa demanding at bounce
+
+            teg "You were just /ooking for an a/ibi... A p/ace to bide your time... To hide away from the drones unti/ it was time to indu/ge once more in your crimina/ ways!"
+
+            "You try to defend yourself. You didn’t do any of those things! And you had a perfectly good reason for most of them!"
+
+            show atraxa muhgun
+
+            "atraxa isn’t buying it. He’s clutching his katana’s hilt so tight, veins are bulging on his hand."
+
+            teg "Si/ence, coward."
+
+            teg "The time has come for my b/ade to strike true!"
+
+            show speedlines
+            show atraxa muhgun2 at bounce
+
+            teg "Hah!"
+
+            with hpunch
+
+            "He draws his blade in a smooth motion and swipes at you, and you just barely manage to sidestep the attack."
+
+            hide speedlines
+            hide atraxa
+            with moveoutright
+
+            "You dart backwards, stumbling over yourself in your haste to get away, while he swings his katana wildly around while making lots of weird grunting noises."
+
+            "Once again, his mouth has been writing a check his sword hand can’t cash, but you doubt that matters when trolls are stronger and faster than you in general, and he’s accompanied by a giant murderdrone."
+
+            "It’s time for you to split, and you’d better do it lickety."
+
+            "Glancing around, you notice that you’re about to cross over a bridge, with an underpass beneath it. Perfect! Just like an action hero you can hop right over the edge of the road, duck into the underpass, and find a nice hiding spot."
+
+            "You dash toward the traffic barrier, vault nimbly over it, and {i}oh jesus piss this is way higher than you thought it was.{/i}"
+
+            with vpunch
+
+            if persistent.flash:
+
+                with Fade(0.04, 0.5, 0.5, color="#ffffff")
+
+            "You hit the ground hard with a resounding crack, and for a moment your vision goes blank as a wave of pain sears your nerves."
+
+            "As the pained disorientation begins to fade, you decide it’s about time to take stock of your situation."
+
+            "A couple of broken bones (old hat), a troll trying to kill you (not unfamiliar), drones attacking you (same) and sun about to rise and scorch you into nothing (again)."
+
+            "Individually, you’ve risen to the challenge of just barely handling each of these problems. But all at once? Yeah, you think you’re just gonna call this one here."
+
+            call ending ("gameover atraxa2", False, True) from _call_ending_56
+
+            return
+        "[pick]Defend the shopkeeper.":
+
+
+            "Okay, you know this is a terrible idea, but you’ve seriously had it up to here with being party to the murder of random trolls."
+
+            show atraxa question
+
+            "You quickly interpose yourself between atraxa and the goldblood. Does he really have to kill this guy? For what seems to be his first offense?"
+
+            "You launch into an impassioned spiel about LOVE and FRIENDSHIP and JUSTICE, riding the value of forgiveness and second chances really hard."
+
+            "And, for good measure, you throw in a little side note about how atraxa’s favorite shop will close down if he kills this dude."
+
+    teg sour "Si/ence."
+
+    with hpunch
+
+    "atraxa shoves you roughly aside and you go careening into a display full of body pillows."
+
+    show atraxa muhgun
+
+    "You watch, stomach plummeting, as atraxa turns back to the shopkeeper and slowly draws his sword."
+
+    show atraxa neutral at bounce
+
+    "But then, at the last second, he reconsiders."
+
+    teg "..."
+
+    show atraxa at shaking
+
+    teg "............"
+
+    show atraxa sour at middle
+
+    teg "... Ugh. Consider yourse/f /ucky I’m in a good mood."
+
+    teg "If I catch you se//ing contraband again, your /ife wi// be mine."
+
+    show bg hs_background3 with wipedown
+
+    "atraxa strides out of the store, holding a fresh copy of the DVD he wanted to exchange. You give the shopkeeper a vaguely apologetic look and rush out of the store behind him."
+
+    "Whew! That was a close one. You thank atraxa profusely for listening to your dumb little speech about... whatever it was you said. Honestly, you already forgot."
+
+    teg question "You’re c/ear/y new to this p/anet. I fe/t... pity, for your naivete."
+
+    teg sour "But I shou/d have just ki//ed him."
+
+    teg "Death is the /ega//y-prescribed punishment for such crimes as his."
+
+    teg question "Actua//y... it’s the /ega//y-prescribed punishment for most crimes."
+
+    teg "I shou/d have separated him from his head."
+
+    teg talk "But I /ooked into your p/eading eyes, and I saw..."
+
+    teg brood "I saw........."
+
+    "atraxa goes quiet. You would describe the silence as being particularly brooding. There’s a lot of silences like that on this planet. Then, finally, he speaks:"
+
+    show atraxa at nod
+
+    teg "This... isn’t my first time."
+
+    teg question "It was just over a sweep ago, I be/ieve. I was patro//ing the hivebatch in search of evi/doers when I caught the unmistakab/e scent of smoke in the air."
+
+    teg "Upon pursuing the /ead I saw a hive, partia//y co//apsed, partia//y on fire. My instincts f/ared, and I rushed in to he/p the innocent sou/ who was trapped there."
+
+    teg talk "But as I was he/ping the gir/ bandage her wounds, it occurred to me that I had made a grievous error in judgment."
+
+    teg question "Tro//s be/ow a certain age without a /usus, or a proper hive, are considered unviab/e and s/ated to be cu//ed."
+
+    teg talk "By rights I shou/d have put her out of her misery, the moment I rea/ized my mistake."
+
+    teg "And yet..."
+
+    teg question "I /ooked into her deep grey eyes, du//ed from the pain of\n/oss, and I sheathed my b/ade."
+
+    teg "In fact... Even though she is hive/ess and /usus/ess, I remain in contact with her to this day."
+
+    teg talk "Knowing deep down that one day, I must cu// her. The /aw demands it."
+
+    teg "But I haven’t yet."
+
+    teg brood "I don’t know if I cou/d..."
+
+    teg "Why does my conviction waver at times /ike these?"
+
+    "If he’s talking about who you think he’s talking about, you’re pretty sure he couldn’t kill her even if he tried."
+
+    "But that’s not the point here. The point is, he’s spilling some REAL and TRUE and DEEP emotion with you!"
+
+    "This friendship is basically in the bag. Just gotta drop some sweeping, vague wisdom that makes him feel better about potentially not being an unthinking cog in the Alternian murder machine."
+
+    "You offer a light suggestion that maybe, what is legal and what is just... aren’t always the same thing? Just a little thought."
+
+    "Maybe he’s doing the right thing, overlooking her situation because of how obviously fucked up it is to be a homeless orphan."
+
+    "He goes silent for a long time, chewing his bottom lip."
+
+    show atraxa sour at bounce
+
+    teg "Feh. You’re naïve."
+
+    teg "Naïve, uncu/tured, unen/ightened."
+
+    "Wow, thanks!"
+
+    teg talk "You think the wor/d is simp/e. /ike a cartoon for chi/dren."
+
+    teg angry "But this is A/ternia, a /and ru/ed by co/d /ogic, where men such as myse/f must make the hard decisions."
+
+    teg talk "It’s not easy, being dedicated to the code of /aw."
+
+    teg "It asks much of us and gives us /itt/e in return. But it gives us order. It keeps the beasts at bay."
+
+    teg "If I were to question it, what then?"
+
+    teg angry "Wou/d I begin to wonder if it is unjust for a b/ueb/ood to command his servants? For imperia/ drones to cu// the infirm? For us to obey the ever-changing whims of the A/ternian roya/ty?"
+
+    "It takes a lot of effort to suppress your \"well, yeah\", but for the sake of this burgeoning friendship, you allow him to continue his monologue."
+
+    teg talk "Riots in the streets. Tro// ki//ing tro//. Even more than usua/, I mean."
+
+    teg "No. I cannot waver."
+
+    teg dance "These hands must remain steady and true. Though I fee/ a pu// toward the scorching fangs of the /ight, I must continue my path and remain in the tender, righteous embrace of the dark."
+
+    teg "Truth be my b/ade, inte//ect my sensei, and justice my on/y companion on this /one/y road."
+
+    "He goes on like that for quite a while. It all starts to muddle together in your head, and you lose count of how many times he’s repeated some screed about justice and truth and being smarter than all the other trolls in the room."
+
+    "It honestly sounds to you like he’s just... lonely?"
+
+    "You know a whole lot about loneliness, and the poor management thereof."
+
+    "Some people throw themselves into their nerdy anime hobby, and others become obsessed with making friends no matter the cost to their mental or physical wellbeing."
+
+    "Maybe he just needs a couple of good pals to remind him what it’s like to have a heart."
+
+    "But if you try to tell him that, he’ll probably just respond with another long and winding monologue, likely stolen from an anime he watched recently. Maybe you should just let him vent."
+
+    teg question "You have my thanks for /ending your ear."
+
+    "Oh! A compliment brings you out of your reverie. Nothing interrupts the ol’ introspection machine like the opportunity to chug on the succulent ambrosia that is any kind of praise or gratitude."
+
+    "It’s no big deal, you tell him. You’re a great listener! That’s what friends are for. Has he considered having more friends? Like you, for example?"
+
+    show atraxa neutral
+
+    "He opens his mouth like he’s about to reiterate the whole \"lone swordsman\" thing, so you hastily try to change the topic. What’s with his eyes?"
+
+    "Most trolls you’ve seen have had grey irises, and those who didn’t followed the typical biological trend of displaying their blood color."
+
+    show atraxa sour
+
+    "atraxa pauses, his grip tensing on his sword as his fangs dig into his lip. Oh jeez. This must be his most closely guarded secret. Have you earned enough trust to hear it...?"
+
+    teg question "They’re contact /enses, for cosp/ay."
+
+    "Oh."
+
+    "Fair enough."
+
+    show atraxa neutral
+
+    "Actually, is cosplaying as a different blood caste even legal on this planet? If he's doing it, it probably is... right?"
+
+    "You’re about to ask when something distracts you – the sight of another troll standing in front of atraxa’s hive, using it as shelter from the rising sun."
+
+    "They’re pacing back and forth with precise movements, glancing at one of the windows almost like they’re plotting to break in."
+
+    "And when they hear footsteps approaching, they perk up and whirl their head around—"
+
+    "Hey, wait a second. You recognize them!"
+
+    show atraxa neutral at left1280 with move
+
+    show polypa neutral at right1280 with moveinright
+
+
+
+    "Polypa spots you before atraxa spots her. Her expression is hard and stoic, eyes glancing between the two of you as she assesses the situation."
+
+    show polypa pleased
+
+    "And then, like she’s throwing on a disguise, her face softens and she smiles."
+
+    show polypa at speaking
+
+    pol "hey tegs*|"
+
+    pol "i was starting to wonder * where you were * and if anime night was cancelled *|"
+
+    pol neutral "your lusus * is staring at me through the window * i think he thinks it’s funny * watching me stuck outside *|"
+
+    pol "roasting to death * while you’re chasing purrbeasts around the hivebatch *|"
+
+    show polypa at stopspeaking
+
+    show atraxa proud at speaking
+
+    teg "Heh. C/assic Tadashi."
+
+    teg talk "Why were you /ate?"
+
+    show atraxa at stopspeaking
+
+    show polypa at speaking
+
+    pol "just busier than expected * with some work *|"
+
+    show polypa serious at stopspeaking
+
+    "She shoots you a sharp glance."
+
+    show polypa pleased at speaking
+
+    pol "assembling some new mecha models *|"
+
+    pol "you know how it is *|"
+
+    show polypa at stopspeaking
+
+    show atraxa question at speaking
+
+    teg "Yes, of course. It’s a// too easy to get wrapped up in one’s hobby."
+
+    show atraxa neutral at stopspeaking
+
+    show polypa neutral at speaking
+
+    pol "anyway * i didn’t realize we’d have a third * for once *|"
+
+    pol pleased "not to mention * somebody i know *|"
+
+    show polypa at stopspeaking
+
+    show atraxa question at speaking
+
+    teg "Nani?? You and my new kohai have a/ready met?"
+
+    show atraxa at stopspeaking
+
+    show polypa neutral
+
+    "She pauses, her eyes darting back and forth between you two once more."
+
+    "She seems to be assessing the situation, wearing a look like an assassin trying to evade capture. You recognize that look, considering she was literally wearing it the last time you met."
+
+    show polypa neutral at speaking
+
+    pol "we’re kinda * moirails *|"
+
+    show polypa at stopspeaking
+
+    "Whoa! That’s absolutely not what you thought you were, but you just kind of nod your head and roll with it. It seems to be what she wants you to do."
+
+    show atraxa talk at speaking
+
+    teg "Oh. Moirai/s."
+
+    show atraxa sourtoneutral at stopspeaking
+
+    "atraxa’s face tightens almost imperceptibly, but you caught it. Nothing gets past your honed friendmaking eyes."
+
+    "Well, actually, a lot of things get past them, but not this particular thing."
+
+    "You’re finely tuned to the nuances of social situations, as long as those nuances don’t involve making a binary choice on which your social future hinges."
+
+    show atraxa talk at speaking
+
+    teg "We//."
+
+    teg dance "As you know, I am far too busy studying the b/ade to pursue quadrants of any sort."
+
+    teg "A foo/ish waste of time. Were it not for the /aws of this\n/and, I wou/d swear off them entire/y."
+
+    show atraxa neutral at stopspeaking
+
+    show polypa pleased at speaking
+
+    pol "are you sure it isn’t * that you just can’t get a date *|"
+
+    pol neutral "you don’t have to play the mysterious loner * you know *|"
+
+    pol pleased "there’s other clubs you could join * instead of insisting on running your own *|"
+
+    show polypa at stopspeaking
+
+    show atraxa sour at bounce
+
+    "He huffs, looking away. You hear his lusus barking from behind the window, in a tone that sounds like laughter."
+
+    show atraxa question at speaking
+
+    teg "Foo/s mock that which they cannot understand."
+
+    teg talk "And to think, I was going to congratu/ate you on finding\n/ove."
+
+    show atraxa neutral at stopspeaking
+
+    show polypa pleased at speaking
+
+    pol "once you finished your spiel * about romance being dumb *|"
+
+    show polypa at stopspeaking
+
+    show polypa at whap
+
+    show atraxa pleased
+
+    "Polypa gives him a light, friendly whap, which he responds to with a smile. You can tell the exchange is friendly not only because he’s smiling, but because he’s still standing."
+
+    show atraxa pleased at speaking
+
+    teg "Enough banter."
+
+    teg proud "The harsh g/are of the sun begins to crest, and we have Eastern A/ternian animation to indu/ge in."
+
+    teg pleased "I’// a//ow you both to spend the day at my hive, if needed. There’s space."
+
+    show atraxa neutral at stopspeaking
+
+    "Oh shit. A slumber party? And with more than one participant, even? That’s got to be worth extra friend points. You are so in."
+
+    "Shelter from the broiling death orb in the sky barely even registers to you as an added bonus."
+
+    "Polypa smiles at you as the three of you enter atraxa’s hive."
+
+    show bg atraxahive with wiperight
+    show polypa at middle with move
+    show tadashi end with moveinright
+
+    show darken
+
+    "atraxa covers up all of his windows to block out the sun, and then starts up the new copy of his DVD, which thankfully seems to meet his standards this time."
+
+    "You settle in on the couch, basking in the warm glow of friendship, and prepare to lose yourself to hours of the beautiful wonderful animes."
+
+    call ending ("victory atraxa", True, True) from _call_ending_57
+
+    return
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -1,0 +1,11 @@
+{
+    "package_id": "aradiafix",
+    "volumes": [
+        {
+            "volume_id": "aradiafix",
+            "title": "Aradia",
+            "subtitle": "please read the renpy manual",
+            "author": "Gio, James Roach"
+        }
+    ]
+}

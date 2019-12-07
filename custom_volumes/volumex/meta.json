@@ -1,0 +1,11 @@
+{
+    "package_id": "volumex",
+    "volumes": [
+        {
+            "volume_id": "volumex",
+            "title": "Volume X",
+            "subtitle": "pull quote",
+            "author": "Volume X Team"
+        }
+    ]
+}

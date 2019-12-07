@@ -1,0 +1,74 @@
+init offset = 2
+
+transform __p__appeartop:
+    xalign 0.7 yalign 0.0
+    linear 0.7 xalign 0.7 yalign 0.7
+
+transform __p__appearbottom:
+    xalign 0.3 yalign 1.0
+    linear 0.7 xalign 0.3 yalign 0.0
+
+image __p__ants2:
+    "ants vincent"
+
+transform __p__appeartopaligned:
+    xalign 0.7 yalign 0.0
+    linear 0.7 xalign 0.7 yalign 1.0
+
+transform __p__appearbottomleft:
+    xalign 0.2 yalign 1.0
+    linear 0.7 xalign 0.2 yalign 0.0
+
+transform __p__appeartopright:
+    xalign 0.8 yalign 0.0
+    linear 0.7 xalign 0.8 yalign 1.0
+
+transform __p__appeartopright4:
+    xalign 0.8 yalign 0.0
+    linear 1.0 xalign 0.8 yalign 0.5
+
+
+transform __p__appeartop2:
+    xalign 0.8 yalign 0.0
+    linear 0.7 xalign 0.8 yalign 1.0
+
+transform __p__appearbottom2:
+    xalign 0.2 yalign 1.0
+    linear 0.7 xalign 0.2 yalign 0.0
+
+transform __p__appearcenter:
+    xalign 0.5 yalign 0.0
+
+transform __p__appearright:
+    xalign 0.8 yalign 1.0
+
+transform __p__appearright1:
+    xalign 0.7 yalign 0.4
+
+transform __p__appearleft:
+    xalign 0.2 yalign 0.1
+
+transform __p__appearleft1:
+    xalign 0.3 yalign 0.2
+
+transform __p__appearcenter2:
+    xalign 0.5 yalign 0.5
+
+transform __p__appearcenter3:
+    xalign 0.5 yalign 0.3
+
+transform __p__appearbottomleft2:
+    xalign 0.2 yalign 0.0
+    linear 0.7 xalign 0.2 yalign 1.0
+
+transform __p__appeartopright2:
+    xalign 0.8 yalign 1.0
+    linear 0.7 xalign 0.8 yalign 0.0
+
+transform __p__appeartopright3:
+    xalign 0.9 yalign 1.0
+    linear 0.7 xalign 0.9 yalign 0.0
+
+transform __p__appearatright:
+    xalign 0.9 yalign 1.0
+    linear 0.6 xalign 0.9 yalign 0.3
