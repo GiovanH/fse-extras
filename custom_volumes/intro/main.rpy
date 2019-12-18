@@ -1,6 +1,6 @@
 # Define characters
 
-image __p___greenscreen = Solid(hemospectrum("cerulean")["hex"])
+image __p___greenscreen = Solid(hemospectrum("cerulean"))
 # "{{assets}}/greenscreen.png"
 
 image __p___namelabel = Text(

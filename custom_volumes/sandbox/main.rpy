@@ -125,7 +125,7 @@ label __package_entrypoint___sandbox:
     show boldir neutral
     bo "Vanilla boldir"
     __p__.bo "Default"
-    __p__.bo "Override" (show_color="#0A0")
+    __p__.bo "Override" (show_blood="#0A0")
     __p__.bo "Test" (show_blood="test")
     __p__.bo "Gray" (show_blood="gray")
     __p__.bo "Candy red" (show_blood="candyred")
