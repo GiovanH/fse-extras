@@ -1,30 +1,59 @@
+init offset = 1
+
 # Define characters
 
-# Always prefix your definitions with __p__ so they won't conflict with existing resources.
 
+# Different ways to namespace names:
+# Defines can use dots
 define __p__.jo = Character(name="ectoBiologist", kind=pesterchum, what_color='#0715cd', image="john")
 # define __p__.jo = Character(kind=pesterchum,  what_color='#0715cd', image="john")
-define __p__.vr = Character(name="arachnidsGrip", kind=trollian, show_blood="cerulean", image="vriska")
+
+# "!." is the preferred prefix for character defines and other areas where dot namespaces are accepted.
+# But it can't be used inside quotes or parameters.
+define !.vr = Character(name="arachnidsGrip", kind=trollian, show_blood="cerulean", image="vriska")
+
+# "__p__" is also acceptable, and can be used in all contexts
 define __p__.bo = Character(name="BOLDIR", kind=hiveswap, image="boldir", show_blood="olive")
 
-define __p__.tz = Character("[tztitle]", kind=trollian, show_blood='teal', image="__p___terezi")
+# Using dots in the namespace is optional.
+define __p__tz = Character("[tztitle]", kind=trollian, show_blood='teal', image="__p__terezi")
 
 # Give characters poses
 # image vriska neutral3 = Image("images/Vriska_Neutral_3.png", ypos=730, xanchor=640, yanchor=730)
-image vriska __p___ngreen = Image("{{assets}}/Vriska_Green.png", ypos=730, xanchor=640, yanchor=730)
-image __p___terezi neutral = Image("{{assets}}/terezi.png", ypos=730, xanchor=640, yanchor=730)
+image vriska __p__ngreen = Image("{{assets}}/Vriska_Green.png", ypos=730, xanchor=640, yanchor=730)
+image __p__terezi neutral = Image("{{assets}}/terezi.png", ypos=730, xanchor=640, yanchor=730)
 
 # Define backgrounds
 # image bg johnroom = im.Scale("images/john_s room.png", 1300,730)
 
 # Define other graphics, end cards
-image __p___fakemenu = "{{assets}}/fakemenu.png"
-image __p___vriskaend = "images/vriska_endcard_badend1.png"
-image __p___fakemenu = "{{assets}}/fakemenu.png"
+image __p__fakemenu = "{{assets}}/fakemenu.png"
+image __p__vriskaend = "images/vriska_endcard_badend1.png"
+image __p__fakemenu = "{{assets}}/fakemenu.png"
 
 # ob_meulin is already defined; define a new copy using the openround style
-define __p___meu2 = Character(name="MEULIN", show_blood="olive", kind=openround, image="ob_meulin", namebox_xanchor=0.5, who_ypos=3, show_use_nameframe=True)
+define __p__befriendus = Character(
+    kind=openround,
+    namebox_xanchor=0.5, namebox_ypos=0, namebox_yanchor=0.78125, # Position the namebox askew
+    say_dialogue_ypos=164 + 7, # shift box up
+    show_use_nameframe=True, # Frame the name in a box
+    show_hashtags=" " # By default, show a blank hashtag)
+)
+define __p__.meu2 = Character(
+    name="MEULIN", show_blood="olive", kind=__p__befriendus, image="ob_meulin", 
+)
 
+image vriska grype neutral = GrypeMasked("vriska neutral1")
+image grype_frame __p__vriska = GrypeFrame(
+        handle="arachnidsGrip",
+        blood="cerulean", 
+        avatar="{{assets}}/vriskagrype.png"
+    )
+image grype_frame __p__vriska2 = GrypeFrame(
+        handle="arachnidsGrip",
+        blood="#646464", 
+        avatar="{{assets}}/vriskagrype.png"
+    )
 
 # Start of route
 # Start of route should always be named like this, where sandbox is replaced
@@ -46,6 +75,59 @@ label __package_entrypoint___sandbox:
     # Helper for rewind
     "rollback"
 
+    # Test extended choice screen
+
+    menu:
+        "[pick] pick1":
+            pass
+        "[pick] pick2":
+            pass
+        "[pick] pick3":
+            pass
+
+    menu (screen="choice_scrollable"):
+        "[pick] pick1\nline2":
+            pass
+        "[pick] pick2\nline2":
+            pass
+        "[pick] pick3\nline2":
+            pass
+        "[pick] pick4\nline2":
+            pass
+        "[pick] pick5\nline2":
+            pass
+        "[pick] pick6\nline2":
+            pass
+        "[pick] pick7\nline2":
+            pass
+        "[pick] pick8\nline2":
+            pass
+        "[pick] pick9\nline2":
+            pass
+
+    # Grype
+    show grype_frame __p__vriska
+    show vriska grype neutral 
+    !.vr "Bitch."
+    show grype_frame __p__vriska2
+    !.vr "im gray now"
+    hide vriska 
+    hide grype_frame
+
+    show ob_meulin idle
+    ob_meulin idle "Color by color" (show_blood="#0A0")
+    ob_meulin idle "Color by blood" (show_blood="candyred")
+    ob_meulin idle "!!"
+    ob_meulin laugh "!!!" (show_hashtags="#hashtag1")
+    ob_meulin hypno "A very spooky bit of text which reads about three lines at this size" (show_chuckle=True)
+    ob_meulin hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
+
+    __p__.meu2 idle "!!"
+    __p__.meu2 laugh "!!!" (show_hashtags="#hashtag1")
+    __p__.meu2 hypno "HONK" (show_chuckle=True)
+    __p__.meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
+    hide ob_meulin
+
     # Test dialogue systems
 
     # Compare our dialog systems against the vanilla ones
@@ -53,10 +135,14 @@ label __package_entrypoint___sandbox:
     bo "Vanilla boldir"
     __p__.bo "Custom boldir"
     vr "Vanilla vriska"
-    __p__.vr "Custom vriska"
+    !.vr "Custom vriska"
     jo "Vanilla john"
     __p__.jo "Custom john"
     ob_meulin "Custom openbound"
+
+    "My quirk is weird and I exclaim wrong !it's weird"
+    op "My quirk is weird and I exclaim wrong !it's weird"
+    !.vr "My quirk is weird and I exclaim wrong !it's weird"
 
     # Music notifications. 
     # See full implementation in sys/fx.rpy
@@ -100,25 +186,25 @@ label __package_entrypoint___sandbox:
     # Trollian multiline test
     show vriska neutral1
     vr "Vanilla vriska"
-    __p__.vr "Hi! I'm vriska\nLines are loose"
-    __p__.vr "Hi! I'm vriska, but busy.\nMultiple lines are tight." (show_big=True)
+    !.vr "Hi! I'm vriska\nLines are loose"
+    !.vr "Hi! I'm vriska, but busy.\nMultiple lines are tight." (show_big=True)
     
     # Trollian colorizing
-    __p__.vr "Override" (show_color="#0A0", show_blood=None)
-    __p__.vr "Gray" (show_blood="gray")
-    __p__.vr "Candy red" (show_blood="candyred")
-    __p__.vr "Burgandy" (show_blood="burgandy")
-    __p__.vr "Bronze" (show_blood="bronze")
-    __p__.vr "Gold" (show_blood="gold")
-    __p__.vr "Lime" (show_blood="lime")
-    __p__.vr "Olive" (show_blood="olive")
-    __p__.vr "Jade" (show_blood="jade")
-    __p__.vr "Teal" (show_blood="teal")
-    __p__.vr "Cerulean" (show_blood="cerulean")
-    __p__.vr "Indigo" (show_blood="indigo")
-    __p__.vr "Purple" (show_blood="purple")
-    __p__.vr "Violet" (show_blood="violet")
-    __p__.vr "Fuchsia" (show_blood="fuchsia")
+    !.vr "Override" (show_blood="#0A0")
+    !.vr "Gray" (show_blood="gray")
+    !.vr "Candy red" (show_blood="candyred")
+    !.vr "Burgandy" (show_blood="burgandy")
+    !.vr "Bronze" (show_blood="bronze")
+    !.vr "Gold" (show_blood="gold")
+    !.vr "Lime" (show_blood="lime")
+    !.vr "Olive" (show_blood="olive")
+    !.vr "Jade" (show_blood="jade")
+    !.vr "Teal" (show_blood="teal")
+    !.vr "Cerulean" (show_blood="cerulean")
+    !.vr "Indigo" (show_blood="indigo")
+    !.vr "Purple" (show_blood="purple")
+    !.vr "Violet" (show_blood="violet")
+    !.vr "Fuchsia" (show_blood="fuchsia")
     hide vriska
 
     # Hiveswap colorizing
@@ -167,17 +253,17 @@ label __package_entrypoint___sandbox:
 
     # Openbound: Use parameters for effects.
     show ob_meulin idle
-    ob_meulin idle "Color by color" (show_color="#0A0")
+    ob_meulin idle "Color by color" (show_blood="#0A0")
     ob_meulin idle "Color by blood" (show_blood="candyred")
     ob_meulin idle "!!"
     ob_meulin laugh "!!!" (show_hashtags="#hashtag1")
     ob_meulin hypno "A very spooky bit of text which reads about three lines at this size" (show_chuckle=True)
     ob_meulin hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
 
-    __p___meu2 idle "!!"
-    __p___meu2 laugh "!!!" (show_hashtags="#hashtag1")
-    __p___meu2 hypno "HONK" (show_chuckle=True)
-    __p___meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
+    __p__.meu2 idle "!!"
+    __p__.meu2 laugh "!!!" (show_hashtags="#hashtag1")
+    __p__.meu2 hypno "HONK" (show_chuckle=True)
+    __p__.meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
     hide ob_meulin
 
 
@@ -201,25 +287,25 @@ label __package_entrypoint___sandbox:
     hide gamzee
 
     show vriska neutral1
-    __p__.vr "I'm 8riska"
+    !.vr "I'm 8riska"
     hide vriska
 
-    show __p___terezi neutral
+    show __p__terezi neutral
     # play music "music/fs_BOLDIR.wav" loop
     hide blackcover with dissolve
 
     # Test dynamic name growth
     $ tztitle = "A"
-    __p__.tz "1"
+    __p__tz "1"
     $ tztitle = "AAAAAAAAAAAA"
-    __p__.tz "2"
+    __p__tz "2"
     $ tztitle = "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    __p__.tz "3"
+    __p__tz "3"
     $ tztitle = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    __p__.tz "4"
+    __p__tz "4"
 
     # Twitter demo
-    __p__.tz neutral "Hey. Hey. Over here."
+    __p__tz neutral "Hey. Hey. Over here."
 
     "Oh shit. You’re just standing out here with all his mail, he’s going to think you’re trying to rob the place."
     menu:
@@ -230,23 +316,23 @@ label __package_entrypoint___sandbox:
         "[pick] Hide the evidence":
             pass
 
-    show __p___fakemenu
-    __p__.tz "UHHHHHHHH"
+    show __p__fakemenu
+    __p__tz "UHHHHHHHH"
 
-    show __p___terezi at right1280 with ease
-    __p__.tz "*SNIFFFFFFFF*"
+    show __p__terezi at right1280 with ease
+    __p__tz "*SNIFFFFFFFF*"
 
-    show __p___terezi at left1280 with move
-    __p__.tz "TF 1S TH1S TH1NG :?"
+    show __p__terezi at left1280 with move
+    __p__tz "TF 1S TH1S TH1NG :?"
 
-    hide __p___terezi
-    hide __p___fakemenu
+    hide __p__terezi
+    hide __p__fakemenu
 
     show vriska neutral4
 
     # Write dialogue!
     vr neutral3 "Hey. Hey. Over here."
-    vr __p___ngreen "8itch."
+    vr __p__ngreen "8itch."
 
     hide vriska  # goodbye
 
@@ -258,5 +344,5 @@ label __package_entrypoint___sandbox:
     # I help where I can by offering the substitutions like {{package_id}}.
 
     # Show end card
-    call ending pass ("__p___vriskaend", True, True)
+    call ending pass ("__p__vriskaend", True, True)
     return
