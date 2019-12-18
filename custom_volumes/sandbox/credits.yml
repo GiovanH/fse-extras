@@ -1,0 +1,4 @@
+DICT:
+  Mods:
+    Gio:
+      - "{{package_id}}"

@@ -1,0 +1,5 @@
+image bec_1 = Image("{{assets}}/object/bec_1.png")
+image bec_2 = Image("{{assets}}/object/bec_2.png")
+image bec_3 = Image("{{assets}}/object/bec_3.png")
+image bec_4 = Image("{{assets}}/object/bec_4.png")
+image bec_5 = Image("{{assets}}/object/bec_5.png")
