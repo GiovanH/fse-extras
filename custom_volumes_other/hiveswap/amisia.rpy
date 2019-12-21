@@ -1,3 +1,5 @@
+init offset = 1
+
 define amisia = Character(name="AMISIA", kind=hiveswap, image="amisia", window_background="gui/textbox_blue.png", who_outlines=[(4, "#000056")])
 
 image amisia axe = Image("{{assets}}/sprite/amisia_axe.png", ypos=730)

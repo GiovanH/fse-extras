@@ -1,4 +1,5 @@
 {
     "package_id": "variants",
+    "public": true,
     "volumes": []
 }

@@ -43,7 +43,7 @@ define __p__.meu2 = Character(
     name="MEULIN", show_blood="olive", kind=__p__befriendus, image="ob_meulin", 
 )
 
-image vriska grype neutral = GrypeMasked("vriska neutral1")
+image vriska grype !neutral = GrypeMasked("vriska neutral1")
 image grype_frame __p__vriska = GrypeFrame(
         handle="arachnidsGrip",
         blood="cerulean", 

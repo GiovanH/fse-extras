@@ -1,5 +1,6 @@
 {
     "package_id": "openbound",
+    "public": true,
     "volumes": [
         {
             "volume_id": "route",
