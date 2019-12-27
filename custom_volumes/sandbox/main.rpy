@@ -107,7 +107,7 @@ label __package_entrypoint___sandbox:
 
     # Grype
     show grype_frame __p__vriska
-    show vriska grype neutral 
+    show vriska grype !neutral 
     !.vr "Bitch."
     show grype_frame __p__vriska2
     !.vr "im gray now"
