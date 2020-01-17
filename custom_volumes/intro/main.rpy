@@ -1,3 +1,4 @@
+init offset = 1
 # Define characters
 
 image __p___greenscreen = Solid(hemospectrum("cerulean"))
@@ -17,6 +18,8 @@ transform __p___namelabel_pos:
     yalign 0.5
     xalign 0.9
 
+define !.fef = Character(name="cuttlefishCuttler", kind=trollian, show_blood="fuchsia")
+
 # Start of route
 label __package_entrypoint___route:
 
@@ -34,6 +37,11 @@ label __package_entrypoint___route:
 
     "rollback"
     $ quick_menu = False
+    $ renpy.pause(0.2)
+
+    !.fef ")(ave I told you my c)(aracter traits? T)(ey are all other people."
+
+
     $ renpy.pause(0.2)
 
     show vriska neutral1 

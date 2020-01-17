@@ -31,11 +31,13 @@ image __p__fakemenu = "{{assets}}/fakemenu.png"
 image __p__vriskaend = "images/vriska_endcard_badend1.png"
 image __p__fakemenu = "{{assets}}/fakemenu.png"
 
+define !mituna = quirkSayer(Character("Mituna", screen="chan_say"), "greentext")
+
 # ob_meulin is already defined; define a new copy using the openround style
 define __p__befriendus = Character(
     kind=openround,
-    namebox_xanchor=0.5, namebox_ypos=0, namebox_yanchor=0.78125, # Position the namebox askew
-    say_dialogue_ypos=164 + 7, # shift box up
+    namebox_xanchor=0.5, namebox_yanchor=1.0, namebox_ypos=14, # Position the namebox askew
+    say_dialogue_yoffset=-27, # shift box up
     show_use_nameframe=True, # Frame the name in a box
     show_hashtags=" " # By default, show a blank hashtag)
 )
@@ -43,7 +45,7 @@ define __p__.meu2 = Character(
     name="MEULIN", show_blood="olive", kind=__p__befriendus, image="ob_meulin", 
 )
 
-image vriska grype !neutral = GrypeMasked("vriska neutral1")
+image !vriska grype neutral = GrypeMasked("vriska neutral1")
 image grype_frame __p__vriska = GrypeFrame(
         handle="arachnidsGrip",
         blood="cerulean", 
@@ -75,43 +77,22 @@ label __package_entrypoint___sandbox:
     # Helper for rewind
     "rollback"
 
-    # Test extended choice screen
-
-    menu:
-        "[pick] pick1":
-            pass
-        "[pick] pick2":
-            pass
-        "[pick] pick3":
-            pass
-
-    menu (screen="choice_scrollable"):
-        "[pick] pick1\nline2":
-            pass
-        "[pick] pick2\nline2":
-            pass
-        "[pick] pick3\nline2":
-            pass
-        "[pick] pick4\nline2":
-            pass
-        "[pick] pick5\nline2":
-            pass
-        "[pick] pick6\nline2":
-            pass
-        "[pick] pick7\nline2":
-            pass
-        "[pick] pick8\nline2":
-            pass
-        "[pick] pick9\nline2":
-            pass
-
+    show ob_mituna idle
+    !mituna "Fuck"
+    !mituna ">tfw no greentext\nwait ah no shit"
+    !mituna "Attachment" (show_attachment="{{assets}}/vriskagrype.png")
+    !mituna "Attachment" (show_attachment="gui/game_menu.png")
+    !mituna "Attachment" (show_attachment="{{assets}}/Vriska_Green.png")
+    !mituna "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at feugiat eros, nec rhoncus velit. Nullam nunc est, semper id justo sit amet, laoreet congue tortor. Etiam scelerisque lacinia elit, eu mollis magna efficitur nec. Aliquam cursus tristique elit, vel facilisis nibh congue vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+    !mituna "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at feugiat eros, nec rhoncus velit. Nullam nunc est, semper id justo sit amet, laoreet congue tortor. Etiam scelerisque lacinia elit, eu mollis magna efficitur nec. Aliquam cursus tristique elit, vel facilisis nibh congue vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus." (show_attachment="{{assets}}/vriskagrype.png")
+    hide ob_mituna
     # Grype
     show grype_frame __p__vriska
-    show vriska grype !neutral 
+    show !vriska grype neutral 
     !.vr "Bitch."
     show grype_frame __p__vriska2
     !.vr "im gray now"
-    hide vriska 
+    hide !vriska 
     hide grype_frame
 
     show ob_meulin idle
@@ -119,6 +100,7 @@ label __package_entrypoint___sandbox:
     ob_meulin idle "Color by blood" (show_blood="candyred")
     ob_meulin idle "!!"
     ob_meulin laugh "!!!" (show_hashtags="#hashtag1")
+    ob_meulin laugh "!!!" (show_hashtags="#hashtag1\n#multiline")
     ob_meulin hypno "A very spooky bit of text which reads about three lines at this size" (show_chuckle=True)
     ob_meulin hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
 
@@ -129,11 +111,10 @@ label __package_entrypoint___sandbox:
     hide ob_meulin
 
     # Test dialogue systems
-
     # Compare our dialog systems against the vanilla ones
     # to ensure everything matches up
-    bo "Vanilla boldir"
-    __p__.bo "Custom boldir"
+    bo "Boldir vanilla"
+    __p__.bo "Boldir custom"
     vr "Vanilla vriska"
     !.vr "Custom vriska"
     jo "Vanilla john"
@@ -144,44 +125,7 @@ label __package_entrypoint___sandbox:
     op "My quirk is weird and I exclaim wrong !it's weird"
     !.vr "My quirk is weird and I exclaim wrong !it's weird"
 
-    # Music notifications. 
-    # See full implementation in sys/fx.rpy
-    # By default, shows a notification and hides itself.
-    show screen MusicToast()
-    "Drink it in"
 
-    # ...although you do need to hide it yourself eventually
-    # if you want things to work right, even if you use the autohiding versions. 
-    hide screen MusicToast
-
-    # Set albumart, title, artist, and album fields to your data.
-    # Set tf to toast_down instead of toast_down_peek to make the notification stick on the screen.
-    # You can use tags here like other text.
-
-    # Advanced:
-    # You can supply an arbitrary transofmration to the tf parameter
-    # You can style the entire window using stule=x
-    # You can edit the template form strings using ttitle, tartist, and talbum
-    # You can edit the size of the album art using albumartsize
-    show screen MusicToast(
-        tf=toast_down,
-        albumart="{{assets}}/scourgequest.jpg",
-        title="Let Me Tell You About (Instrumental)",
-        artist="Flutterwhat",
-        album="{a=https://flutterwhat.bandcamp.com/track/let-me-tell-you-about-insturmental}ScourgeQuest{/a}")
-    
-    "Drink it in {i}forever{/i}"
-    # After *something*, hide the notification, if you used something like toast_down to make it stick.
-    # Something that uses toast_down or toast_up will use the toast animation to hide the window.
-    hide screen MusicToast
-
-    "and I guess let it leave before bringing in the next thing"
-
-    # pause 0.3
-
-    show screen MusicToast(tf=toast_flyby)
-    "Is this even a toast anymore?"
-    hide screen MusicToast
 
     # Trollian multiline test
     show vriska neutral1
@@ -193,7 +137,7 @@ label __package_entrypoint___sandbox:
     !.vr "Override" (show_blood="#0A0")
     !.vr "Gray" (show_blood="gray")
     !.vr "Candy red" (show_blood="candyred")
-    !.vr "Burgandy" (show_blood="burgandy")
+    !.vr "burgundy" (show_blood="burgundy")
     !.vr "Bronze" (show_blood="bronze")
     !.vr "Gold" (show_blood="gold")
     !.vr "Lime" (show_blood="lime")
@@ -215,8 +159,8 @@ label __package_entrypoint___sandbox:
     __p__.bo "Test" (show_blood="test")
     __p__.bo "Gray" (show_blood="gray")
     __p__.bo "Candy red" (show_blood="candyred")
-    bo "Burgandy" (window_background="gui/textbox_rust.png")
-    __p__.bo "Burgandy" (show_blood="burgandy")
+    bo "burgundy" (window_background="gui/textbox_rust.png")
+    __p__.bo "burgundy" (show_blood="burgundy")
     bo "Bronze" (window_background="gui/textbox_bronze.png")
     __p__.bo "Bronze" (show_blood="bronze")
     bo "Gold" (window_background="gui/textbox_gold.png")
@@ -265,6 +209,77 @@ label __package_entrypoint___sandbox:
     __p__.meu2 hypno "HONK" (show_chuckle=True)
     __p__.meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
     hide ob_meulin
+
+    # Music notifications. 
+    # See full implementation in sys/fx.rpy
+    # By default, shows a notification and hides itself.
+    show screen MusicToast()
+    "Drink it in"
+
+    # ...although you do need to hide it yourself eventually
+    # if you want things to work right, even if you use the autohiding versions. 
+    hide screen MusicToast
+
+    # Set albumart, title, artist, and album fields to your data.
+    # Set tf to toast_down instead of toast_down_peek to make the notification stick on the screen.
+    # You can use tags here like other text.
+
+    # Advanced:
+    # You can supply an arbitrary transofmration to the tf parameter
+    # You can style the entire window using stule=x
+    # You can edit the template form strings using ttitle, tartist, and talbum
+    # You can edit the size of the album art using albumartsize
+    show screen MusicToast(
+        tf=toast_down,
+        albumart="{{assets}}/scourgequest.jpg",
+        title="Let Me Tell You About (Instrumental)",
+        artist="Flutterwhat",
+        album="{a=https://flutterwhat.bandcamp.com/track/let-me-tell-you-about-insturmental}ScourgeQuest{/a}")
+    
+    "Drink it in {i}forever{/i}"
+    # After *something*, hide the notification, if you used something like toast_down to make it stick.
+    # Something that uses toast_down or toast_up will use the toast animation to hide the window.
+    hide screen MusicToast
+
+    "and I guess let it leave before bringing in the next thing"
+
+    
+
+    # Test extended choice screen
+
+    menu:
+        "[pick] pick1":
+            pass
+        "[pick] pick2":
+            pass
+        "[pick] pick3":
+            pass
+
+    menu (screen="choice_scrollable"):
+        "[pick] pick1\nline2":
+            pass
+        "[pick] pick2\nline2":
+            pass
+        "[pick] pick3\nline2":
+            pass
+        "[pick] pick4\nline2":
+            pass
+        "[pick] pick5\nline2":
+            pass
+        "[pick] pick6\nline2":
+            pass
+        "[pick] pick7\nline2":
+            pass
+        "[pick] pick8\nline2":
+            pass
+        "[pick] pick9\nline2":
+            pass
+
+
+    show screen MusicToast(tf=toast_flyby)
+    "Is this even a toast anymore?"
+    hide screen MusicToast
+
 
 
     # Different approaches to quirk formatting
