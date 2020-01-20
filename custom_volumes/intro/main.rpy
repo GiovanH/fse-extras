@@ -58,7 +58,7 @@ label __package_entrypoint___route:
     show vriska at shoveright
     show vriska at __p___char_pos
 
-    show __p___namelabel at __p___namelabel_pos with Dissolve(0.1) 
+    show __p___namelabel at __p___namelabel_pos behind vriska with Dissolve(0.1) 
 
     $ renpy.pause(8.0)
     
