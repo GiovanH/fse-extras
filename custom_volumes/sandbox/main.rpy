@@ -74,8 +74,15 @@ label __package_entrypoint___sandbox:
     # Set the scene, fade in from black
     scene bg spaceship with Dissolve(0.6)
 
+
     # Helper for rewind
     "rollback"
+
+    "achieve"
+
+    $ achievement.grant("__p__test")
+
+    "achieved"
 
     show ob_mituna idle
     !mituna "Fuck"

@@ -9,9 +9,19 @@
         },
         {
             "volume_id": "route",
-            "title": "Ternep",
+            "title": "Neprezi",
             "subtitle": "\"K1SS3S FOR M1L3S\"",
             "author": "Gio, Andrew Hussie"
+        }
+    ],
+    "achievements": [
+        {
+            "id_suffix": "test",
+            "img_locked": "ach_no.png",
+            "img_unlocked": "ach_yes.png",
+            "name": "Test",
+            "desc": "You played the sandbox",
+            "hint": "Play the sandbox"
         }
     ]
 }
