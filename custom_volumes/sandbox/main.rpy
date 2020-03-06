@@ -3,16 +3,16 @@ init offset = 1
 # Define characters
 
 
-define !.jo = Character(name="ectoBiologist", kind=pesterchum, what_color='#0715cd', image="john")
+define !jo = Character(name="ectoBiologist", kind=pesterchum, what_color='#0715cd', image="john")
 
 # Different ways to namespace names:
 # Defines can use dots
-# "!." is the preferred prefix for character defines and other areas where dot namespaces are accepted.
+# "!" is the preferred prefix for character defines and other areas where dot namespaces are accepted.
 # But it can't be used inside quotes or parameters.
-# "!" is also acceptable, and can be used in all contexts
-define !.vr = Character(name="arachnidsGrip", kind=trollian, show_blood="cerulean", image="vriska")
+# "__p__" is also acceptable, and can be used in all contexts
+define !vr = Character(name="arachnidsGrip", kind=trollian, show_blood="cerulean", image="vriska")
 
-define !.bo = Character(name="BOLDIR", kind=hiveswap, image="boldir", show_blood="olive")
+define !bo = Character(name="BOLDIR", kind=hiveswap, image="boldir", show_blood="olive")
 
 # Using dots in the namespace is optional, and only works for defines.
 define !tz = Character("[tztitle]", kind=trollian, show_blood='teal', image="!terezi")
@@ -42,17 +42,17 @@ define __p__befriendus = Character(
     show_use_nameframe=True, # Frame the name in a box
     show_hashtags=" " # By default, show a blank hashtag)
 )
-define !.meu2 = Character(
+define !meu2 = Character(
     name="MEULIN", show_blood="olive", kind=__p__befriendus, image="ob_meulin", 
 )
 
-image !vriska grype neutral = GrypeMasked("vriska neutral1")
-image grype_frame !vriska = GrypeFrame(
+image !karako grype happy = GrypeMasked("__p__karako happy")
+image grype_frame !karako = GrypeFrame(
         handle="arachnidsGrip",
         blood="cerulean", 
         avatar="{{assets}}/vriskagrype.png"
     )
-image grype_frame !vriska2 = GrypeFrame(
+image grype_frame !karako2 = GrypeFrame(
         handle="arachnidsGrip",
         blood="#646464", 
         avatar="{{assets}}/vriskagrype.png"
@@ -73,7 +73,7 @@ label __package_entrypoint___sandbox:
     $ quick_menu = True
 
     # Set the scene, fade in from black
-    scene bg spaceship with Dissolve(0.6)
+    scene fs_bg background_spaceship with Dissolve(0.6)
 
 
     # Helper for rewind
@@ -84,6 +84,27 @@ label __package_entrypoint___sandbox:
     $ achievement.grant("__p__test")
 
     "achieved"
+    show !karako happy at default
+    "Happy" 
+    show !karako happy blank
+    "Happy blank"
+    show !karako happy grateful
+    "Happy grateful"
+    show !karako happy block
+    "Happy block"
+    show !karako happy same
+    "Happy same"
+
+    show !karako happy at bounce
+    "Bounce"
+    show !karako happy at bounce(50)
+    "Bounce 30"
+    show !karako happy at bounce(repeat=2)
+    "Bounce twice"
+    show !karako happy at bounce(pause=0, repeat=2)
+    "Bounce twice quick"
+
+    hide !karako
 
     show ob_mituna idle
     !mituna "Fuck"
@@ -95,12 +116,12 @@ label __package_entrypoint___sandbox:
     !mituna "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at feugiat eros, nec rhoncus velit. Nullam nunc est, semper id justo sit amet, laoreet congue tortor. Etiam scelerisque lacinia elit, eu mollis magna efficitur nec. Aliquam cursus tristique elit, vel facilisis nibh congue vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus." (show_attachment="{{assets}}/vriskagrype.png")
     hide ob_mituna
     # Grype
-    show grype_frame !vriska
-    show !vriska grype neutral 
-    !.vr "Bitch."
-    show grype_frame !vriska2
-    !.vr "im gray now"
-    hide !vriska 
+    show grype_frame !karako
+    show !karako grype happy 
+    !vr "Bitch."
+    show grype_frame !karako2
+    !vr "im gray now"
+    hide !karako 
     hide grype_frame
 
     show ob_meulin idle
@@ -112,90 +133,75 @@ label __package_entrypoint___sandbox:
     ob_meulin hypno "A very spooky bit of text which reads about three lines at this size" (show_chuckle=True)
     ob_meulin hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
 
-    !.meu2 idle "!!"
-    !.meu2 laugh "!!!" (show_hashtags="#hashtag1")
-    !.meu2 hypno "HONK" (show_chuckle=True)
-    !.meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
+    !meu2 idle "!!"
+    !meu2 laugh "!!!" (show_hashtags="#hashtag1")
+    !meu2 hypno "HONK" (show_chuckle=True)
+    !meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
     hide ob_meulin
 
     # Test dialogue systems
     # Compare our dialog systems against the vanilla ones
     # to ensure everything matches up
-    bo "Boldir vanilla"
-    !.bo "Boldir custom"
-    vr "Vanilla vriska"
-    !.vr "Custom vriska"
-    jo "Vanilla john"
-    !.jo "Custom john"
+    !bo "Boldir custom"
+    !vr "Custom vriska"
+    !jo "Custom john"
     ob_meulin "Custom openbound"
 
     # Make absolutely sure the preprocessor isn't modifying dialogue
     "My quirk is weird and I exclaim wrong !it's weird"
     op "My quirk is weird and I exclaim wrong !it's weird"
-    !.vr "My quirk is weird and I exclaim wrong !it's weird"
+    !vr "My quirk is weird and I exclaim wrong !it's weird"
 
 
 
     # Trollian multiline test
-    show vriska neutral1
-    vr "Vanilla vriska"
-    !.vr "Hi! I'm vriska\nLines are loose"
-    !.vr "Hi! I'm vriska, but busy.\nMultiple lines are tight." (show_big=True)
+    show !karako happy blank
+    !vr "Hi! I'm vriska\nLines are loose"
+    !vr "Hi! I'm vriska, but busy.\nMultiple lines are tight." (show_big=True)
     
     # Trollian colorizing
-    !.vr "Override" (show_blood="#0A0")
-    !.vr "Gray" (show_blood="gray")
-    !.vr "Candy red" (show_blood="candyred")
-    !.vr "burgundy" (show_blood="burgundy")
-    !.vr "Bronze" (show_blood="bronze")
-    !.vr "Gold" (show_blood="gold")
-    !.vr "Lime" (show_blood="lime")
-    !.vr "Olive" (show_blood="olive")
-    !.vr "Jade" (show_blood="jade")
-    !.vr "Teal" (show_blood="teal")
-    !.vr "Cerulean" (show_blood="cerulean")
-    !.vr "Indigo" (show_blood="indigo")
-    !.vr "Purple" (show_blood="purple")
-    !.vr "Violet" (show_blood="violet")
-    !.vr "Fuchsia" (show_blood="fuchsia")
-    hide vriska
+    !vr "Override" (show_blood="#0A0")
+    !vr "Gray" (show_blood="gray")
+    !vr "Candy red" (show_blood="candyred")
+    !vr "burgundy" (show_blood="burgundy")
+    !vr "Bronze" (show_blood="bronze")
+    !vr "Gold" (show_blood="gold")
+    !vr "Lime" (show_blood="lime")
+    !vr "Olive" (show_blood="olive")
+    !vr "Jade" (show_blood="jade")
+    !vr "Teal" (show_blood="teal")
+    !vr "Cerulean" (show_blood="cerulean")
+    !vr "Indigo" (show_blood="indigo")
+    !vr "Purple" (show_blood="purple")
+    !vr "Violet" (show_blood="violet")
+    !vr "Fuchsia" (show_blood="fuchsia")
+    hide !karako
 
     # Hiveswap colorizing
-    show boldir neutral
-    bo "Vanilla boldir"
-    !.bo "Default"
-    !.bo "Override" (show_blood="#0A0")
-    !.bo "Test" (show_blood="test")
-    !.bo "Gray" (show_blood="gray")
-    !.bo "Candy red" (show_blood="candyred")
-    bo "burgundy" (window_background="gui/textbox_rust.png")
-    !.bo "burgundy" (show_blood="burgundy")
-    bo "Bronze" (window_background="gui/textbox_bronze.png")
-    !.bo "Bronze" (show_blood="bronze")
-    bo "Gold" (window_background="gui/textbox_gold.png")
-    !.bo "Gold" (show_blood="gold")
-    !.bo "Lime" (show_blood="lime")
-    bo "Olive" (window_background="gui/textbox_olive.png")
-    !.bo "Olive" (show_blood="olive")
-    bo "Jade" (window_background="gui/textbox_jade.png")
-    !.bo "Jade" (show_blood="jade")
-    bo "Teal" (window_background="gui/textbox_teal.png")
-    !.bo "Teal" (show_blood="teal")
-    bo "Cobalt" (window_background="gui/textbox_cobalt.png")
-    !.bo "Cerulean" (show_blood="cerulean")
-    bo "Blue" (window_background="gui/textbox_blue.png")
-    !.bo "Indigo" (show_blood="indigo")
-    bo "Purple" (window_background="gui/textbox_purple.png")
-    !.bo "Purple" (show_blood="purple")
-    !.bo "Violet" (show_blood="violet")
-    !.bo "Fuchsia" (show_blood="fuchsia")
+    show fs_boldir neutral
+    !bo "Default"
+    !bo "Override" (show_blood="#0A0")
+    !bo "Test" (show_blood="test")
+    !bo "Gray" (show_blood="gray")
+    !bo "Candy red" (show_blood="candyred")
+    !bo "burgundy" (show_blood="burgundy")
+    !bo "Bronze" (show_blood="bronze")
+    !bo "Gold" (show_blood="gold")
+    !bo "Lime" (show_blood="lime")
+    !bo "Olive" (show_blood="olive")
+    !bo "Jade" (show_blood="jade")
+    !bo "Teal" (show_blood="teal")
+    !bo "Cerulean" (show_blood="cerulean")
+    !bo "Indigo" (show_blood="indigo")
+    !bo "Purple" (show_blood="purple")
+    !bo "Violet" (show_blood="violet")
+    !bo "Fuchsia" (show_blood="fuchsia")
     hide boldir
 
     # Pesterchum and multilines
     show john neutral
-    jo "Vanilla john"
-    !.jo "Hi! I'm john\nLines are loose"
-    !.jo "Hi! I'm john, but busy.\nMultiple lines are tight." (show_big=True)
+    !jo "Hi! I'm john\nLines are loose"
+    !jo "Hi! I'm john, but busy.\nMultiple lines are tight." (show_big=True)
     hide john
 
     # Test our supplemental narrators, characters
@@ -213,10 +219,10 @@ label __package_entrypoint___sandbox:
     ob_meulin hypno "A very spooky bit of text which reads about three lines at this size" (show_chuckle=True)
     ob_meulin hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
 
-    !.meu2 idle "!!"
-    !.meu2 laugh "!!!" (show_hashtags="#hashtag1")
-    !.meu2 hypno "HONK" (show_chuckle=True)
-    !.meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
+    !meu2 idle "!!"
+    !meu2 laugh "!!!" (show_hashtags="#hashtag1")
+    !meu2 hypno "HONK" (show_chuckle=True)
+    !meu2 hypno "spoop" (show_chuckle=True, show_hashtags="#HONK")
     hide ob_meulin
 
     # Music notifications. 
@@ -308,9 +314,9 @@ label __package_entrypoint___sandbox:
     gam "[__p__tmp_text]"
     hide gamzee
 
-    show vriska neutral1
-    !.vr "I'm 8riska"
-    hide vriska
+    show !karako happy blank
+    !vr "I'm 8riska"
+    hide !karako
 
     show !terezi neutral
     # play music "music/fs_BOLDIR.wav" loop
@@ -350,13 +356,13 @@ label __package_entrypoint___sandbox:
     hide !terezi
     hide !fakemenu
 
-    show vriska neutral4
+    show !karako happy
 
     # Write dialogue!
-    vr neutral3 "Hey. Hey. Over here."
+    !karako happy "Hey. Hey. Over here."
     vr __p__ngreen "8itch."
 
-    hide vriska  # goodbye
+    hide !karako  # goodbye
 
     # You can use assets that have already been definied in other pesterquest routes directly!
     show bg gamzeehive
