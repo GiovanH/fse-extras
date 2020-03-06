@@ -1,17 +1,18 @@
-define galekh = Character(name="GALEKH", kind=hiveswap, image="galekh", window_background="gui/textbox_blue.png", who_outlines=[(4, "#000056")])
+init offset = 1
+image fs_galekh disappointedpause = "{{assets}}/sprite/galekh_disappointedpause.png"
+image fs_galekh expressions001 = "{{assets}}/sprite/galekh_expressions001.png"
+image fs_galekh frustration = "{{assets}}/sprite/galekh_frustration.png"
+image fs_galekh glare = "{{assets}}/sprite/galekh_glare.png"
+image fs_galekh neutral = "{{assets}}/sprite/galekh_neutral.png"
+image fs_galekh nojacketneutral = "{{assets}}/sprite/galekh_nojacketneutral.png"
+image fs_galekh nojacketpleased = "{{assets}}/sprite/galekh_nojacketpleased.png"
+image fs_galekh pissed = "{{assets}}/sprite/galekh_pissed.png"
+image fs_galekh pleased = "{{assets}}/sprite/galekh_pleased.png"
+image fs_galekh questioning = "{{assets}}/sprite/galekh_questioning.png"
+image fs_galekh surprise = "{{assets}}/sprite/galekh_surprise.png"
+image fs_galekh tattoocrookedsmile = "{{assets}}/sprite/galekh_tattoocrookedsmile.png"
+image fs_galekh tattooflush = "{{assets}}/sprite/galekh_tattooflush.png"
+image fs_galekh tattooneutral = "{{assets}}/sprite/galekh_tattooneutral.png"
+image fs_galekh tattoowince = "{{assets}}/sprite/galekh_tattoowince.png"
+define fs_galekh = Character(name="GALEKH", kind=hiveswap, image="galekh", show_blood="blue")
 
-image galekh disappointedpause = Image("{{assets}}/sprite/galekh_disappointedpause.png", ypos=730)
-image galekh expressions001 = Image("{{assets}}/sprite/galekh_expressions001.png", ypos=730)
-image galekh frustration = Image("{{assets}}/sprite/galekh_frustration.png", ypos=730)
-image galekh glare = Image("{{assets}}/sprite/galekh_glare.png", ypos=730)
-image galekh neutral = Image("{{assets}}/sprite/galekh_neutral.png", ypos=730)
-image galekh nojacketneutral = Image("{{assets}}/sprite/galekh_nojacketneutral.png", ypos=730)
-image galekh nojacketpleased = Image("{{assets}}/sprite/galekh_nojacketpleased.png", ypos=730)
-image galekh pissed = Image("{{assets}}/sprite/galekh_pissed.png", ypos=730)
-image galekh pleased = Image("{{assets}}/sprite/galekh_pleased.png", ypos=730)
-image galekh questioning = Image("{{assets}}/sprite/galekh_questioning.png", ypos=730)
-image galekh surprise = Image("{{assets}}/sprite/galekh_surprise.png", ypos=730)
-image galekh tattoocrookedsmile = Image("{{assets}}/sprite/galekh_tattoocrookedsmile.png", ypos=730)
-image galekh tattooflush = Image("{{assets}}/sprite/galekh_tattooflush.png", ypos=730)
-image galekh tattooneutral = Image("{{assets}}/sprite/galekh_tattooneutral.png", ypos=730)
-image galekh tattoowince = Image("{{assets}}/sprite/galekh_tattoowince.png", ypos=730)

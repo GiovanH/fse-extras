@@ -1,17 +1,18 @@
-define baizli = Character(name="BAIZLI", kind=hiveswap, image="baizli", window_background="gui/textbox_purple.png", who_outlines=[(4, "#2b0057")])
+init offset = 1
+image fs_baizli CalmManic = "{{assets}}/sprite/BAIZLI_CalmManic.png"
+image fs_baizli CalmManicTalk = "{{assets}}/sprite/BAIZLI_CalmManicTalk.png"
+image fs_baizli CalmMorose = "{{assets}}/sprite/BAIZLI_CalmMorose.png"
+image fs_baizli CalmMoroseTalk = "{{assets}}/sprite/BAIZLI_CalmMoroseTalk.png"
+image fs_baizli Confused = "{{assets}}/sprite/BAIZLI_Confused.png"
+image fs_baizli ConfusedTalking = "{{assets}}/sprite/BAIZLI_ConfusedTalking.png"
+image fs_baizli Disapproving = "{{assets}}/sprite/BAIZLI_Disapproving.png"
+image fs_baizli DisapprovingTalk = "{{assets}}/sprite/BAIZLI_DisapprovingTalk.png"
+image fs_baizli InShadow = "{{assets}}/sprite/BAIZLI_InShadow.png"
+image fs_baizli Laughing = "{{assets}}/sprite/BAIZLI_Laughing.png"
+image fs_baizli Neutral = "{{assets}}/sprite/BAIZLI_Neutral.png"
+image fs_baizli NeutralTalking = "{{assets}}/sprite/BAIZLI_NeutralTalking.png"
+image fs_baizli Skeptical = "{{assets}}/sprite/BAIZLI_Skeptical.png"
+image fs_baizli Thinking = "{{assets}}/sprite/BAIZLI_Thinking.png"
+image fs_baizli ThinkingTalk = "{{assets}}/sprite/BAIZLI_ThinkingTalk.png"
+define fs_baizli = Character(name="BAIZLI", kind=hiveswap, image="baizli", show_blood="purple")
 
-image baizli CalmManic = Image("{{assets}}/sprite/BAIZLI_CalmManic.png", ypos=730)
-image baizli CalmManicTalk = Image("{{assets}}/sprite/BAIZLI_CalmManicTalk.png", ypos=730)
-image baizli CalmMorose = Image("{{assets}}/sprite/BAIZLI_CalmMorose.png", ypos=730)
-image baizli CalmMoroseTalk = Image("{{assets}}/sprite/BAIZLI_CalmMoroseTalk.png", ypos=730)
-image baizli Confused = Image("{{assets}}/sprite/BAIZLI_Confused.png", ypos=730)
-image baizli ConfusedTalking = Image("{{assets}}/sprite/BAIZLI_ConfusedTalking.png", ypos=730)
-image baizli Disapproving = Image("{{assets}}/sprite/BAIZLI_Disapproving.png", ypos=730)
-image baizli DisapprovingTalk = Image("{{assets}}/sprite/BAIZLI_DisapprovingTalk.png", ypos=730)
-image baizli InShadow = Image("{{assets}}/sprite/BAIZLI_InShadow.png", ypos=730)
-image baizli Laughing = Image("{{assets}}/sprite/BAIZLI_Laughing.png", ypos=730)
-image baizli Neutral = Image("{{assets}}/sprite/BAIZLI_Neutral.png", ypos=730)
-image baizli NeutralTalking = Image("{{assets}}/sprite/BAIZLI_NeutralTalking.png", ypos=730)
-image baizli Skeptical = Image("{{assets}}/sprite/BAIZLI_Skeptical.png", ypos=730)
-image baizli Thinking = Image("{{assets}}/sprite/BAIZLI_Thinking.png", ypos=730)
-image baizli ThinkingTalk = Image("{{assets}}/sprite/BAIZLI_ThinkingTalk.png", ypos=730)

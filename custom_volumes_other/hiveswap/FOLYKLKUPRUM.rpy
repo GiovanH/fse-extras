@@ -1,12 +1,13 @@
-define folyklkuprum = Character(name="FOLYKLKUPRUM", kind=hiveswap, image="folyklkuprum", window_background="gui/textbox_gold.png", who_outlines=[(4, "#a1a100")])
+init offset = 1
+image fs_folyklkuprum double frown = "{{assets}}/sprite/FOLYKLKUPRUM_double frown.png"
+image fs_folyklkuprum doublegrin = "{{assets}}/sprite/FOLYKLKUPRUM_doublegrin.png"
+image fs_folyklkuprum f_mouthopen = "{{assets}}/sprite/FOLYKLKUPRUM_f_mouthopen.png"
+image fs_folyklkuprum grin = "{{assets}}/sprite/FOLYKLKUPRUM_grin.png"
+image fs_folyklkuprum hairtug = "{{assets}}/sprite/FOLYKLKUPRUM_hairtug.png"
+image fs_folyklkuprum hairtug_angry = "{{assets}}/sprite/FOLYKLKUPRUM_hairtug_angry.png"
+image fs_folyklkuprum karmsdown = "{{assets}}/sprite/FOLYKLKUPRUM_karmsdown.png"
+image fs_folyklkuprum k_armpower = "{{assets}}/sprite/FOLYKLKUPRUM_k_armpower.png"
+image fs_folyklkuprum k_mouthopen = "{{assets}}/sprite/FOLYKLKUPRUM_k_mouthopen.png"
+image fs_folyklkuprum POWER = "{{assets}}/sprite/FOLYKLKUPRUM_POWER.png"
+define fs_folyklkuprum = Character(name="FOLYKLKUPRUM", kind=hiveswap, image="folyklkuprum", show_blood="gold")
 
-image folyklkuprum double frown = Image("{{assets}}/sprite/FOLYKLKUPRUM_double frown.png", ypos=730)
-image folyklkuprum doublegrin = Image("{{assets}}/sprite/FOLYKLKUPRUM_doublegrin.png", ypos=730)
-image folyklkuprum f_mouthopen = Image("{{assets}}/sprite/FOLYKLKUPRUM_f_mouthopen.png", ypos=730)
-image folyklkuprum grin = Image("{{assets}}/sprite/FOLYKLKUPRUM_grin.png", ypos=730)
-image folyklkuprum hairtug = Image("{{assets}}/sprite/FOLYKLKUPRUM_hairtug.png", ypos=730)
-image folyklkuprum hairtug_angry = Image("{{assets}}/sprite/FOLYKLKUPRUM_hairtug_angry.png", ypos=730)
-image folyklkuprum karmsdown = Image("{{assets}}/sprite/FOLYKLKUPRUM_karmsdown.png", ypos=730)
-image folyklkuprum k_armpower = Image("{{assets}}/sprite/FOLYKLKUPRUM_k_armpower.png", ypos=730)
-image folyklkuprum k_mouthopen = Image("{{assets}}/sprite/FOLYKLKUPRUM_k_mouthopen.png", ypos=730)
-image folyklkuprum POWER = Image("{{assets}}/sprite/FOLYKLKUPRUM_POWER.png", ypos=730)

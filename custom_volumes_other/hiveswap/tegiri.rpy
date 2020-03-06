@@ -1,16 +1,17 @@
-define tegiri = Character(name="TEGIRI", kind=hiveswap, image="tegiri", window_background="gui/textbox_teal.png", who_outlines=[(4, "#008282")])
+init offset = 1
+image fs_tegiri angry = "{{assets}}/sprite/tegiri_angry.png"
+image fs_tegiri brood = "{{assets}}/sprite/tegiri_brood.png"
+image fs_tegiri demanding = "{{assets}}/sprite/tegiri_demanding.png"
+image fs_tegiri doyoudance = "{{assets}}/sprite/tegiri_doyoudance.png"
+image fs_tegiri doyoudance_fx01 = "{{assets}}/sprite/tegiri_doyoudance_fx01.png"
+image fs_tegiri doyoudance_fx02 = "{{assets}}/sprite/tegiri_doyoudance_fx02.png"
+image fs_tegiri neutral = "{{assets}}/sprite/tegiri_neutral.png"
+image fs_tegiri pleased = "{{assets}}/sprite/tegiri_pleased.png"
+image fs_tegiri proud = "{{assets}}/sprite/tegiri_proud.png"
+image fs_tegiri question = "{{assets}}/sprite/tegiri_question.png"
+image fs_tegiri sharingan = "{{assets}}/sprite/tegiri_sharingan.png"
+image fs_tegiri sour = "{{assets}}/sprite/tegiri_sour.png"
+image fs_tegiri talk = "{{assets}}/sprite/tegiri_talk.png"
+image fs_tegiri thepowerofkamiandanime = "{{assets}}/sprite/tegiri_thepowerofkamiandanime.png"
+define fs_tegiri = Character(name="TEGIRI", kind=hiveswap, image="tegiri", show_blood="teal")
 
-image tegiri angry = Image("{{assets}}/sprite/tegiri_angry.png", ypos=730)
-image tegiri brood = Image("{{assets}}/sprite/tegiri_brood.png", ypos=730)
-image tegiri demanding = Image("{{assets}}/sprite/tegiri_demanding.png", ypos=730)
-image tegiri doyoudance = Image("{{assets}}/sprite/tegiri_doyoudance.png", ypos=730)
-image tegiri doyoudance_fx01 = Image("{{assets}}/sprite/tegiri_doyoudance_fx01.png", ypos=730)
-image tegiri doyoudance_fx02 = Image("{{assets}}/sprite/tegiri_doyoudance_fx02.png", ypos=730)
-image tegiri neutral = Image("{{assets}}/sprite/tegiri_neutral.png", ypos=730)
-image tegiri pleased = Image("{{assets}}/sprite/tegiri_pleased.png", ypos=730)
-image tegiri proud = Image("{{assets}}/sprite/tegiri_proud.png", ypos=730)
-image tegiri question = Image("{{assets}}/sprite/tegiri_question.png", ypos=730)
-image tegiri sharingan = Image("{{assets}}/sprite/tegiri_sharingan.png", ypos=730)
-image tegiri sour = Image("{{assets}}/sprite/tegiri_sour.png", ypos=730)
-image tegiri talk = Image("{{assets}}/sprite/tegiri_talk.png", ypos=730)
-image tegiri thepowerofkamiandanime = Image("{{assets}}/sprite/tegiri_thepowerofkamiandanime.png", ypos=730)

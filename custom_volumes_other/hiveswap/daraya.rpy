@@ -1,20 +1,21 @@
-define daraya = Character(name="DARAYA", kind=hiveswap, image="daraya", window_background="gui/textbox_jade.png", who_outlines=[(4, "#0aa85b")])
+init offset = 1
+image fs_daraya burnitdown = "{{assets}}/sprite/daraya_burnitdown.png"
+image fs_daraya comeon = "{{assets}}/sprite/daraya_comeon.png"
+image fs_daraya elwurdspcool = "{{assets}}/sprite/daraya_elwurdspcool.png"
+image fs_daraya eyeroll = "{{assets}}/sprite/daraya_eyeroll.png"
+image fs_daraya frozen = "{{assets}}/sprite/daraya_frozen.png"
+image fs_daraya frustrated = "{{assets}}/sprite/daraya_frustrated.png"
+image fs_daraya gross = "{{assets}}/sprite/daraya_gross.png"
+image fs_daraya oldbuildingsarekindasick = "{{assets}}/sprite/daraya_oldbuildingsarekindasick.png"
+image fs_daraya quirkedup = "{{assets}}/sprite/daraya_quirkedup.png"
+image fs_daraya sogoodriddance = "{{assets}}/sprite/daraya_sogoodriddance.png"
+image fs_daraya takemewithyou = "{{assets}}/sprite/daraya_takemewithyou.png"
+image fs_daraya trapped = "{{assets}}/sprite/daraya_trapped.png"
+image fs_daraya ughitsyou = "{{assets}}/sprite/daraya_ughitsyou.png"
+image fs_daraya uhhyouknowwhat = "{{assets}}/sprite/daraya_uhhyouknowwhat.png"
+image fs_daraya upset = "{{assets}}/sprite/daraya_upset.png"
+image fs_daraya well = "{{assets}}/sprite/daraya_well.png"
+image fs_daraya whatever = "{{assets}}/sprite/daraya_whatever.png"
+image fs_daraya WHOCARES = "{{assets}}/sprite/daraya_WHOCARES.png"
+define fs_daraya = Character(name="DARAYA", kind=hiveswap, image="daraya", show_blood="jade")
 
-image daraya burnitdown = Image("{{assets}}/sprite/daraya_burnitdown.png", ypos=730)
-image daraya comeon = Image("{{assets}}/sprite/daraya_comeon.png", ypos=730)
-image daraya elwurdspcool = Image("{{assets}}/sprite/daraya_elwurdspcool.png", ypos=730)
-image daraya eyeroll = Image("{{assets}}/sprite/daraya_eyeroll.png", ypos=730)
-image daraya frozen = Image("{{assets}}/sprite/daraya_frozen.png", ypos=730)
-image daraya frustrated = Image("{{assets}}/sprite/daraya_frustrated.png", ypos=730)
-image daraya gross = Image("{{assets}}/sprite/daraya_gross.png", ypos=730)
-image daraya oldbuildingsarekindasick = Image("{{assets}}/sprite/daraya_oldbuildingsarekindasick.png", ypos=730)
-image daraya quirkedup = Image("{{assets}}/sprite/daraya_quirkedup.png", ypos=730)
-image daraya sogoodriddance = Image("{{assets}}/sprite/daraya_sogoodriddance.png", ypos=730)
-image daraya takemewithyou = Image("{{assets}}/sprite/daraya_takemewithyou.png", ypos=730)
-image daraya trapped = Image("{{assets}}/sprite/daraya_trapped.png", ypos=730)
-image daraya ughitsyou = Image("{{assets}}/sprite/daraya_ughitsyou.png", ypos=730)
-image daraya uhhyouknowwhat = Image("{{assets}}/sprite/daraya_uhhyouknowwhat.png", ypos=730)
-image daraya upset = Image("{{assets}}/sprite/daraya_upset.png", ypos=730)
-image daraya well = Image("{{assets}}/sprite/daraya_well.png", ypos=730)
-image daraya whatever = Image("{{assets}}/sprite/daraya_whatever.png", ypos=730)
-image daraya WHOCARES = Image("{{assets}}/sprite/daraya_WHOCARES.png", ypos=730)

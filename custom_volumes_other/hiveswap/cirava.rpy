@@ -1,11 +1,12 @@
-define cirava = Character(name="CIRAVA", kind=hiveswap, image="cirava", window_background="gui/textbox_gold.png", who_outlines=[(4, "#a1a100")])
+init offset = 1
+image fs_cirava angst = "{{assets}}/sprite/cirava_angst.png"
+image fs_cirava cross = "{{assets}}/sprite/cirava_cross.png"
+image fs_cirava feelingit = "{{assets}}/sprite/cirava_feelingit.png"
+image fs_cirava peace = "{{assets}}/sprite/cirava_peace.png"
+image fs_cirava point = "{{assets}}/sprite/cirava_point.png"
+image fs_cirava shrug = "{{assets}}/sprite/cirava_shrug.png"
+image fs_cirava standing = "{{assets}}/sprite/cirava_standing.png"
+image fs_cirava talk = "{{assets}}/sprite/cirava_talk.png"
+image fs_cirava vape = "{{assets}}/sprite/cirava_vape.png"
+define fs_cirava = Character(name="CIRAVA", kind=hiveswap, image="cirava", show_blood="gold")
 
-image cirava angst = Image("{{assets}}/sprite/cirava_angst.png", ypos=730)
-image cirava cross = Image("{{assets}}/sprite/cirava_cross.png", ypos=730)
-image cirava feelingit = Image("{{assets}}/sprite/cirava_feelingit.png", ypos=730)
-image cirava peace = Image("{{assets}}/sprite/cirava_peace.png", ypos=730)
-image cirava point = Image("{{assets}}/sprite/cirava_point.png", ypos=730)
-image cirava shrug = Image("{{assets}}/sprite/cirava_shrug.png", ypos=730)
-image cirava standing = Image("{{assets}}/sprite/cirava_standing.png", ypos=730)
-image cirava talk = Image("{{assets}}/sprite/cirava_talk.png", ypos=730)
-image cirava vape = Image("{{assets}}/sprite/cirava_vape.png", ypos=730)

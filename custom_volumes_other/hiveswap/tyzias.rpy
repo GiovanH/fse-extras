@@ -1,15 +1,16 @@
-define tyzias = Character(name="TYZIAS", kind=hiveswap, image="tyzias", window_background="gui/textbox_teal.png", who_outlines=[(4, "#008282")])
+init offset = 1
+image fs_tyzias grimace = "{{assets}}/sprite/Tyzias_grimace.png"
+image fs_tyzias irritated = "{{assets}}/sprite/Tyzias_irritated.png"
+image fs_tyzias irritatedtalk = "{{assets}}/sprite/Tyzias_irritatedtalk.png"
+image fs_tyzias laugh = "{{assets}}/sprite/Tyzias_laugh.png"
+image fs_tyzias miserable = "{{assets}}/sprite/Tyzias_miserable.png"
+image fs_tyzias mugglare = "{{assets}}/sprite/Tyzias_mugglare.png"
+image fs_tyzias sad = "{{assets}}/sprite/Tyzias_sad.png"
+image fs_tyzias sip = "{{assets}}/sprite/Tyzias_sip.png"
+image fs_tyzias siplook = "{{assets}}/sprite/Tyzias_siplook.png"
+image fs_tyzias talk = "{{assets}}/sprite/Tyzias_talk.png"
+image fs_tyzias weary = "{{assets}}/sprite/Tyzias_weary.png"
+image fs_tyzias workedup = "{{assets}}/sprite/Tyzias_workedup.png"
+image fs_tyzias workedup2 = "{{assets}}/sprite/Tyzias_workedup2.png"
+define fs_tyzias = Character(name="TYZIAS", kind=hiveswap, image="tyzias", show_blood="teal")
 
-image tyzias grimace = Image("{{assets}}/sprite/Tyzias_grimace.png", ypos=730)
-image tyzias irritated = Image("{{assets}}/sprite/Tyzias_irritated.png", ypos=730)
-image tyzias irritatedtalk = Image("{{assets}}/sprite/Tyzias_irritatedtalk.png", ypos=730)
-image tyzias laugh = Image("{{assets}}/sprite/Tyzias_laugh.png", ypos=730)
-image tyzias miserable = Image("{{assets}}/sprite/Tyzias_miserable.png", ypos=730)
-image tyzias mugglare = Image("{{assets}}/sprite/Tyzias_mugglare.png", ypos=730)
-image tyzias sad = Image("{{assets}}/sprite/Tyzias_sad.png", ypos=730)
-image tyzias sip = Image("{{assets}}/sprite/Tyzias_sip.png", ypos=730)
-image tyzias siplook = Image("{{assets}}/sprite/Tyzias_siplook.png", ypos=730)
-image tyzias talk = Image("{{assets}}/sprite/Tyzias_talk.png", ypos=730)
-image tyzias weary = Image("{{assets}}/sprite/Tyzias_weary.png", ypos=730)
-image tyzias workedup = Image("{{assets}}/sprite/Tyzias_workedup.png", ypos=730)
-image tyzias workedup2 = Image("{{assets}}/sprite/Tyzias_workedup2.png", ypos=730)

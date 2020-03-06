@@ -1,37 +1,38 @@
-define diemen = Character(name="DIEMEN", kind=hiveswap, image="diemen", window_background="gui/textbox_rust.png", who_outlines=[(4, "#a20000")])
-
-image diemen cry = Image("{{assets}}/sprite/diemen_cry.png", ypos=730)
-image diemen cry_dogless = Image("{{assets}}/sprite/diemen_cry_dogless.png", ypos=730)
-image diemen cry_shirtless = Image("{{assets}}/sprite/diemen_cry_shirtless.png", ypos=730)
-image diemen curious = Image("{{assets}}/sprite/diemen_curious.png", ypos=730)
-image diemen curious_dogless = Image("{{assets}}/sprite/diemen_curious_dogless.png", ypos=730)
-image diemen curious_shirtless = Image("{{assets}}/sprite/diemen_curious_shirtless.png", ypos=730)
-image diemen die_shirtless = Image("{{assets}}/sprite/diemen_die_shirtless.png", ypos=730)
-image diemen frown = Image("{{assets}}/sprite/diemen_frown.png", ypos=730)
-image diemen frown_dogless = Image("{{assets}}/sprite/diemen_frown_dogless.png", ypos=730)
-image diemen offer = Image("{{assets}}/sprite/diemen_offer.png", ypos=730)
-image diemen offer_dogless = Image("{{assets}}/sprite/diemen_offer_dogless.png", ypos=730)
-image diemen offer_dogless_resized = Image("{{assets}}/sprite/diemen_offer_dogless_resized.png", ypos=730)
-image diemen offer_shirtless = Image("{{assets}}/sprite/diemen_offer_shirtless.png", ypos=730)
-image diemen optimistic = Image("{{assets}}/sprite/diemen_optimistic.png", ypos=730)
-image diemen optimistic_dogless = Image("{{assets}}/sprite/diemen_optimistic_dogless.png", ypos=730)
-image diemen optimistic_dogless_resized = Image("{{assets}}/sprite/diemen_optimistic_dogless_resized.png", ypos=730)
-image diemen optimistic_scaled = Image("{{assets}}/sprite/diemen_optimistic_scaled.png", ypos=730)
-image diemen recoil = Image("{{assets}}/sprite/diemen_recoil.png", ypos=730)
-image diemen recoil_shirtless = Image("{{assets}}/sprite/diemen_recoil_shirtless.png", ypos=730)
-image diemen shock = Image("{{assets}}/sprite/diemen_shock.png", ypos=730)
-image diemen shock_shirtless = Image("{{assets}}/sprite/diemen_shock_shirtless.png", ypos=730)
-image diemen smile = Image("{{assets}}/sprite/diemen_smile.png", ypos=730)
-image diemen smile_dogless = Image("{{assets}}/sprite/diemen_smile_dogless.png", ypos=730)
-image diemen smile_dogless_resized = Image("{{assets}}/sprite/diemen_smile_dogless_resized.png", ypos=730)
-image diemen smile_scaled = Image("{{assets}}/sprite/diemen_smile_scaled.png", ypos=730)
-image diemen smile_shirtless = Image("{{assets}}/sprite/diemen_smile_shirtless.png", ypos=730)
-image diemen talk = Image("{{assets}}/sprite/diemen_talk.png", ypos=730)
-image diemen talk_dogless = Image("{{assets}}/sprite/diemen_talk_dogless.png", ypos=730)
-image diemen talk_dogless_resized = Image("{{assets}}/sprite/diemen_talk_dogless_resized.png", ypos=730)
-image diemen thinking = Image("{{assets}}/sprite/diemen_thinking.png", ypos=730)
-image diemen thinking_dogless = Image("{{assets}}/sprite/diemen_thinking_dogless.png", ypos=730)
-image diemen thinking_dogless_resized = Image("{{assets}}/sprite/diemen_thinking_dogless_resized.png", ypos=730)
+init offset = 1
+image fs_diemen cry = "{{assets}}/sprite/diemen_cry.png"
+image fs_diemen cry_dogless = "{{assets}}/sprite/diemen_cry_dogless.png"
+image fs_diemen cry_shirtless = "{{assets}}/sprite/diemen_cry_shirtless.png"
+image fs_diemen curious = "{{assets}}/sprite/diemen_curious.png"
+image fs_diemen curious_dogless = "{{assets}}/sprite/diemen_curious_dogless.png"
+image fs_diemen curious_shirtless = "{{assets}}/sprite/diemen_curious_shirtless.png"
+image fs_diemen die_shirtless = "{{assets}}/sprite/diemen_die_shirtless.png"
+image fs_diemen frown = "{{assets}}/sprite/diemen_frown.png"
+image fs_diemen frown_dogless = "{{assets}}/sprite/diemen_frown_dogless.png"
+image fs_diemen offer = "{{assets}}/sprite/diemen_offer.png"
+image fs_diemen offer_dogless = "{{assets}}/sprite/diemen_offer_dogless.png"
+image fs_diemen offer_dogless_resized = "{{assets}}/sprite/diemen_offer_dogless_resized.png"
+image fs_diemen offer_shirtless = "{{assets}}/sprite/diemen_offer_shirtless.png"
+image fs_diemen optimistic = "{{assets}}/sprite/diemen_optimistic.png"
+image fs_diemen optimistic_dogless = "{{assets}}/sprite/diemen_optimistic_dogless.png"
+image fs_diemen optimistic_dogless_resized = "{{assets}}/sprite/diemen_optimistic_dogless_resized.png"
+image fs_diemen optimistic_scaled = "{{assets}}/sprite/diemen_optimistic_scaled.png"
+image fs_diemen recoil = "{{assets}}/sprite/diemen_recoil.png"
+image fs_diemen recoil_shirtless = "{{assets}}/sprite/diemen_recoil_shirtless.png"
+image fs_diemen shock = "{{assets}}/sprite/diemen_shock.png"
+image fs_diemen shock_shirtless = "{{assets}}/sprite/diemen_shock_shirtless.png"
+image fs_diemen smile = "{{assets}}/sprite/diemen_smile.png"
+image fs_diemen smile_dogless = "{{assets}}/sprite/diemen_smile_dogless.png"
+image fs_diemen smile_dogless_resized = "{{assets}}/sprite/diemen_smile_dogless_resized.png"
+image fs_diemen smile_scaled = "{{assets}}/sprite/diemen_smile_scaled.png"
+image fs_diemen smile_shirtless = "{{assets}}/sprite/diemen_smile_shirtless.png"
+image fs_diemen talk = "{{assets}}/sprite/diemen_talk.png"
+image fs_diemen talk_dogless = "{{assets}}/sprite/diemen_talk_dogless.png"
+image fs_diemen talk_dogless_resized = "{{assets}}/sprite/diemen_talk_dogless_resized.png"
+image fs_diemen thinking = "{{assets}}/sprite/diemen_thinking.png"
+image fs_diemen thinking_dogless = "{{assets}}/sprite/diemen_thinking_dogless.png"
+image fs_diemen thinking_dogless_resized = "{{assets}}/sprite/diemen_thinking_dogless_resized.png"
 
 init python:
     quirks["diemen"] = [("(.+)", "(| \g<1> |)")]
+define fs_diemen = Character(name="DIEMEN", kind=hiveswap, image="diemen", show_blood="rust")
+

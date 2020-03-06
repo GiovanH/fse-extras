@@ -1,15 +1,16 @@
-define elwurd = Character(name="ELWURD", kind=hiveswap, image="elwurd", window_background="gui/textbox_cobalt.png", who_outlines=[(4, "#005682")])
+init offset = 1
+image fs_elwurd casualsurprise = "{{assets}}/sprite/elwurd_casualsurprise.png"
+image fs_elwurd defensive = "{{assets}}/sprite/elwurd_defensive.png"
+image fs_elwurd fingerguns = "{{assets}}/sprite/elwurd_fingerguns.png"
+image fs_elwurd frown = "{{assets}}/sprite/elwurd_frown.png"
+image fs_elwurd handsome = "{{assets}}/sprite/elwurd_handsome.png"
+image fs_elwurd headtilt = "{{assets}}/sprite/elwurd_headtilt.png"
+image fs_elwurd interested = "{{assets}}/sprite/elwurd_interested.png"
+image fs_elwurd pissed = "{{assets}}/sprite/elwurd_pissed.png"
+image fs_elwurd psh = "{{assets}}/sprite/elwurd_psh.png"
+image fs_elwurd scowl = "{{assets}}/sprite/elwurd_scowl.png"
+image fs_elwurd shrug = "{{assets}}/sprite/elwurd_shrug.png"
+image fs_elwurd smile = "{{assets}}/sprite/elwurd_smile.png"
+image fs_elwurd ugh = "{{assets}}/sprite/elwurd_ugh.png"
+define fs_elwurd = Character(name="ELWURD", kind=hiveswap, image="elwurd", show_blood="cobalt")
 
-image elwurd casualsurprise = Image("{{assets}}/sprite/elwurd_casualsurprise.png", ypos=730)
-image elwurd defensive = Image("{{assets}}/sprite/elwurd_defensive.png", ypos=730)
-image elwurd fingerguns = Image("{{assets}}/sprite/elwurd_fingerguns.png", ypos=730)
-image elwurd frown = Image("{{assets}}/sprite/elwurd_frown.png", ypos=730)
-image elwurd handsome = Image("{{assets}}/sprite/elwurd_handsome.png", ypos=730)
-image elwurd headtilt = Image("{{assets}}/sprite/elwurd_headtilt.png", ypos=730)
-image elwurd interested = Image("{{assets}}/sprite/elwurd_interested.png", ypos=730)
-image elwurd pissed = Image("{{assets}}/sprite/elwurd_pissed.png", ypos=730)
-image elwurd psh = Image("{{assets}}/sprite/elwurd_psh.png", ypos=730)
-image elwurd scowl = Image("{{assets}}/sprite/elwurd_scowl.png", ypos=730)
-image elwurd shrug = Image("{{assets}}/sprite/elwurd_shrug.png", ypos=730)
-image elwurd smile = Image("{{assets}}/sprite/elwurd_smile.png", ypos=730)
-image elwurd ugh = Image("{{assets}}/sprite/elwurd_ugh.png", ypos=730)

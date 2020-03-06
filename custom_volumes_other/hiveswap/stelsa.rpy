@@ -1,21 +1,22 @@
-define stelsa = Character(name="STELSA", kind=hiveswap, image="stelsa", window_background="gui/textbox_teal.png", who_outlines=[(4, "#008282")])
+init offset = 1
+image fs_stelsa embarrassed = "{{assets}}/sprite/stelsa_embarrassed.png"
+image fs_stelsa embarrassedcasual = "{{assets}}/sprite/stelsa_embarrassedcasual.png"
+image fs_stelsa fakesmile = "{{assets}}/sprite/stelsa_fakesmile.png"
+image fs_stelsa fakesmilecasual = "{{assets}}/sprite/stelsa_fakesmilecasual.png"
+image fs_stelsa gesticulate = "{{assets}}/sprite/stelsa_gesticulate.png"
+image fs_stelsa gesticulatecasual = "{{assets}}/sprite/stelsa_gesticulatecasual.png"
+image fs_stelsa happy = "{{assets}}/sprite/stelsa_happy.png"
+image fs_stelsa happycasual = "{{assets}}/sprite/stelsa_happycasual.png"
+image fs_stelsa happytowel = "{{assets}}/sprite/stelsa_happytowel.png"
+image fs_stelsa harried = "{{assets}}/sprite/stelsa_harried.png"
+image fs_stelsa harriedcasual = "{{assets}}/sprite/stelsa_harriedcasual.png"
+image fs_stelsa harriedruffled = "{{assets}}/sprite/stelsa_harriedruffled.png"
+image fs_stelsa smile = "{{assets}}/sprite/stelsa_smile.png"
+image fs_stelsa smilecasual = "{{assets}}/sprite/stelsa_smilecasual.png"
+image fs_stelsa smiletowel = "{{assets}}/sprite/stelsa_smiletowel.png"
+image fs_stelsa surprise = "{{assets}}/sprite/stelsa_surprise.png"
+image fs_stelsa surprisecasual = "{{assets}}/sprite/stelsa_surprisecasual.png"
+image fs_stelsa wringing = "{{assets}}/sprite/stelsa_wringing.png"
+image fs_stelsa wringingcasual = "{{assets}}/sprite/stelsa_wringingcasual.png"
+define fs_stelsa = Character(name="STELSA", kind=hiveswap, image="stelsa", show_blood="teal")
 
-image stelsa embarrassed = Image("{{assets}}/sprite/stelsa_embarrassed.png", ypos=730)
-image stelsa embarrassedcasual = Image("{{assets}}/sprite/stelsa_embarrassedcasual.png", ypos=730)
-image stelsa fakesmile = Image("{{assets}}/sprite/stelsa_fakesmile.png", ypos=730)
-image stelsa fakesmilecasual = Image("{{assets}}/sprite/stelsa_fakesmilecasual.png", ypos=730)
-image stelsa gesticulate = Image("{{assets}}/sprite/stelsa_gesticulate.png", ypos=730)
-image stelsa gesticulatecasual = Image("{{assets}}/sprite/stelsa_gesticulatecasual.png", ypos=730)
-image stelsa happy = Image("{{assets}}/sprite/stelsa_happy.png", ypos=730)
-image stelsa happycasual = Image("{{assets}}/sprite/stelsa_happycasual.png", ypos=730)
-image stelsa happytowel = Image("{{assets}}/sprite/stelsa_happytowel.png", ypos=730)
-image stelsa harried = Image("{{assets}}/sprite/stelsa_harried.png", ypos=730)
-image stelsa harriedcasual = Image("{{assets}}/sprite/stelsa_harriedcasual.png", ypos=730)
-image stelsa harriedruffled = Image("{{assets}}/sprite/stelsa_harriedruffled.png", ypos=730)
-image stelsa smile = Image("{{assets}}/sprite/stelsa_smile.png", ypos=730)
-image stelsa smilecasual = Image("{{assets}}/sprite/stelsa_smilecasual.png", ypos=730)
-image stelsa smiletowel = Image("{{assets}}/sprite/stelsa_smiletowel.png", ypos=730)
-image stelsa surprise = Image("{{assets}}/sprite/stelsa_surprise.png", ypos=730)
-image stelsa surprisecasual = Image("{{assets}}/sprite/stelsa_surprisecasual.png", ypos=730)
-image stelsa wringing = Image("{{assets}}/sprite/stelsa_wringing.png", ypos=730)
-image stelsa wringingcasual = Image("{{assets}}/sprite/stelsa_wringingcasual.png", ypos=730)

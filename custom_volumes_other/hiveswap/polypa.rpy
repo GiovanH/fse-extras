@@ -1,14 +1,15 @@
-define polypa = Character(name="POLYPA", kind=hiveswap, image="polypa", window_background="gui/textbox_olive.png", who_outlines=[(4, "#416600")])
-
-image polypa dejected = Image("{{assets}}/sprite/polypa_dejected.png", ypos=730)
-image polypa hoodie_intro = Image("{{assets}}/sprite/polypa_hoodie_intro.png", ypos=730)
-image polypa hoodie_pissed = Image("{{assets}}/sprite/polypa_hoodie_pissed.png", ypos=730)
-image polypa neutral = Image("{{assets}}/sprite/polypa_neutral.png", ypos=730)
-image polypa pleased = Image("{{assets}}/sprite/polypa_pleased.png", ypos=730)
-image polypa scuffle = Image("{{assets}}/sprite/polypa_scuffle.png", ypos=730)
-image polypa serious = Image("{{assets}}/sprite/polypa_serious.png", ypos=730)
-image polypa shocked = Image("{{assets}}/sprite/polypa_shocked.png", ypos=730)
-image polypa shooshpap = Image("{{assets}}/sprite/polypa_shooshpap.png", ypos=730)
+init offset = 1
+image fs_polypa dejected = "{{assets}}/sprite/polypa_dejected.png"
+image fs_polypa hoodie_intro = "{{assets}}/sprite/polypa_hoodie_intro.png"
+image fs_polypa hoodie_pissed = "{{assets}}/sprite/polypa_hoodie_pissed.png"
+image fs_polypa neutral = "{{assets}}/sprite/polypa_neutral.png"
+image fs_polypa pleased = "{{assets}}/sprite/polypa_pleased.png"
+image fs_polypa scuffle = "{{assets}}/sprite/polypa_scuffle.png"
+image fs_polypa serious = "{{assets}}/sprite/polypa_serious.png"
+image fs_polypa shocked = "{{assets}}/sprite/polypa_shocked.png"
+image fs_polypa shooshpap = "{{assets}}/sprite/polypa_shooshpap.png"
 
 init python:
     quirks["polypa"] = [("(.+)", "<1> *|")]
+define fs_polypa = Character(name="POLYPA", kind=hiveswap, image="polypa", show_blood="olive")
+

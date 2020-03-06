@@ -1,22 +1,23 @@
-define wanshi = Character(name="WANSHI", kind=hiveswap, image="wanshi", window_background="gui/textbox_jade.png", who_outlines=[(4, "#0aa85b")])
+init offset = 1
+image fs_wanshi betrayed = "{{assets}}/sprite/wanshi_betrayed.png"
+image fs_wanshi claspshands = "{{assets}}/sprite/wanshi_claspshands.png"
+image fs_wanshi curiosity = "{{assets}}/sprite/wanshi_curiosity.png"
+image fs_wanshi eager = "{{assets}}/sprite/wanshi_eager.png"
+image fs_wanshi expectant = "{{assets}}/sprite/wanshi_expectant.png"
+image fs_wanshi fear = "{{assets}}/sprite/wanshi_fear.png"
+image fs_wanshi gift = "{{assets}}/sprite/wanshi_gift.png"
+image fs_wanshi hi = "{{assets}}/sprite/wanshi_hi.png"
+image fs_wanshi intro_nothingtoseehere = "{{assets}}/sprite/wanshi_intro_nothingtoseehere.png"
+image fs_wanshi intro_snitch = "{{assets}}/sprite/wanshi_intro_snitch.png"
+image fs_wanshi intro_wanshiout = "{{assets}}/sprite/wanshi_intro_wanshiout.png"
+image fs_wanshi OoO = "{{assets}}/sprite/wanshi_OoO.png"
+image fs_wanshi rp = "{{assets}}/sprite/wanshi_rp.png"
+image fs_wanshi sadsmile = "{{assets}}/sprite/wanshi_sadsmile.png"
+image fs_wanshi shakingwithexcitement = "{{assets}}/sprite/wanshi_shakingwithexcitement.png"
+image fs_wanshi sideye = "{{assets}}/sprite/wanshi_sideye.png"
+image fs_wanshi teary = "{{assets}}/sprite/wanshi_teary.png"
+image fs_wanshi ughlame = "{{assets}}/sprite/wanshi_ughlame.png"
+image fs_wanshi woah = "{{assets}}/sprite/wanshi_woah.png"
+image fs_wanshi youknowit = "{{assets}}/sprite/wanshi_youknowit.png"
+define fs_wanshi = Character(name="WANSHI", kind=hiveswap, image="wanshi", show_blood="jade")
 
-image wanshi betrayed = Image("{{assets}}/sprite/wanshi_betrayed.png", ypos=730)
-image wanshi claspshands = Image("{{assets}}/sprite/wanshi_claspshands.png", ypos=730)
-image wanshi curiosity = Image("{{assets}}/sprite/wanshi_curiosity.png", ypos=730)
-image wanshi eager = Image("{{assets}}/sprite/wanshi_eager.png", ypos=730)
-image wanshi expectant = Image("{{assets}}/sprite/wanshi_expectant.png", ypos=730)
-image wanshi fear = Image("{{assets}}/sprite/wanshi_fear.png", ypos=730)
-image wanshi gift = Image("{{assets}}/sprite/wanshi_gift.png", ypos=730)
-image wanshi hi = Image("{{assets}}/sprite/wanshi_hi.png", ypos=730)
-image wanshi intro_nothingtoseehere = Image("{{assets}}/sprite/wanshi_intro_nothingtoseehere.png", ypos=730)
-image wanshi intro_snitch = Image("{{assets}}/sprite/wanshi_intro_snitch.png", ypos=730)
-image wanshi intro_wanshiout = Image("{{assets}}/sprite/wanshi_intro_wanshiout.png", ypos=730)
-image wanshi OoO = Image("{{assets}}/sprite/wanshi_OoO.png", ypos=730)
-image wanshi rp = Image("{{assets}}/sprite/wanshi_rp.png", ypos=730)
-image wanshi sadsmile = Image("{{assets}}/sprite/wanshi_sadsmile.png", ypos=730)
-image wanshi shakingwithexcitement = Image("{{assets}}/sprite/wanshi_shakingwithexcitement.png", ypos=730)
-image wanshi sideye = Image("{{assets}}/sprite/wanshi_sideye.png", ypos=730)
-image wanshi teary = Image("{{assets}}/sprite/wanshi_teary.png", ypos=730)
-image wanshi ughlame = Image("{{assets}}/sprite/wanshi_ughlame.png", ypos=730)
-image wanshi woah = Image("{{assets}}/sprite/wanshi_woah.png", ypos=730)
-image wanshi youknowit = Image("{{assets}}/sprite/wanshi_youknowit.png", ypos=730)

@@ -1,0 +1,13 @@
+init offset = 1
+image fs_mspareader Angry = "{{assets}}/sprite/MSPAreader_Angry.png"
+image fs_mspareader Confused = "{{assets}}/sprite/MSPAreader_Confused.png"
+image fs_mspareader Determined = "{{assets}}/sprite/MSPAreader_Determined.png"
+image fs_mspareader faint = "{{assets}}/sprite/MSPAreader_faint.png"
+image fs_mspareader Falter = "{{assets}}/sprite/MSPAreader_Falter.png"
+image fs_mspareader GetItTogether = "{{assets}}/sprite/MSPAreader_GetItTogether.png"
+image fs_mspareader Gross = "{{assets}}/sprite/MSPAreader_Gross.png"
+image fs_mspareader HoodieOver = "{{assets}}/sprite/MSPAreader_HoodieOver.png"
+image fs_mspareader nervous = "{{assets}}/sprite/MSPAreader_nervous.png"
+image fs_mspareader oh = "{{assets}}/sprite/MSPAreader_oh.png"
+image fs_mspareader pixelated = "{{assets}}/sprite/MSPAreader_pixelated.png"
+image fs_mspareader SelfConfidence = "{{assets}}/sprite/MSPAreader_SelfConfidence.png"

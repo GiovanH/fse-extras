@@ -1,13 +1,14 @@
-define skylla = Character(name="SKYLLA", kind=hiveswap, image="skylla", window_background="gui/textbox_bronze.png", who_outlines=[(4, "#bb6405")])
+init offset = 1
+image fs_skylla anger = "{{assets}}/sprite/Skylla_anger.png"
+image fs_skylla concern = "{{assets}}/sprite/Skylla_concern.png"
+image fs_skylla depressed = "{{assets}}/sprite/Skylla_depressed.png"
+image fs_skylla distress = "{{assets}}/sprite/Skylla_distress.png"
+image fs_skylla happy = "{{assets}}/sprite/Skylla_happy.png"
+image fs_skylla kickass = "{{assets}}/sprite/Skylla_kickass.png"
+image fs_skylla numb = "{{assets}}/sprite/Skylla_numb.png"
+image fs_skylla numb2 = "{{assets}}/sprite/Skylla_numb2.png"
+image fs_skylla stand = "{{assets}}/sprite/Skylla_stand.png"
+image fs_skylla talk = "{{assets}}/sprite/Skylla_talk.png"
+image fs_skylla upset = "{{assets}}/sprite/Skylla_upset.png"
+define fs_skylla = Character(name="SKYLLA", kind=hiveswap, image="skylla", show_blood="bronze")
 
-image skylla anger = Image("{{assets}}/sprite/Skylla_anger.png", ypos=730)
-image skylla concern = Image("{{assets}}/sprite/Skylla_concern.png", ypos=730)
-image skylla depressed = Image("{{assets}}/sprite/Skylla_depressed.png", ypos=730)
-image skylla distress = Image("{{assets}}/sprite/Skylla_distress.png", ypos=730)
-image skylla happy = Image("{{assets}}/sprite/Skylla_happy.png", ypos=730)
-image skylla kickass = Image("{{assets}}/sprite/Skylla_kickass.png", ypos=730)
-image skylla numb = Image("{{assets}}/sprite/Skylla_numb.png", ypos=730)
-image skylla numb2 = Image("{{assets}}/sprite/Skylla_numb2.png", ypos=730)
-image skylla stand = Image("{{assets}}/sprite/Skylla_stand.png", ypos=730)
-image skylla talk = Image("{{assets}}/sprite/Skylla_talk.png", ypos=730)
-image skylla upset = Image("{{assets}}/sprite/Skylla_upset.png", ypos=730)

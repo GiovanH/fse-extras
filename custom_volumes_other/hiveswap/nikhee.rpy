@@ -1,24 +1,25 @@
-define nikhee = Character(name="NIKHEE", kind=hiveswap, image="nikhee", window_background="gui/textbox_blue.png", who_outlines=[(4, "#000056")])
+init offset = 1
+image fs_nikhee blankface = "{{assets}}/sprite/nikhee_blankface.png"
+image fs_nikhee coward = "{{assets}}/sprite/nikhee_coward.png"
+image fs_nikhee doiscareyou = "{{assets}}/sprite/nikhee_doiscareyou.png"
+image fs_nikhee FLEXSTAR_01 = "{{assets}}/sprite/nikhee_FLEXSTAR_01.png"
+image fs_nikhee FLEXSTAR_02 = "{{assets}}/sprite/nikhee_FLEXSTAR_02.png"
+image fs_nikhee FLEXSTAR_03 = "{{assets}}/sprite/nikhee_FLEXSTAR_03.png"
+image fs_nikhee getoutofmysight = "{{assets}}/sprite/nikhee_getoutofmysight.png"
+image fs_nikhee hemhaw = "{{assets}}/sprite/nikhee_hemhaw.png"
+image fs_nikhee kylorenlol = "{{assets}}/sprite/nikhee_kylorenlol.png"
+image fs_nikhee listentome = "{{assets}}/sprite/nikhee_listentome.png"
+image fs_nikhee lostleg = "{{assets}}/sprite/nikhee_lostleg.png"
+image fs_nikhee MAYBE = "{{assets}}/sprite/nikhee_MAYBE.png"
+image fs_nikhee milkflex = "{{assets}}/sprite/nikhee_milkflex.png"
+image fs_nikhee NO = "{{assets}}/sprite/nikhee_NO.png"
+image fs_nikhee notimpressed = "{{assets}}/sprite/nikhee_notimpressed.png"
+image fs_nikhee offended = "{{assets}}/sprite/nikhee_offended.png"
+image fs_nikhee proud = "{{assets}}/sprite/nikhee_proud.png"
+image fs_nikhee ringstand = "{{assets}}/sprite/nikhee_ringstand.png"
+image fs_nikhee smile = "{{assets}}/sprite/nikhee_smile.png"
+image fs_nikhee THEBRAWNISEUM = "{{assets}}/sprite/nikhee_THEBRAWNISEUM.png"
+image fs_nikhee weirdflexbutok = "{{assets}}/sprite/nikhee_weirdflexbutok.png"
+image fs_nikhee weirdflexbutok_scowl = "{{assets}}/sprite/nikhee_weirdflexbutok_scowl.png"
+define fs_nikhee = Character(name="NIKHEE", kind=hiveswap, image="nikhee", show_blood="blue")
 
-image nikhee blankface = Image("{{assets}}/sprite/nikhee_blankface.png", ypos=730)
-image nikhee coward = Image("{{assets}}/sprite/nikhee_coward.png", ypos=730)
-image nikhee doiscareyou = Image("{{assets}}/sprite/nikhee_doiscareyou.png", ypos=730)
-image nikhee FLEXSTAR_01 = Image("{{assets}}/sprite/nikhee_FLEXSTAR_01.png", ypos=730)
-image nikhee FLEXSTAR_02 = Image("{{assets}}/sprite/nikhee_FLEXSTAR_02.png", ypos=730)
-image nikhee FLEXSTAR_03 = Image("{{assets}}/sprite/nikhee_FLEXSTAR_03.png", ypos=730)
-image nikhee getoutofmysight = Image("{{assets}}/sprite/nikhee_getoutofmysight.png", ypos=730)
-image nikhee hemhaw = Image("{{assets}}/sprite/nikhee_hemhaw.png", ypos=730)
-image nikhee kylorenlol = Image("{{assets}}/sprite/nikhee_kylorenlol.png", ypos=730)
-image nikhee listentome = Image("{{assets}}/sprite/nikhee_listentome.png", ypos=730)
-image nikhee lostleg = Image("{{assets}}/sprite/nikhee_lostleg.png", ypos=730)
-image nikhee MAYBE = Image("{{assets}}/sprite/nikhee_MAYBE.png", ypos=730)
-image nikhee milkflex = Image("{{assets}}/sprite/nikhee_milkflex.png", ypos=730)
-image nikhee NO = Image("{{assets}}/sprite/nikhee_NO.png", ypos=730)
-image nikhee notimpressed = Image("{{assets}}/sprite/nikhee_notimpressed.png", ypos=730)
-image nikhee offended = Image("{{assets}}/sprite/nikhee_offended.png", ypos=730)
-image nikhee proud = Image("{{assets}}/sprite/nikhee_proud.png", ypos=730)
-image nikhee ringstand = Image("{{assets}}/sprite/nikhee_ringstand.png", ypos=730)
-image nikhee smile = Image("{{assets}}/sprite/nikhee_smile.png", ypos=730)
-image nikhee THEBRAWNISEUM = Image("{{assets}}/sprite/nikhee_THEBRAWNISEUM.png", ypos=730)
-image nikhee weirdflexbutok = Image("{{assets}}/sprite/nikhee_weirdflexbutok.png", ypos=730)
-image nikhee weirdflexbutok_scowl = Image("{{assets}}/sprite/nikhee_weirdflexbutok_scowl.png", ypos=730)

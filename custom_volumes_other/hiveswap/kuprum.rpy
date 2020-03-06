@@ -1,5 +1,6 @@
-define kuprum = Character(name="KUPRUM", kind=hiveswap, image="kuprum", window_background="gui/textbox_gold.png", who_outlines=[(4, "#a1a100")])
+init offset = 1
+image fs_kuprum anger = "{{assets}}/sprite/kuprum_anger.png"
+image fs_kuprum idle = "{{assets}}/sprite/kuprum_idle.png"
+image fs_kuprum POWER = "{{assets}}/sprite/kuprum_POWER.png"
+define fs_kuprum = Character(name="KUPRUM", kind=hiveswap, image="kuprum", show_blood="gold")
 
-image kuprum anger = Image("{{assets}}/sprite/kuprum_anger.png", ypos=730)
-image kuprum idle = Image("{{assets}}/sprite/kuprum_idle.png", ypos=730)
-image kuprum POWER = Image("{{assets}}/sprite/kuprum_POWER.png", ypos=730)

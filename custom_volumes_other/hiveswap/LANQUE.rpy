@@ -1,45 +1,46 @@
-define lanque = Character(name="LANQUE", kind=hiveswap, image="lanque", window_background="gui/textbox_jade.png", who_outlines=[(4, "#0aa85b")])
+init offset = 1
+image fs_lanque Bitching = "{{assets}}/sprite/LANQUE_Bitching.png"
+image fs_lanque Close = "{{assets}}/sprite/LANQUE_Close.png"
+image fs_lanque CloseHiding = "{{assets}}/sprite/LANQUE_CloseHiding.png"
+image fs_lanque CloseJK = "{{assets}}/sprite/LANQUE_CloseJK.png"
+image fs_lanque CloseKiss = "{{assets}}/sprite/LANQUE_CloseKiss.png"
+image fs_lanque CloseLicky = "{{assets}}/sprite/LANQUE_CloseLicky.png"
+image fs_lanque CloseNakeyKiss = "{{assets}}/sprite/LANQUE_CloseNakeyKiss.png"
+image fs_lanque CloseNakeyShh = "{{assets}}/sprite/LANQUE_CloseNakeyShh.png"
+image fs_lanque CloseNakeyTalk = "{{assets}}/sprite/LANQUE_CloseNakeyTalk.png"
+image fs_lanque CloseTalk = "{{assets}}/sprite/LANQUE_CloseTalk.png"
+image fs_lanque Embrace = "{{assets}}/sprite/LANQUE_Embrace.png"
+image fs_lanque Grinding = "{{assets}}/sprite/LANQUE_Grinding.png"
+image fs_lanque Hmph = "{{assets}}/sprite/LANQUE_Hmph.png"
+image fs_lanque Interesting = "{{assets}}/sprite/LANQUE_Interesting.png"
+image fs_lanque InterestingTalk = "{{assets}}/sprite/LANQUE_InterestingTalk.png"
+image fs_lanque Laughing = "{{assets}}/sprite/LANQUE_Laughing.png"
+image fs_lanque Licky = "{{assets}}/sprite/LANQUE_Licky.png"
+image fs_lanque NakeyBitching = "{{assets}}/sprite/LANQUE_NakeyBitching.png"
+image fs_lanque NakeyFeigning = "{{assets}}/sprite/LANQUE_NakeyFeigning.png"
+image fs_lanque NakeyHmph = "{{assets}}/sprite/LANQUE_NakeyHmph.png"
+image fs_lanque NakeyOhShit = "{{assets}}/sprite/LANQUE_NakeyOhShit.png"
+image fs_lanque NakeySlapped = "{{assets}}/sprite/LANQUE_NakeySlapped.png"
+image fs_lanque Neutral = "{{assets}}/sprite/LANQUE_Neutral.png"
+image fs_lanque NeutralTalk = "{{assets}}/sprite/LANQUE_NeutralTalk.png"
+image fs_lanque OhShit = "{{assets}}/sprite/LANQUE_OhShit.png"
+image fs_lanque Questioning = "{{assets}}/sprite/LANQUE_Questioning.png"
+image fs_lanque Redress = "{{assets}}/sprite/LANQUE_Redress.png"
+image fs_lanque RedressExcuses = "{{assets}}/sprite/LANQUE_RedressExcuses.png"
+image fs_lanque Scathing = "{{assets}}/sprite/LANQUE_Scathing.png"
+image fs_lanque Smile = "{{assets}}/sprite/LANQUE_Smile.png"
+image fs_lanque Sneer = "{{assets}}/sprite/LANQUE_Sneer.png"
+image fs_lanque Undress = "{{assets}}/sprite/LANQUE_Undress.png"
+image fs_lanque VALID_Happy = "{{assets}}/sprite/LANQUE_VALID_Happy.png"
+image fs_lanque VALID_Heartfelt = "{{assets}}/sprite/LANQUE_VALID_Heartfelt.png"
+image fs_lanque VALID_HeartfeltTalk = "{{assets}}/sprite/LANQUE_VALID_HeartfeltTalk.png"
+image fs_lanque VALID_JoinUs = "{{assets}}/sprite/LANQUE_VALID_JoinUs.png"
+image fs_lanque VALID_Neutral = "{{assets}}/sprite/LANQUE_VALID_Neutral.png"
+image fs_lanque VALID_PoetryReading = "{{assets}}/sprite/LANQUE_VALID_PoetryReading.png"
+image fs_lanque VALID_PoetryTears = "{{assets}}/sprite/LANQUE_VALID_PoetryTears.png"
+image fs_lanque VALID_PoetryTime = "{{assets}}/sprite/LANQUE_VALID_PoetryTime.png"
+image fs_lanque VALID_PoetryTimeTalk = "{{assets}}/sprite/LANQUE_VALID_PoetryTimeTalk.png"
+image fs_lanque VALID_Smile = "{{assets}}/sprite/LANQUE_VALID_Smile.png"
+image fs_lanque VALID_Uh = "{{assets}}/sprite/LANQUE_VALID_Uh.png"
+define fs_lanque = Character(name="LANQUE", kind=hiveswap, image="lanque", show_blood="jade")
 
-image lanque Bitching = Image("{{assets}}/sprite/LANQUE_Bitching.png", ypos=730)
-image lanque Close = Image("{{assets}}/sprite/LANQUE_Close.png", ypos=730)
-image lanque CloseHiding = Image("{{assets}}/sprite/LANQUE_CloseHiding.png", ypos=730)
-image lanque CloseJK = Image("{{assets}}/sprite/LANQUE_CloseJK.png", ypos=730)
-image lanque CloseKiss = Image("{{assets}}/sprite/LANQUE_CloseKiss.png", ypos=730)
-image lanque CloseLicky = Image("{{assets}}/sprite/LANQUE_CloseLicky.png", ypos=730)
-image lanque CloseNakeyKiss = Image("{{assets}}/sprite/LANQUE_CloseNakeyKiss.png", ypos=730)
-image lanque CloseNakeyShh = Image("{{assets}}/sprite/LANQUE_CloseNakeyShh.png", ypos=730)
-image lanque CloseNakeyTalk = Image("{{assets}}/sprite/LANQUE_CloseNakeyTalk.png", ypos=730)
-image lanque CloseTalk = Image("{{assets}}/sprite/LANQUE_CloseTalk.png", ypos=730)
-image lanque Embrace = Image("{{assets}}/sprite/LANQUE_Embrace.png", ypos=730)
-image lanque Grinding = Image("{{assets}}/sprite/LANQUE_Grinding.png", ypos=730)
-image lanque Hmph = Image("{{assets}}/sprite/LANQUE_Hmph.png", ypos=730)
-image lanque Interesting = Image("{{assets}}/sprite/LANQUE_Interesting.png", ypos=730)
-image lanque InterestingTalk = Image("{{assets}}/sprite/LANQUE_InterestingTalk.png", ypos=730)
-image lanque Laughing = Image("{{assets}}/sprite/LANQUE_Laughing.png", ypos=730)
-image lanque Licky = Image("{{assets}}/sprite/LANQUE_Licky.png", ypos=730)
-image lanque NakeyBitching = Image("{{assets}}/sprite/LANQUE_NakeyBitching.png", ypos=730)
-image lanque NakeyFeigning = Image("{{assets}}/sprite/LANQUE_NakeyFeigning.png", ypos=730)
-image lanque NakeyHmph = Image("{{assets}}/sprite/LANQUE_NakeyHmph.png", ypos=730)
-image lanque NakeyOhShit = Image("{{assets}}/sprite/LANQUE_NakeyOhShit.png", ypos=730)
-image lanque NakeySlapped = Image("{{assets}}/sprite/LANQUE_NakeySlapped.png", ypos=730)
-image lanque Neutral = Image("{{assets}}/sprite/LANQUE_Neutral.png", ypos=730)
-image lanque NeutralTalk = Image("{{assets}}/sprite/LANQUE_NeutralTalk.png", ypos=730)
-image lanque OhShit = Image("{{assets}}/sprite/LANQUE_OhShit.png", ypos=730)
-image lanque Questioning = Image("{{assets}}/sprite/LANQUE_Questioning.png", ypos=730)
-image lanque Redress = Image("{{assets}}/sprite/LANQUE_Redress.png", ypos=730)
-image lanque RedressExcuses = Image("{{assets}}/sprite/LANQUE_RedressExcuses.png", ypos=730)
-image lanque Scathing = Image("{{assets}}/sprite/LANQUE_Scathing.png", ypos=730)
-image lanque Smile = Image("{{assets}}/sprite/LANQUE_Smile.png", ypos=730)
-image lanque Sneer = Image("{{assets}}/sprite/LANQUE_Sneer.png", ypos=730)
-image lanque Undress = Image("{{assets}}/sprite/LANQUE_Undress.png", ypos=730)
-image lanque VALID_Happy = Image("{{assets}}/sprite/LANQUE_VALID_Happy.png", ypos=730)
-image lanque VALID_Heartfelt = Image("{{assets}}/sprite/LANQUE_VALID_Heartfelt.png", ypos=730)
-image lanque VALID_HeartfeltTalk = Image("{{assets}}/sprite/LANQUE_VALID_HeartfeltTalk.png", ypos=730)
-image lanque VALID_JoinUs = Image("{{assets}}/sprite/LANQUE_VALID_JoinUs.png", ypos=730)
-image lanque VALID_Neutral = Image("{{assets}}/sprite/LANQUE_VALID_Neutral.png", ypos=730)
-image lanque VALID_PoetryReading = Image("{{assets}}/sprite/LANQUE_VALID_PoetryReading.png", ypos=730)
-image lanque VALID_PoetryTears = Image("{{assets}}/sprite/LANQUE_VALID_PoetryTears.png", ypos=730)
-image lanque VALID_PoetryTime = Image("{{assets}}/sprite/LANQUE_VALID_PoetryTime.png", ypos=730)
-image lanque VALID_PoetryTimeTalk = Image("{{assets}}/sprite/LANQUE_VALID_PoetryTimeTalk.png", ypos=730)
-image lanque VALID_Smile = Image("{{assets}}/sprite/LANQUE_VALID_Smile.png", ypos=730)
-image lanque VALID_Uh = Image("{{assets}}/sprite/LANQUE_VALID_Uh.png", ypos=730)

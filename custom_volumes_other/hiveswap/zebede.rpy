@@ -1,11 +1,12 @@
-define zebede = Character(name="ZEBEDE", kind=hiveswap, image="zebede", window_background="gui/textbox_gold.png", who_outlines=[(4, "#a1a100")])
+init offset = 1
+image fs_zebede crying = "{{assets}}/sprite/zebede_crying.png"
+image fs_zebede distressed = "{{assets}}/sprite/zebede_distressed.png"
+image fs_zebede happy = "{{assets}}/sprite/zebede_happy.png"
+image fs_zebede hi = "{{assets}}/sprite/zebede_hi.png"
+image fs_zebede neutral = "{{assets}}/sprite/zebede_neutral.png"
+image fs_zebede questioning = "{{assets}}/sprite/zebede_questioning.png"
+image fs_zebede radiant = "{{assets}}/sprite/zebede_radiant.png"
+image fs_zebede shiftyeyed = "{{assets}}/sprite/zebede_shiftyeyed.png"
+image fs_zebede shockedembarassed = "{{assets}}/sprite/zebede_shockedembarassed.png"
+define fs_zebede = Character(name="ZEBEDE", kind=hiveswap, image="zebede", show_blood="gold")
 
-image zebede crying = Image("{{assets}}/sprite/zebede_crying.png", ypos=730)
-image zebede distressed = Image("{{assets}}/sprite/zebede_distressed.png", ypos=730)
-image zebede happy = Image("{{assets}}/sprite/zebede_happy.png", ypos=730)
-image zebede hi = Image("{{assets}}/sprite/zebede_hi.png", ypos=730)
-image zebede neutral = Image("{{assets}}/sprite/zebede_neutral.png", ypos=730)
-image zebede questioning = Image("{{assets}}/sprite/zebede_questioning.png", ypos=730)
-image zebede radiant = Image("{{assets}}/sprite/zebede_radiant.png", ypos=730)
-image zebede shiftyeyed = Image("{{assets}}/sprite/zebede_shiftyeyed.png", ypos=730)
-image zebede shockedembarassed = Image("{{assets}}/sprite/zebede_shockedembarassed.png", ypos=730)

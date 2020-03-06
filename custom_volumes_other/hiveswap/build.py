@@ -101,31 +101,10 @@ characters = set(
     for talksprite in talksprites
 )
 
-routefp = open("route.rpy", "w")
-routefp.write("""
-label {{package_entrypoint}}_route:
-    # Menu boilerplate: Exit main menu, fade to black
-    $ renpy.block_rollback()
-    $ main_menu = False
-    show image "gui/game_menu.png"
-    window hide
-    scene black with Dissolve(1.0)
-    show blackcover
-    $ quick_menu = True
-    scene bg alternia4
-""")
-
 for character in characters:
     with open(f"{character}.rpy", "w") as charfp:
-        try:
-            guicolor, outlines = blood_data[character.upper()]
-        except:
-            print("Don't know character", character)
-            continue
-        define = f'define {character.lower()} = Character(name="{character.upper()}", kind=hiveswap, image="{character}", window_background="gui/textbox_{guicolor}.png", who_outlines=[(4, "{outlines}")])\n\n'
-
-        charfp.write(define)
-        for charsprite in glob.glob(f"assets/sprite/{character}_*.*"):
+        charfp.write("init offset = 1\n")
+        for charsprite in glob.glob(f"assets/sprite/{character}_*.png"):
             filedir, filename = os.path.split(charsprite)
             charname, *rest = filename.split("_")
             charname = charname.lower()
@@ -133,47 +112,47 @@ for character in characters:
             pose = os.path.splitext(rest)[0]
             # print(charname, rest)
 
-            kwargs = char_kwargs.get(charname, ", ypos=730")
+            kwargs = char_kwargs.get(charname, "")  # ", ypos=730"
 
             imgpath = charsprite.replace("assets/", "{{assets}}/").replace("\\", "/")
-            image = f'image {charname} {pose} = Image("{imgpath}"{kwargs})\n'
+            image = f'image fs_{charname} {pose} = "{imgpath}"\n'
             charfp.write(image)
 
         charfp.write(char_exdata.get(character.upper(), ""))
+        try:
+            guicolor, outlines = blood_data[character.upper()]
+            define = f'define fs_{character.lower()} = Character(name="{character.upper()}", kind=hiveswap, image="{character}", show_blood="{guicolor}")\n\n'
+            charfp.write(define)
+        except:
+            print("Don't know character", character)
+            continue
+        
         charfp.close()
-        routefp.write(f"\n    $ debug_dump_character({character.lower()})")
-
-routefp.write("""
-    call ending pass ("gui/game_menu.png", True, True)
-    return
-""")
-
-routefp.close()
 
 with open(f"backgrounds.rpy", "w") as bgfp:   
     for file in glob.glob(f"assets/bg/*.*"):
         filedir, filename = os.path.split(file)
         filename, fileext = os.path.splitext(filename)
         imgpath = file.replace("assets/", "{{assets}}/").replace("\\", "/")
-        bgfp.write(f'image bg {filename} = Image("{imgpath}")\n')
+        bgfp.write(f'image fs_bg {filename} = "{imgpath}"\n')
 
 with open(f"objects.rpy", "w") as bgfp:   
     for file in glob.glob(f"assets/object/*.*"):
         filedir, filename = os.path.split(file)
         filename, fileext = os.path.splitext(filename)
         imgpath = file.replace("assets/", "{{assets}}/").replace("\\", "/")
-        bgfp.write(f'image {filename} = Image("{imgpath}")\n')
+        bgfp.write(f'image fs {filename} = "{imgpath}"\n')
 
 with open(f"effects.rpy", "w") as bgfp:   
     for file in glob.glob(f"assets/object/*.*"):
         filedir, filename = os.path.split(file)
         filename, fileext = os.path.splitext(filename)
         imgpath = file.replace("assets/", "{{assets}}/").replace("\\", "/")
-        bgfp.write(f'image fx {filename} = Image("{imgpath}")\n')
+        bgfp.write(f'image fs_fx {filename} = "{imgpath}"\n')
 
 with open(f"text.rpy", "w") as bgfp:   
     for file in glob.glob(f"assets/text/*.*"):
         filedir, filename = os.path.split(file)
         filename, fileext = os.path.splitext(filename)
         imgpath = file.replace("assets/", "{{assets}}/").replace("\\", "/")
-        bgfp.write(f'image char {filename} = Image("{imgpath}")\n')
+        bgfp.write(f'image fs_text {filename} = "{imgpath}"\n')

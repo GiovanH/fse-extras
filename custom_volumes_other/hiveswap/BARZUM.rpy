@@ -1,17 +1,18 @@
-define barzum = Character(name="BARZUM", kind=hiveswap, image="barzum", window_background="gui/textbox_purple.png", who_outlines=[(4, "#2b0057")])
+init offset = 1
+image fs_barzum CalmManic = "{{assets}}/sprite/BARZUM_CalmManic.png"
+image fs_barzum CalmManicTalk = "{{assets}}/sprite/BARZUM_CalmManicTalk.png"
+image fs_barzum CalmMorose = "{{assets}}/sprite/BARZUM_CalmMorose.png"
+image fs_barzum CalmMoroseTalk = "{{assets}}/sprite/BARZUM_CalmMoroseTalk.png"
+image fs_barzum Confused = "{{assets}}/sprite/BARZUM_Confused.png"
+image fs_barzum ConfusedTalk = "{{assets}}/sprite/BARZUM_ConfusedTalk.png"
+image fs_barzum Disapproving = "{{assets}}/sprite/BARZUM_Disapproving.png"
+image fs_barzum DisapprovingTalk = "{{assets}}/sprite/BARZUM_DisapprovingTalk.png"
+image fs_barzum InShadow = "{{assets}}/sprite/BARZUM_InShadow.png"
+image fs_barzum Laughing = "{{assets}}/sprite/BARZUM_Laughing.png"
+image fs_barzum Neutral = "{{assets}}/sprite/BARZUM_Neutral.png"
+image fs_barzum NeutralTalk = "{{assets}}/sprite/BARZUM_NeutralTalk.png"
+image fs_barzum Sketpical = "{{assets}}/sprite/BARZUM_Sketpical.png"
+image fs_barzum Thinking = "{{assets}}/sprite/BARZUM_Thinking.png"
+image fs_barzum ThinkingTalk = "{{assets}}/sprite/BARZUM_ThinkingTalk.png"
+define fs_barzum = Character(name="BARZUM", kind=hiveswap, image="barzum", show_blood="purple")
 
-image barzum CalmManic = Image("{{assets}}/sprite/BARZUM_CalmManic.png", ypos=730)
-image barzum CalmManicTalk = Image("{{assets}}/sprite/BARZUM_CalmManicTalk.png", ypos=730)
-image barzum CalmMorose = Image("{{assets}}/sprite/BARZUM_CalmMorose.png", ypos=730)
-image barzum CalmMoroseTalk = Image("{{assets}}/sprite/BARZUM_CalmMoroseTalk.png", ypos=730)
-image barzum Confused = Image("{{assets}}/sprite/BARZUM_Confused.png", ypos=730)
-image barzum ConfusedTalk = Image("{{assets}}/sprite/BARZUM_ConfusedTalk.png", ypos=730)
-image barzum Disapproving = Image("{{assets}}/sprite/BARZUM_Disapproving.png", ypos=730)
-image barzum DisapprovingTalk = Image("{{assets}}/sprite/BARZUM_DisapprovingTalk.png", ypos=730)
-image barzum InShadow = Image("{{assets}}/sprite/BARZUM_InShadow.png", ypos=730)
-image barzum Laughing = Image("{{assets}}/sprite/BARZUM_Laughing.png", ypos=730)
-image barzum Neutral = Image("{{assets}}/sprite/BARZUM_Neutral.png", ypos=730)
-image barzum NeutralTalk = Image("{{assets}}/sprite/BARZUM_NeutralTalk.png", ypos=730)
-image barzum Sketpical = Image("{{assets}}/sprite/BARZUM_Sketpical.png", ypos=730)
-image barzum Thinking = Image("{{assets}}/sprite/BARZUM_Thinking.png", ypos=730)
-image barzum ThinkingTalk = Image("{{assets}}/sprite/BARZUM_ThinkingTalk.png", ypos=730)

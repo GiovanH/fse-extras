@@ -1,10 +1,11 @@
-define chahut = Character(name="CHAHUT", kind=hiveswap, image="chahut", window_background="gui/textbox_purple.png", who_outlines=[(4, "#2b0057")])
+init offset = 1
+image fs_chahut blood = "{{assets}}/sprite/Chahut_blood.png"
+image fs_chahut lazysmile = "{{assets}}/sprite/Chahut_lazysmile.png"
+image fs_chahut neutral = "{{assets}}/sprite/Chahut_neutral.png"
+image fs_chahut pissed = "{{assets}}/sprite/Chahut_pissed.png"
+image fs_chahut pray = "{{assets}}/sprite/Chahut_pray.png"
+image fs_chahut spray = "{{assets}}/sprite/Chahut_spray.png"
+image fs_chahut suprise = "{{assets}}/sprite/Chahut_suprise.png"
+image fs_chahut wince = "{{assets}}/sprite/Chahut_wince.png"
+define fs_chahut = Character(name="CHAHUT", kind=hiveswap, image="chahut", show_blood="purple")
 
-image chahut blood = Image("{{assets}}/sprite/Chahut_blood.png", ypos=730)
-image chahut lazysmile = Image("{{assets}}/sprite/Chahut_lazysmile.png", ypos=730)
-image chahut neutral = Image("{{assets}}/sprite/Chahut_neutral.png", ypos=730)
-image chahut pissed = Image("{{assets}}/sprite/Chahut_pissed.png", ypos=730)
-image chahut pray = Image("{{assets}}/sprite/Chahut_pray.png", ypos=730)
-image chahut spray = Image("{{assets}}/sprite/Chahut_spray.png", ypos=730)
-image chahut suprise = Image("{{assets}}/sprite/Chahut_suprise.png", ypos=730)
-image chahut wince = Image("{{assets}}/sprite/Chahut_wince.png", ypos=730)

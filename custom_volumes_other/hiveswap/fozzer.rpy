@@ -1,20 +1,21 @@
-define fozzer = Character(name="FOZZER", kind=hiveswap, image="fozzer", window_background="gui/textbox_rust.png", who_outlines=[(4, "#a20000")])
+init offset = 1
+image fs_fozzer accusatory = "{{assets}}/sprite/fozzer_accusatory.png"
+image fs_fozzer AirQuotes = "{{assets}}/sprite/fozzer_AirQuotes.png"
+image fs_fozzer ArmsCrossed = "{{assets}}/sprite/fozzer_ArmsCrossed.png"
+image fs_fozzer ArmsCrossedDispleased = "{{assets}}/sprite/fozzer_ArmsCrossedDispleased.png"
+image fs_fozzer ArmsCrossedQuestioning = "{{assets}}/sprite/fozzer_ArmsCrossedQuestioning.png"
+image fs_fozzer digging = "{{assets}}/sprite/fozzer_digging.png"
+image fs_fozzer embrace = "{{assets}}/sprite/fozzer_embrace.png"
+image fs_fozzer estatic = "{{assets}}/sprite/fozzer_estatic.png"
+image fs_fozzer estaticListening = "{{assets}}/sprite/fozzer_estaticListening.png"
+image fs_fozzer fistpump = "{{assets}}/sprite/fozzer_fistpump.png"
+image fs_fozzer LetsShovel = "{{assets}}/sprite/fozzer_LetsShovel.png"
+image fs_fozzer panicked = "{{assets}}/sprite/fozzer_panicked.png"
+image fs_fozzer SPOOKED = "{{assets}}/sprite/fozzer_SPOOKED.png"
+image fs_fozzer squint = "{{assets}}/sprite/fozzer_squint.png"
+image fs_fozzer thinking = "{{assets}}/sprite/fozzer_thinking.png"
+image fs_fozzer thinkinghard = "{{assets}}/sprite/fozzer_thinkinghard.png"
+image fs_fozzer thinkingImpressed = "{{assets}}/sprite/fozzer_thinkingImpressed.png"
+image fs_fozzer thinkingUnimpressed = "{{assets}}/sprite/fozzer_thinkingUnimpressed.png"
+define fs_fozzer = Character(name="FOZZER", kind=hiveswap, image="fozzer", show_blood="rust")
 
-image fozzer accusatory = Image("{{assets}}/sprite/fozzer_accusatory.png", ypos=730)
-image fozzer AirQuotes = Image("{{assets}}/sprite/fozzer_AirQuotes.png", ypos=730)
-image fozzer ArmsCrossed = Image("{{assets}}/sprite/fozzer_ArmsCrossed.png", ypos=730)
-image fozzer ArmsCrossedDispleased = Image("{{assets}}/sprite/fozzer_ArmsCrossedDispleased.png", ypos=730)
-image fozzer ArmsCrossedQuestioning = Image("{{assets}}/sprite/fozzer_ArmsCrossedQuestioning.png", ypos=730)
-image fozzer digging = Image("{{assets}}/sprite/fozzer_digging.png", ypos=730)
-image fozzer embrace = Image("{{assets}}/sprite/fozzer_embrace.png", ypos=730)
-image fozzer estatic = Image("{{assets}}/sprite/fozzer_estatic.png", ypos=730)
-image fozzer estaticListening = Image("{{assets}}/sprite/fozzer_estaticListening.png", ypos=730)
-image fozzer fistpump = Image("{{assets}}/sprite/fozzer_fistpump.png", ypos=730)
-image fozzer LetsShovel = Image("{{assets}}/sprite/fozzer_LetsShovel.png", ypos=730)
-image fozzer panicked = Image("{{assets}}/sprite/fozzer_panicked.png", ypos=730)
-image fozzer SPOOKED = Image("{{assets}}/sprite/fozzer_SPOOKED.png", ypos=730)
-image fozzer squint = Image("{{assets}}/sprite/fozzer_squint.png", ypos=730)
-image fozzer thinking = Image("{{assets}}/sprite/fozzer_thinking.png", ypos=730)
-image fozzer thinkinghard = Image("{{assets}}/sprite/fozzer_thinkinghard.png", ypos=730)
-image fozzer thinkingImpressed = Image("{{assets}}/sprite/fozzer_thinkingImpressed.png", ypos=730)
-image fozzer thinkingUnimpressed = Image("{{assets}}/sprite/fozzer_thinkingUnimpressed.png", ypos=730)

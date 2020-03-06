@@ -1,11 +1,12 @@
-define ardata = Character(name="ARDATA", kind=hiveswap, image="ardata", window_background="gui/textbox_cobalt.png", who_outlines=[(4, "#005682")])
+init offset = 1
+image fs_ardata bored = "{{assets}}/sprite/ardata_bored.png"
+image fs_ardata cry = "{{assets}}/sprite/ardata_cry.png"
+image fs_ardata hand = "{{assets}}/sprite/ardata_hand.png"
+image fs_ardata laugh = "{{assets}}/sprite/ardata_laugh.png"
+image fs_ardata murder = "{{assets}}/sprite/ardata_murder.png"
+image fs_ardata ohoho = "{{assets}}/sprite/ardata_ohoho.png"
+image fs_ardata smile = "{{assets}}/sprite/ardata_smile.png"
+image fs_ardata testy = "{{assets}}/sprite/ardata_testy.png"
+image fs_ardata wink = "{{assets}}/sprite/ardata_wink.png"
+define fs_ardata = Character(name="ARDATA", kind=hiveswap, image="ardata", show_blood="cobalt")
 
-image ardata bored = Image("{{assets}}/sprite/ardata_bored.png", ypos=730)
-image ardata cry = Image("{{assets}}/sprite/ardata_cry.png", ypos=730)
-image ardata hand = Image("{{assets}}/sprite/ardata_hand.png", ypos=730)
-image ardata laugh = Image("{{assets}}/sprite/ardata_laugh.png", ypos=730)
-image ardata murder = Image("{{assets}}/sprite/ardata_murder.png", ypos=730)
-image ardata ohoho = Image("{{assets}}/sprite/ardata_ohoho.png", ypos=730)
-image ardata smile = Image("{{assets}}/sprite/ardata_smile.png", ypos=730)
-image ardata testy = Image("{{assets}}/sprite/ardata_testy.png", ypos=730)
-image ardata wink = Image("{{assets}}/sprite/ardata_wink.png", ypos=730)

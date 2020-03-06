@@ -1,16 +1,17 @@
-define mallek = Character(name="MALLEK", kind=hiveswap, image="mallek", window_background="gui/textbox_teal.png", who_outlines=[(4, "#008282")])
+init offset = 1
+image fs_mallek down = "{{assets}}/sprite/mallek_down.png"
+image fs_mallek drones = "{{assets}}/sprite/mallek_drones.png"
+image fs_mallek grin = "{{assets}}/sprite/mallek_grin.png"
+image fs_mallek interest = "{{assets}}/sprite/mallek_interest.png"
+image fs_mallek laugh = "{{assets}}/sprite/mallek_laugh.png"
+image fs_mallek lowered = "{{assets}}/sprite/mallek_lowered.png"
+image fs_mallek neutral = "{{assets}}/sprite/mallek_neutral.png"
+image fs_mallek pissed = "{{assets}}/sprite/mallek_pissed.png"
+image fs_mallek really = "{{assets}}/sprite/mallek_really.png"
+image fs_mallek scrutinyannoyance = "{{assets}}/sprite/mallek_scrutinyannoyance.png"
+image fs_mallek shirtlessflush = "{{assets}}/sprite/mallek_shirtlessflush.png"
+image fs_mallek shirtlessmybad = "{{assets}}/sprite/mallek_shirtlessmybad.png"
+image fs_mallek shirtlesstalk = "{{assets}}/sprite/mallek_shirtlesstalk.png"
+image fs_mallek shirtlessum = "{{assets}}/sprite/mallek_shirtlessum.png"
+define fs_mallek = Character(name="MALLEK", kind=hiveswap, image="mallek", show_blood="teal")
 
-image mallek down = Image("{{assets}}/sprite/mallek_down.png", ypos=730)
-image mallek drones = Image("{{assets}}/sprite/mallek_drones.png", ypos=730)
-image mallek grin = Image("{{assets}}/sprite/mallek_grin.png", ypos=730)
-image mallek interest = Image("{{assets}}/sprite/mallek_interest.png", ypos=730)
-image mallek laugh = Image("{{assets}}/sprite/mallek_laugh.png", ypos=730)
-image mallek lowered = Image("{{assets}}/sprite/mallek_lowered.png", ypos=730)
-image mallek neutral = Image("{{assets}}/sprite/mallek_neutral.png", ypos=730)
-image mallek pissed = Image("{{assets}}/sprite/mallek_pissed.png", ypos=730)
-image mallek really = Image("{{assets}}/sprite/mallek_really.png", ypos=730)
-image mallek scrutinyannoyance = Image("{{assets}}/sprite/mallek_scrutinyannoyance.png", ypos=730)
-image mallek shirtlessflush = Image("{{assets}}/sprite/mallek_shirtlessflush.png", ypos=730)
-image mallek shirtlessmybad = Image("{{assets}}/sprite/mallek_shirtlessmybad.png", ypos=730)
-image mallek shirtlesstalk = Image("{{assets}}/sprite/mallek_shirtlesstalk.png", ypos=730)
-image mallek shirtlessum = Image("{{assets}}/sprite/mallek_shirtlessum.png", ypos=730)

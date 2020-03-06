@@ -1,10 +1,11 @@
-define bronya = Character(name="BRONYA", kind=hiveswap, image="bronya", window_background="gui/textbox_jade.png", who_outlines=[(4, "#0aa85b")])
+init offset = 1
+image fs_bronya angry = "{{assets}}/sprite/bronya_angry.png"
+image fs_bronya duty = "{{assets}}/sprite/bronya_duty.png"
+image fs_bronya happy = "{{assets}}/sprite/bronya_happy.png"
+image fs_bronya motherly = "{{assets}}/sprite/bronya_motherly.png"
+image fs_bronya panic = "{{assets}}/sprite/bronya_panic.png"
+image fs_bronya talk = "{{assets}}/sprite/bronya_talk.png"
+image fs_bronya umm = "{{assets}}/sprite/bronya_umm.png"
+image fs_bronya worried = "{{assets}}/sprite/bronya_worried.png"
+define fs_bronya = Character(name="BRONYA", kind=hiveswap, image="bronya", show_blood="jade")
 
-image bronya angry = Image("{{assets}}/sprite/bronya_angry.png", ypos=730)
-image bronya duty = Image("{{assets}}/sprite/bronya_duty.png", ypos=730)
-image bronya happy = Image("{{assets}}/sprite/bronya_happy.png", ypos=730)
-image bronya motherly = Image("{{assets}}/sprite/bronya_motherly.png", ypos=730)
-image bronya panic = Image("{{assets}}/sprite/bronya_panic.png", ypos=730)
-image bronya talk = Image("{{assets}}/sprite/bronya_talk.png", ypos=730)
-image bronya umm = Image("{{assets}}/sprite/bronya_umm.png", ypos=730)
-image bronya worried = Image("{{assets}}/sprite/bronya_worried.png", ypos=730)

@@ -1,16 +1,17 @@
-define boldir = Character(name="BOLDIR", kind=hiveswap, image="boldir", window_background="gui/textbox_olive.png", who_outlines=[(4, "#416600")])
+init offset = 1
+image fs_boldir antidote = "{{assets}}/sprite/boldir_antidote.png"
+image fs_boldir cold = "{{assets}}/sprite/boldir_cold.png"
+image fs_boldir cold_small = "{{assets}}/sprite/boldir_cold_small.png"
+image fs_boldir dressneutral = "{{assets}}/sprite/boldir_dressneutral.png"
+image fs_boldir dressthoughtful = "{{assets}}/sprite/boldir_dressthoughtful.png"
+image fs_boldir dresswideeyed = "{{assets}}/sprite/boldir_dresswideeyed.png"
+image fs_boldir dying = "{{assets}}/sprite/boldir_dying.png"
+image fs_boldir hurt = "{{assets}}/sprite/boldir_hurt.png"
+image fs_boldir mean = "{{assets}}/sprite/boldir_mean.png"
+image fs_boldir mean_small = "{{assets}}/sprite/boldir_mean_small.png"
+image fs_boldir neutral = "{{assets}}/sprite/boldir_neutral.png"
+image fs_boldir oof = "{{assets}}/sprite/boldir_oof.png"
+image fs_boldir thoughtful = "{{assets}}/sprite/boldir_thoughtful.png"
+image fs_boldir wideeyed = "{{assets}}/sprite/boldir_wideeyed.png"
+define fs_boldir = Character(name="BOLDIR", kind=hiveswap, image="boldir", show_blood="olive")
 
-image boldir antidote = Image("{{assets}}/sprite/boldir_antidote.png", ypos=730)
-image boldir cold = Image("{{assets}}/sprite/boldir_cold.png", ypos=730)
-image boldir cold_small = Image("{{assets}}/sprite/boldir_cold_small.png", ypos=730)
-image boldir dressneutral = Image("{{assets}}/sprite/boldir_dressneutral.png", ypos=730)
-image boldir dressthoughtful = Image("{{assets}}/sprite/boldir_dressthoughtful.png", ypos=730)
-image boldir dresswideeyed = Image("{{assets}}/sprite/boldir_dresswideeyed.png", ypos=730)
-image boldir dying = Image("{{assets}}/sprite/boldir_dying.png", ypos=730)
-image boldir hurt = Image("{{assets}}/sprite/boldir_hurt.png", ypos=730)
-image boldir mean = Image("{{assets}}/sprite/boldir_mean.png", ypos=730)
-image boldir mean_small = Image("{{assets}}/sprite/boldir_mean_small.png", ypos=730)
-image boldir neutral = Image("{{assets}}/sprite/boldir_neutral.png", ypos=730)
-image boldir oof = Image("{{assets}}/sprite/boldir_oof.png", ypos=730)
-image boldir thoughtful = Image("{{assets}}/sprite/boldir_thoughtful.png", ypos=730)
-image boldir wideeyed = Image("{{assets}}/sprite/boldir_wideeyed.png", ypos=730)
